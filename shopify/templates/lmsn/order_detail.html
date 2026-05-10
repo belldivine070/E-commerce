@@ -1,0 +1,38 @@
+{% extends "lmsn/layout.html" %}
+
+
+
+{% block content %}
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3>Order Details: #{{ order.order_number }}</h3>
+                <p>Status: <span class="badge bg-danger">{{ order.get_status_display }}</span></p>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in order.order_items.all %}
+                        <tr>
+                            <td>{{ item.product_name_snapshot }}</td>
+                            <td>{{ item.quantity }}</td>
+                            <td>${{ item.price_at_purchase }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <a href="{% url 'lmsn:profile' %}#orders" class="btn btn-fill-out">Back to Orders</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

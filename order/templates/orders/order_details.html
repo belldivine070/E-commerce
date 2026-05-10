@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="order-header">
+    <h2>Order #{{ order.id }}</h2>
+    
+    {% if order.status == 'paid' %}
+        <span class="badge bg-success">Payment Received</span>
+        <p>Thank you! Your order is being processed.</p>
+    {% elif order.status == 'pending' %}
+        <span class="badge bg-warning">Awaiting Payment</span>
+        <a href="{% url 'payments:initiate' order.id %}" class="btn btn-primary">Complete Payment</a>
+    {% endif %}
+</div>
+
+<div class="order-items">
+    {% for item in order.items.all %}
+        <div class="item">
+            {{ item.product.name }} x {{ item.quantity }} - ₦{{ item.price }}
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
