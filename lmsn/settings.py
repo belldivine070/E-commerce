@@ -25,6 +25,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'import_export',    
     'widget_tweaks',
     'django_paystack',
     'django_bootstrap5',
@@ -50,10 +51,10 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
     'accounts.middleware.UserActivityMiddleware',
     'core.middleware.SessionCartMiddleware',  
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'lmsn.urls'
@@ -186,6 +187,19 @@ PAYSTACK_SETTINGS = {
     'CURRENCY': 'NGN',
     'BUTTON_CLASS': 'btn btn-primary',
 }
+
+#Block unwanted bots and crawlers
+# CRAWLER_USER_AGENTS = [
+#     'Googlebot',
+#     'Slurp',
+#     'DuckDuckGo',
+# ]
+AXES_FAILURE_LIMIT = 5  # Lock out after 5 tries
+AXES_COOLOFF_TIME = 1   # Lock out for 1 hour
+AXES_LOCKOUT_TEMPLATE = 'lockout.html' # Show a custom "You are blocked" page
+AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP = True
+
+
 
 # # --- DEPLOYMENT SECURITY ---
 SECURE_SSL_REDIRECT = True
