@@ -43,6 +43,12 @@ class Order(models.Model):
     def current_update(self):
         return self.tracking_history.first()
 
+    @property
+    def total_items(self):
+        """Calculates total individual quantities across all items in this order"""
+        # Sums up the 'quantity' field of all related OrderItems
+        return self.order_items.aggregate(models.Sum('quantity'))['quantity__sum'] or 0
+
     def save(self, *args, **kwargs):
         is_new = self.pk is None
         if not self.order_number:

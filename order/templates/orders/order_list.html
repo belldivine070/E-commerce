@@ -4,5 +4,23 @@
 
 {% block content %}
 
+{% for order in orders %}
+<div class="container mt-4">
+    <table class="col-md-10">
+        <thead>
+            <th>Order Number</th>
+            <th>User</th>
+            <th>Paid</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+            <td><a href="{% url 'orders:order_detail' order.pk %}">{{ order.order_number }}</a></td>
+            <td>{{ order.user }}</td>
+            <td>{{ order.is_paid }}</td>
+            <td>{{ order.status }}</td>
+        </tbody>
+    </table>
+</div>
+{% endfor %}
 
 {% endblock content %}

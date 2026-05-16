@@ -44,11 +44,14 @@
                     <h5 class="mb-0">Gateway Logs (JSON)</h5>
                 </div>
                 <div class="card-body p-0">
-                    <pre class="m-0 p-3 bg-light" style="max-height: 300px; overflow-y: auto;"><code>{{ payment.gateway_response|json_script:"res-data" }}
-<script>
-    const data = JSON.parse(document.getElementById('res-data').textContent);
-    document.currentScript.parentElement.textContent = JSON.stringify(data, null, 4);
-</script></code></pre>
+                    <pre class="m-0 p-3 bg-light" style="max-height: 300px; overflow-y: auto;">
+                        <code>{{ payment.gateway_response|json_script:"res-data" }}
+                            <script>
+                                const data = JSON.parse(document.getElementById('res-data').textContent);
+                                document.currentScript.parentElement.textContent = JSON.stringify(data, null, 4);
+                            </script>
+                        </code>
+                    </pre>
                 </div>
             </div>
         </div>

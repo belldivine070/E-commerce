@@ -63,6 +63,7 @@ urlpatterns = [
     path("contact-us/", views.ContactUs.as_view(), name="contactus"),
     path('logs/', views.ActivityLogListView.as_view(), name='activity_logs'),
     path('logs/clear/', views.ClearLogsView.as_view(), name='clear_logs'),
+    path('security/', views.SecurityAuditView.as_view(), name='security_audit'),
 
     # =========================================================
     # 5. MEDIA LIBRARY & ASSETS

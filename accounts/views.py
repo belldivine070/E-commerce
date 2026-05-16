@@ -1,3 +1,5 @@
+from datetime import timedelta, timezone, timezone
+
 from django.db.models import Q, Count
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin, PermissionRequiredMixin
@@ -9,9 +11,10 @@ from django.shortcuts import redirect
 
 from django.contrib.auth import update_session_auth_hash
 from django.utils.http import url_has_allowed_host_and_scheme
-from core.mixins import RolePermissionRequiredMixin
+from core.mixins import RolePermissionRequiredMixin, get_client_ip
 from .models import CustomUser, Position
 from .forms import LoginForm, UserEditForm, UserSignupForm, RoleForm
+from core.models import ActivityLog, SecurityAuditLog
 
 from django.views import View
 from django.http import HttpResponse
@@ -22,7 +25,6 @@ from django.shortcuts import get_object_or_404
 # =========================================================
 # 1. AUTHENTICATION VIEWS
 # =========================================================
-
 class UserLoginView(LoginView):
     form_class = LoginForm
     template_name = "lmsn/login.html"
@@ -31,30 +33,77 @@ class UserLoginView(LoginView):
         user = self.request.user
         next_url = self.request.GET.get('next')
 
-        # ✅ Secure redirect check (prevents open redirect attacks)
         if next_url and url_has_allowed_host_and_scheme(
             url=next_url,
             allowed_hosts={self.request.get_host()}
         ):
             return next_url
 
-        # ✅ Role-based redirect
         if user.is_staff or user.is_superuser:
             return reverse("core:index")
-
         return reverse("lmsn:index")
 
     def form_valid(self, form):
+        """Runs only when login is successful"""
         user = form.get_user()
+        
+        SecurityAuditLog.objects.create(
+            user=user,
+            event='login',
+            description=f"User {user.username} logged in successfully.",
+            ip_address=get_client_ip(self.request),
+            user_agent=self.request.headers.get('User-Agent')
+        )
         messages.success(self.request, f"Welcome back, {user.full_name}!")
         return super().form_valid(form)
+
+    def form_invalid(self, form):
+        """Runs when login fails (wrong password/username)"""
+        username = form.data.get('username') # Get the name they tried to use
+        
+        SecurityAuditLog.objects.create(
+            # No user linked because login failed
+            event='failed_login',
+            description=f"Failed login attempt for username: {username}",
+            ip_address=get_client_ip(self.request),
+            user_agent=self.request.headers.get('User-Agent')
+        )
+        # Check for the "50 attempts" here
+        self.check_brute_force(username)
+        return super().form_invalid(form)
+
+    def check_brute_force(self, username):
+        """Simple manual check for too many failed attempts"""
+        one_hour_ago = timezone.now() - timedelta(hours=1)
+        attempts = SecurityAuditLog.objects.filter(
+            event='failed_login',
+            description__contains=username,
+            timestamp__gte=one_hour_ago
+        ).count()
+
+        if attempts >= 5: # Low threshold for testing
+             # You could trigger an email alert or a SecurityAuditLog here
+             SecurityAuditLog.objects.create(
+                event="Potential Brute Force",
+                description=f"User {username} failed login {attempts} times in 1 hour.",
+                ip_address=get_client_ip(self.request),
+                # user_agent=self.request.headers.get('User-Agent'),
+             )
 
 
 class UserLogoutView(LogoutView):
     next_page = reverse_lazy("lmsn:index")
 
     def dispatch(self, request, *args, **kwargs):
+        user=self.request.user
         if request.user.is_authenticated:
+            SecurityAuditLog.objects.create(
+                user=user,
+                event="logout",
+                description=f"User {user.username} logged out successfully.",
+                ip_address=get_client_ip(self.request),
+                user_agent=self.request.headers.get('User-Agent')
+            )
             messages.info(request, "You have been logged out successfully.")
         return super().dispatch(request, *args, **kwargs)
 
@@ -103,6 +152,13 @@ class SignupView(RolePermissionRequiredMixin, CreateView):
             url=next_url,
             allowed_hosts={self.request.get_host()}
         ):
+            SecurityAuditLog.objects.create(
+                user=user,
+                event='register',
+                description=f"User {user.username} created an account successfully.",
+                ip_address=get_client_ip(self.request),
+                user_agent=self.request.headers.get('User-Agent')
+            )
             return redirect(next_url)
 
         return redirect("lsmn:index")
@@ -342,6 +398,15 @@ class CustomPasswordChangeView(LoginRequiredMixin, FormView):
         return kwargs
     
     def form_valid(self, form):
+        user = form.get_user()
+        SecurityAuditLog.objects.create(
+            user=user,
+            event='password_change',
+            description=f"User {user.username} created an account successfully.",
+            ip_address=get_client_ip(self.request),
+            user_agent=self.request.headers.get('User-Agent')
+
+        )
         user = form.save()
         update_session_auth_hash(self.request, user)
         messages.success(self.request, "Password updated.")

@@ -1,9 +1,11 @@
+from django.urls import reverse
 from django.views.generic import CreateView, ListView, DetailView, View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import redirect, render, get_object_or_404
 from .models import Order, OrderItem
 from .forms import OrderCreateForm
 from django.db import transaction
+from django.db.models import Q
 from cart.models import Cart, CartItem
 from django.contrib import messages
 from accounts.models import Address
@@ -20,11 +22,11 @@ class CheckoutView(LoginRequiredMixin, View):
         # Ensure we get the DB-backed cart for the logged-in user
         return Cart.objects.filter(user=request.user).first()
 
-    def get(self, request, order_id=None, *args, **kwargs):
+    def get(self, request, pk=None, *args, **kwargs):
         # --- 1. Restore Order Logic ---
-        if order_id:
+        if pk:
             # Check for existing unpaid order
-            order = get_object_or_404(Order, id=order_id, user=request.user, is_paid=False)
+            order = get_object_or_404(Order, id=pk, user=request.user, is_paid=False)
             cart, _ = Cart.objects.get_or_create(user=request.user)
 
             try:
@@ -56,7 +58,7 @@ class CheckoutView(LoginRequiredMixin, View):
 
                     messages.info(request, "Items restored to checkout. Please confirm your details.")
                     
-                # Redirect to the standard checkout URL (WITHOUT the order_id)
+                # Redirect to the standard checkout URL (WITHOUT the pk)
                 return redirect('orders:checkout')
             except Exception as e:
                 messages.error(request, f"Restore failed: {str(e)}")
@@ -128,7 +130,7 @@ class CheckoutView(LoginRequiredMixin, View):
                     OrderItem.objects.create(
                         order=order,
                         variant=item.variant,
-                        product_name_snapshot=item.variant.product.name if item.variant else "Unknown Product",
+                        product_name_snapshot=item.product.name,
                         price_at_purchase=item.price_at_addition, 
                         quantity=item.quantity
                     )
@@ -139,13 +141,14 @@ class CheckoutView(LoginRequiredMixin, View):
                 # Step 6: ACTIVATE PAYMENT
                 # This is the "Pay Now" trigger. It redirects the browser to the payment app.
                 # print(f"--- REDIRECTING TO ORDER {order.id} ---") # Add this line to confirm we're hitting this point
-                return redirect('payments:initiate', order_id=order.id)
+                return redirect('payments:initiate', pk=order.id)
 
         except Exception as e:
             messages.error(request, f"Checkout failed: {str(e)}")
             return redirect('orders:checkout')
         
 
+from django.db.models import Q
 
 class OrderListView(LoginRequiredMixin, ListView):
     model = Order
@@ -153,27 +156,58 @@ class OrderListView(LoginRequiredMixin, ListView):
     context_object_name = "orders"
     paginate_by = 10
 
+    def dispatch(self, request, *args, **kwargs):
+        if not request.user.is_staff:
+            url = reverse('lmsn:profile') + '#orders'
+            return redirect(url)
+        return super().dispatch(request, *args, **kwargs)
+
+    def get_template_names(self):
+        return ["orders/order_list.html"]
+
     def get_queryset(self):
-        return Order.objects.filter(user=self.request.user).order_by("-created_at")
-    
+        # Added prefetch_related for order_items to keep dashboard fast
+        queryset = Order.objects.all().select_related('user').prefetch_related('order_items')
+        
+        query = self.request.GET.get('q', '').strip()
+        if query:
+            # Base search fields (safe text fields)
+            search_filter = Q(
+                Q(user__email__icontains=query) |
+                Q(order_number__icontains=query) |
+                Q(status__icontains=query) |
+                Q(shipping_address__icontains=query)
+            )
+
+            # Handle the Boolean field safely without breaking the SQL query
+            if query.lower() in ['paid', 'true', 'yes', '1']:
+                search_filter |= Q(is_paid=True)
+            elif query.lower() in ['unpaid', 'false', 'no', '0']:
+                search_filter |= Q(is_paid=False)
+
+            queryset = queryset.filter(search_filter)
+            
+        return queryset.order_by('-created_at')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # Summary Stats for Admin
+        context['total_order'] = Order.objects.count() # Avoid calling .all() unnecessarily
+        return context
+
 
 class OrderDetailView(LoginRequiredMixin, DetailView):
     model = Order
-    template_name = "lmsn/order_detail.html"
     context_object_name = "order"
 
+    def get_template_names(self):
+        if self.request.user.is_staff:
+            return ["orders/order_details.html"] # Template with tracking update controls
+        return ["lmsn/order_detail.html"]             # Simple customer receipt template
+
     def get_queryset(self):
-        # We prefetch 'tracking_history' and the linked 'status_message' 
-        # to make the timeline load instantly.
-        return Order.objects.filter(user=self.request.user).prefetch_related(
-            'order_items', 
-            'tracking_history__status_message'
-        )
-    
+        base_queryset = Order.objects.prefetch_related('order_items', 'tracking_history__status_message')
 
-# class OrderHistoryView(LoginRequiredMixin, ListView):
-#     model = Order
-#     template_name = 'orders/history.html'
-
-#     def get_queryset(self):
-#         return Order.objects.filter(user=self.request.user)
+        if self.request.user.is_staff:
+            return base_queryset
+        return base_queryset.filter(user=self.request.user)

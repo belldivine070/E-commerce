@@ -14,7 +14,7 @@ urlpatterns = [
 
     # --- Paystack Transaction Flow ---
     # 1. Initialize the transaction and redirect to Paystack
-    path('initiate/<int:order_id>/', views.PaystackInitiateView.as_view(), name='initiate'),
+    path('initiate/<int:pk>/', views.PaystackInitiateView.as_view(), name='initiate'),
     
     # 2. Redirect destination after user pays on Paystack
     path('verify/', views.VerifyPaymentView.as_view(), name='verify'),

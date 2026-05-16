@@ -9,107 +9,107 @@ function useImage(url, id) {
         window.parent.handleVisualSelection(url, id);
     }
 }
-    const wrapper = document.getElementById('ajax-table-wrapper');
+const wrapper = document.getElementById('ajax-table-wrapper');
 
-    function getFilters() {
-        return {
-            q: document.getElementById('ajaxSearch').value,
-            cat: document.getElementById('albumFilter').value,
-            entries: document.getElementById('entriesCount').value,
-            page: document.getElementById('customPageInput') ? document.getElementById('customPageInput').value : 1
+function getFilters() {
+    return {
+        q: document.getElementById('ajaxSearch').value,
+        cat: document.getElementById('albumFilter').value,
+        entries: document.getElementById('entriesCount').value,
+        page: document.getElementById('customPageInput') ? document.getElementById('customPageInput').value : 1
+    };
+}
+
+async function fetchData(params = {}) {
+    const filters = getFilters();
+    const searchParams = new URLSearchParams({...filters, ...params});
+    const url = `${window.location.pathname}?${searchParams.toString()}`;
+    
+    wrapper.style.opacity = '0.4';
+    
+    try {
+        const response = await fetch(url, { headers: { 'X-Requested-With': 'XMLHttpRequest' } });
+        const html = await response.text();
+        
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const newTable = doc.getElementById('ajax-table-wrapper').innerHTML;
+        
+        wrapper.innerHTML = newTable;
+        // Update the browser URL without refreshing
+        window.history.pushState({}, '', url);
+    } catch (err) {
+        console.error("Error loading data:", err);
+    } finally {
+        wrapper.style.opacity = '1';
+        bindDynamicEvents();
+    }
+}
+
+function bindDynamicEvents() {
+    // Pagination link clicks
+    document.querySelectorAll('.ajax-page').forEach(link => {
+        link.onclick = (e) => {
+            e.preventDefault();
+            const page = new URL(link.href).searchParams.get('page');
+            fetchData({ page });
         };
-    }
-
-    async function fetchData(params = {}) {
-        const filters = getFilters();
-        const searchParams = new URLSearchParams({...filters, ...params});
-        const url = `${window.location.pathname}?${searchParams.toString()}`;
-        
-        wrapper.style.opacity = '0.4';
-        
-        try {
-            const response = await fetch(url, { headers: { 'X-Requested-With': 'XMLHttpRequest' } });
-            const html = await response.text();
-            
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const newTable = doc.getElementById('ajax-table-wrapper').innerHTML;
-            
-            wrapper.innerHTML = newTable;
-            // Update the browser URL without refreshing
-            window.history.pushState({}, '', url);
-        } catch (err) {
-            console.error("Error loading data:", err);
-        } finally {
-            wrapper.style.opacity = '1';
-            bindDynamicEvents();
-        }
-    }
-
-    function bindDynamicEvents() {
-        // Pagination link clicks
-        document.querySelectorAll('.ajax-page').forEach(link => {
-            link.onclick = (e) => {
-                e.preventDefault();
-                const page = new URL(link.href).searchParams.get('page');
-                fetchData({ page });
-            };
-        });
-
-        // Custom Page Input
-        const pageInput = document.getElementById('customPageInput');
-        if (pageInput) {
-            pageInput.onchange = () => fetchData({ page: pageInput.value });
-        }
-
-        // Header Checkbox (Select All)
-        const headerCheck = document.getElementById('selectAllHeader');
-        if (headerCheck) {
-            headerCheck.onclick = () => {
-                document.querySelectorAll('.asset-checkbox').forEach(cb => cb.checked = headerCheck.checked);
-            };
-        }
-    }
-
-    // Input Listeners with Debounce
-    let timer;
-    document.getElementById('ajaxSearch').addEventListener('input', () => {
-        clearTimeout(timer);
-        timer = setTimeout(() => fetchData({ page: 1 }), 500);
     });
 
-    document.getElementById('albumFilter').addEventListener('change', () => fetchData({ page: 1 }));
-    document.getElementById('entriesCount').addEventListener('change', () => fetchData({ page: 1 }));
-
-    // Actions
-    function deleteSingle(id) {
-        if (confirm('Delete this file permanently?')) {
-            const formData = new FormData();
-            formData.append('bulk_action', 'delete');
-            formData.append('asset_ids', id);
-            formData.append('csrfmiddlewaretoken', '{{ csrf_token }}');
-
-            fetch(window.location.href, {
-                method: 'POST',
-                body: formData
-            }).then(() => fetchData());
-        }
+    // Custom Page Input
+    const pageInput = document.getElementById('customPageInput');
+    if (pageInput) {
+        pageInput.onchange = () => fetchData({ page: pageInput.value });
     }
 
-    function copyToClipboard(text, btn) {
-        navigator.clipboard.writeText(text).then(() => {
-            const oldText = btn.innerText;
-            btn.innerText = "Copied!";
-            btn.classList.replace('btn-info', 'btn-success');
-            setTimeout(() => {
-                btn.innerText = oldText;
-                btn.classList.replace('btn-success', 'btn-info');
-            }, 1500);
-        });
+    // Header Checkbox (Select All)
+    const headerCheck = document.getElementById('selectAllHeader');
+    if (headerCheck) {
+        headerCheck.onclick = () => {
+            document.querySelectorAll('.asset-checkbox').forEach(cb => cb.checked = headerCheck.checked);
+        };
     }
+}
 
-    // Initialize events on page load
-    document.addEventListener('DOMContentLoaded', bindDynamicEvents);
+// Input Listeners with Debounce
+let timer;
+document.getElementById('ajaxSearch').addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fetchData({ page: 1 }), 500);
+});
+
+document.getElementById('albumFilter').addEventListener('change', () => fetchData({ page: 1 }));
+document.getElementById('entriesCount').addEventListener('change', () => fetchData({ page: 1 }));
+
+// Actions
+function deleteSingle(id) {
+    if (confirm('Delete this file permanently?')) {
+        const formData = new FormData();
+        formData.append('bulk_action', 'delete');
+        formData.append('asset_ids', id);
+        formData.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+        fetch(window.location.href, {
+            method: 'POST',
+            body: formData
+        }).then(() => fetchData());
+    }
+}
+
+function copyToClipboard(text, btn) {
+    navigator.clipboard.writeText(text).then(() => {
+        const oldText = btn.innerText;
+        btn.innerText = "Copied!";
+        btn.classList.replace('btn-info', 'btn-success');
+        setTimeout(() => {
+            btn.innerText = oldText;
+            btn.classList.replace('btn-success', 'btn-info');
+        }, 1500);
+    });
+}
+
+// Initialize events on page load
+document.addEventListener('DOMContentLoaded', bindDynamicEvents);
 
 
 

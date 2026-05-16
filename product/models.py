@@ -283,7 +283,7 @@ class ProductVariant(models.Model):
 
     def __str__(self):
         # size_list = ", ".join([s.name for s in self.sizes.all()]) # this line loops through while using many to many field, which is not ideal for performance. We should consider a different approach if we want to display sizes here. 
-        return f"{self.product.name} - {self.color.name} - {self.size.name}" # - (Sizes: {size_list})"
+        return f"{self.color.name} - {self.size.name}" # - (Sizes: {size_list})"
 
 
 

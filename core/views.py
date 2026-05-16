@@ -23,7 +23,7 @@ from django.views.generic import (
 from .models import (
     Category, CategoryPost, Widget, WidgetPost, AppVariable, 
     POST_FIELD_CHOICES, NewsPost, ExternalSubscriber, Page, 
-    MediaAsset, ActivityLog, MediaAlbum
+    MediaAsset, ActivityLog, MediaAlbum, SecurityAuditLog
 )
 # Form Imports
 from .forms import (
@@ -325,12 +325,28 @@ def admin_media_explorer(request):
 # 6. SYSTEM LOGS & MONITORING
 # =========================================================
 
-class ActivityLogListView(LoginRequiredMixin, ListView):
+class ActivityLogListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     model = ActivityLog
-    template_name = 'admin/logs/activity_list.html'
+    template_name = 'activity-logs.html'
     context_object_name = 'logs'
     paginate_by = 50
-    ordering = ['-timestamp'] # Assuming your model has a timestamp/created_at field
+    ordering = ['-timestamp']
+
+    def test_func(self):
+        """Only allow staff/superusers to view logs"""
+        return self.request.user.is_staff
+
+
+class SecurityAuditView(LoginRequiredMixin, UserPassesTestMixin, ListView):
+    model = SecurityAuditLog
+    template_name = 'security-audit.html'    
+    context_object_name = 'logs'
+    paginate_by = 100  # Fixed typo: was 'pagination'
+    ordering = ['-timestamp']
+
+    def test_func(self):
+        return self.request.user.is_staff
+
 
 class ClearLogsView(LoginRequiredMixin, View):
     """Allows admins to wipe the logs"""
@@ -349,6 +365,7 @@ class ClearLogsView(LoginRequiredMixin, View):
         messages.success(request, "Activity logs cleared successfully.")
         return redirect('core:activity_logs')
     
+
 
 # =========================================================
 #             1. CATEGORY & CATEGORY POST VIEWS

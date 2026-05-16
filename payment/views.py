@@ -1,3 +1,6 @@
+from email import message
+from ipaddress import ip_address
+from ipaddress import ip_address
 import json
 import hmac
 import hashlib
@@ -16,7 +19,9 @@ from django.views.generic import ListView, DetailView, RedirectView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib import messages
 from django.db.models import Sum, Q
-from order.models import Order, OrderTracking
+from core.models import ActivityLog
+from core.views import get_client_ip
+from order.models import Order, OrderTracking, TrackingStatus
 from .models import Payment, PaymentHistory, Refund
 
 
@@ -27,13 +32,13 @@ logger = logging.getLogger(__name__)
 
 
 # --- Shared Logic ---
-def process_payment_success(order_id, reference, gateway_data):
+def process_payment_success(pk, reference, gateway_data, request=None):
     data = gateway_data.get('data', gateway_data)
     payment_channel = data.get('channel', 'card')
 
     with transaction.atomic():
         # Use select_for_update to lock the row during this transaction
-        order = Order.objects.select_for_update().get(id=order_id)
+        order = Order.objects.select_for_update().get(id=pk)
         
         payment, created = Payment.objects.get_or_create(
             transaction_reference=reference,
@@ -52,14 +57,40 @@ def process_payment_success(order_id, reference, gateway_data):
             order.status = 'processing' 
             order.save()
 
-            # Create or get the status message
-            paid_status, _ = OrderTracking.objects.get_or_create(
-                message="Payment Confirmed",
-                defaults={'description': 'Your payment was successfully processed. We are now preparing your items.'}
+            # Create or get the status message for "Payment Successful"
+            paid_status, _ = TrackingStatus.objects.get_or_create(
+                message='Your payment was successfully processed. We are now preparing your items.',
+                defaults={
+                    'description': 'This status indicates that the payment has been received and the order is now being prepared for shipment.',
+                }
             )
             
             # Record in timeline
             OrderTracking.objects.create(order=order, status_message=paid_status)
+
+            # --- DYNAMIC METADATA EXTRACTION ---
+            if request:
+                # 1. Active User Browser Track
+                user_ip = get_client_ip(request)
+                user_agent = request.headers.get('User-Agent', 'unknown')
+            else:
+                # 2. Automated Webhook Track (Extracting user footprints saved by Paystack)
+                user_ip = data.get('ip_address') or '0.0.0.0'
+                
+                history = data.get('history', [])
+                if history and isinstance(history, list):
+                    user_agent = history[0].get('user_agent', 'Paystack-Gateway/2.0')
+                else:
+                    user_agent = 'Paystack-Webhook/2.0'
+
+            #  THE REFINED AND SECURE CODE:
+            ActivityLog.objects.create(
+                user=order.user,  # Safe and reliable extraction directly from the order
+                activity_type='purchase',
+                description=f"Order #{order.order_number} confirmed: {order.total_items} items for ₦{order.total_amount}",
+                user_agent=user_agent, # Webhook context fallback safe
+                ip_address=user_ip # Standard loopback or gateway origin
+            )
 
             # Record in payment history (Only once)
             PaymentHistory.objects.create(
@@ -115,7 +146,7 @@ class PaymentDetailView(LoginRequiredMixin, DetailView):
     Useful for generating receipts or for staff to inspect gateway logs.
     """
     model = Payment
-    template_name = "payments/detail.html"
+    template_name = "payments/payment_detail.html"
     context_object_name = "payment"
 
     def get_queryset(self):
@@ -133,19 +164,19 @@ class PaymentDetailView(LoginRequiredMixin, DetailView):
 
 class PaystackInitiateView(LoginRequiredMixin, RedirectView):
     def get_redirect_url(self, *args, **kwargs):
-        order = get_object_or_404(Order, id=kwargs['order_id'], user=self.request.user)
+        order = get_object_or_404(Order, id=kwargs['pk'], user=self.request.user)
         
         url = "https://api.paystack.co/transaction/initialize"
         headers = {
             "Authorization": f"Bearer {settings.PAYSTACK_SECRET_KEY}",
             "Content-Type": "application/json",
         }
-        # Note: order_id is sent as metadata to be retrieved in webhook/verify
+        # Note: pk is sent as metadata to be retrieved in webhook/verify
         payload = {
             "email": self.request.user.email,
             "amount": int(order.total_amount * 100), 
             "callback_url": self.request.build_absolute_uri(reverse('payments:verify')),
-            "metadata": {"order_id": str(order.id)}
+            "metadata": {"pk": str(order.id)}
         }
 
         try:
@@ -156,8 +187,9 @@ class PaystackInitiateView(LoginRequiredMixin, RedirectView):
         except Exception as e:
             logger.error(f"Paystack Init Error: {e}")
             messages.error(self.request, "Payment gateway is currently unreachable.")
+            url = reverse('lmsn:profile') + '#orders'
         
-        return reverse('orders:order_detail', kwargs={'pk': order.id})
+        return reverse(url, kwargs={'pk': order.id})
 
 
 class VerifyPaymentView(LoginRequiredMixin, View):
@@ -181,15 +213,16 @@ class VerifyPaymentView(LoginRequiredMixin, View):
             data = response.json()
 
             if data.get('status') and data['data'].get('status') == "success":
-                order_id = data['data']['metadata'].get('order_id')
-                process_payment_success(order_id, reference, data)
+                pk = data['data']['metadata'].get('pk')
+                process_payment_success(pk, reference, data)
                 messages.success(request, "Payment verified successfully.")
-                return redirect(reverse('orders:order_detail', kwargs={'pk': order_id}))
+                return redirect(reverse('orders:order_detail', kwargs={'pk': pk}))
         except Exception as e:
             logger.error(f"Verification Error: {e}")
 
         messages.info(request, "Transaction is being processed. Please check back in a moment.")
-        return redirect('orders:history')
+        url = reverse('lmsn:profile') + '#orders'
+        return redirect(url)
 
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -216,10 +249,10 @@ class PaystackWebhookView(View):
         if event_data['event'] == 'charge.success':
             data = event_data['data']
             reference = data['reference']
-            order_id = data['metadata'].get('order_id')
+            pk = data['metadata'].get('pk')
             
             try:
-                process_payment_success(order_id, reference, event_data)
+                process_payment_success(pk, reference, event_data)
             except Exception as e:
                 logger.error(f"Webhook Processing Error: {e}")
 
@@ -247,6 +280,14 @@ class ProcessRefundView(LoginRequiredMixin, UserPassesTestMixin, View):
                 processed_by=request.user
             )
             payment.status = 'refunded'
+            if request.user.is_staff:
+                ActivityLog.objects.create(
+                    user=request.user, # Use the request directly
+                    activity_type='refund', # Make sure this matches your ACTIVITY_TYPES choices
+                    description=f"User {request.user.username} successfully initiated a refund for User: {payment.user.username}, Order: #{payment.order.order_number}, Amount: ₦{payment.amount}",
+                    ip_address=get_client_ip(request),
+                    user_agent=request.headers.get('User-Agent')
+                )
             payment.save()
             
             # Update PaymentHistory

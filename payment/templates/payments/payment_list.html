@@ -76,52 +76,52 @@
             </thead>
 
             <tbody>
-                {% for payment in payments %}
+                {% for pay in payments %}
                 <tr>
                     <td>
-                        <code class="text-primary">{{ payment.transaction_reference }}</code>
+                        <code class="text-primary">{{ pay.transaction_reference }}</code>
                     </td>
 
-                    <td>{{ payment.user.email }}</td>
+                    <td>{{ pay.user.email }}</td>
 
                     <td>
                         <span class="badge bg-light text-dark">
-                            #{{ payment.order.id }}
+                            #{{ pay.order.order_number   }}
                         </span>
                     </td>
 
                     <td class="fw-semibold text-dark">
-                        ₦{{ payment.amount|floatformat:2 }}
+                        ₦{{ pay.amount|floatformat:2 }}
                     </td>
 
                     <td>
                         <span class="badge 
-                            {% if payment.status == 'successful' %}
+                            {% if pay.status == 'successful' %}
                                 bg-success-subtle text-success
-                            {% elif payment.status == 'refunded' %}
+                            {% elif pay.status == 'refunded' %}
                                 bg-warning-subtle text-warning
                             {% else %}
                                 bg-secondary-subtle text-secondary
                             {% endif %}
                         ">
-                            {{ payment.status|upper }}
+                            {{ pay.status|upper }}
                         </span>
                     </td>
 
-                    <td>{{ payment.created_at|date:"M d, Y" }}</td>
+                    <td>{{ pay.created_at|date:"M d, Y" }}</td>
 
                     <td class="text-end">
                         <div class="d-flex gap-2 justify-content-end">
 
-                            <a href="{% url 'payments:detail' payment.id %}" 
+                            <a href="{% url 'payments:detail' pay.id %}" 
                                class="btn btn-sm btn-outline-primary">
                                 Details
                             </a>
 
-                            {% if payment.status == 'successful' %}
+                            {% if pay.status == 'successful' %}
                                 <button 
                                     class="btn btn-sm btn-outline-danger"
-                                    onclick="openRefundModal('{{ payment.id }}', '{{ payment.amount }}')">
+                                    onclick="openRefundModal('{{ pay.id }}', '{{ pay.amount }}')">
                                     Refund
                                 </button>
                             {% endif %}

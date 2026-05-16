@@ -1,0 +1,1046 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"bg_lmsn"},
+{"type":"table","name":"accounts_address","database":"bg_lmsn","data":
+[
+{"id":"1","country":"USA","address_line_1":"1st okuta avenue","city":"Port-Harcourt","state":"Rivers","is_default":"0","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"2","country":"Nigeria","address_line_1":"Plot 6 avenue GRA","city":"Lagos","state":"Lagos","is_default":"0","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"}
+]
+}
+,{"type":"table","name":"accounts_customuser","database":"bg_lmsn","data":
+[
+{"password":"pbkdf2_sha256$1200000$aaEnznYg0ZVITenKeUpg4X$SSqW4NCL0p0hkzuzoDLWp4mn0egN3X15zw\/5GO2ajJo=","last_login":"2026-05-10 22:58:39.187400","is_superuser":"0","id":"739e68c0-c463-422d-b7f1-023f79566e65","email":"techwiszard@gmail.com","username":"Inimoney234","first_name":"inimoney","last_name":"okun uya","full_name":"inimoney okun uya","mobile":"+234 7047137084","is_active":"1","is_staff":"0","is_client":"1","is_subscribed":"1","is_online":"1","date_joined":"2026-04-23 08:05:16.996069","ip_address":null,"region":null,"profile_image":"","assigned_to_id":null,"department_id":null,"position_id":null},
+{"password":"pbkdf2_sha256$1200000$QHP1OyhkMnyHtFCIwhO9A4$WRuvamdJ\/7DP+Z8PixVcT9Fl0oMFXoXybrdwO+6XYAo=","last_login":"2026-05-10 12:26:00.442812","is_superuser":"1","id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360","email":"belldivine070@gmail.com","username":"belldivine070","first_name":"DIVINE","last_name":"BELL-GAM","full_name":"DIVINE BELL-GAM","mobile":null,"is_active":"1","is_staff":"1","is_client":"0","is_subscribed":"1","is_online":"1","date_joined":"2026-03-24 16:09:16.890728","ip_address":null,"region":null,"profile_image":"","assigned_to_id":null,"department_id":"1","position_id":"1"},
+{"password":"pbkdf2_sha256$1200000$967lIusdIX8gY8MELyFeAD$vQZtnyySv8WlIp9BLEI4\/sCZhBloUkIfHTNOQ3XDC\/c=","last_login":"2026-05-10 22:58:24.975807","is_superuser":"0","id":"83e3be64-d57e-4c22-9d79-54cb2c806868","email":"chisom119@gmail.com","username":"chisom119","first_name":"chisom","last_name":"Bell-Gam","full_name":"chisom Bell-Gam","mobile":"4567890","is_active":"1","is_staff":"0","is_client":"1","is_subscribed":"1","is_online":"1","date_joined":"2026-04-26 00:05:34.713682","ip_address":null,"region":null,"profile_image":"","assigned_to_id":null,"department_id":null,"position_id":null},
+{"password":"pbkdf2_sha256$1200000$MmhZRnhj3ao2w8oZqgRYK7$vicXe82xHmopJGKYwjoTo7zcU9tvXQ8c0CZSM28R74Y=","last_login":null,"is_superuser":"0","id":"6609cdaa-a903-47bd-b7a5-7e4a60f2774b","email":"belldivine080@gmail.com","username":"","first_name":"jfdb","last_name":"vjdfb","full_name":"jfdb vjdfb","mobile":"456789","is_active":"1","is_staff":"0","is_client":"1","is_subscribed":"1","is_online":"0","date_joined":"2026-04-25 23:53:00.696817","ip_address":null,"region":null,"profile_image":"","assigned_to_id":null,"department_id":null,"position_id":null},
+{"password":"pbkdf2_sha256$1200000$o2Mh4wicfYS2o6OhHFt6g4$WiYS10awWE+26G02LKG+KgQq7kPVSUPu165M1srSRKM=","last_login":"2026-05-10 19:09:27.726206","is_superuser":"0","id":"9e52070e-7516-4433-9cfc-8244e6580ab8","email":"favourbell@gmail.com","username":"favourite02","first_name":"Favour","last_name":"Bell-Gam","full_name":"Favour Bell-Gam","mobile":"456789","is_active":"1","is_staff":"0","is_client":"1","is_subscribed":"1","is_online":"0","date_joined":"2026-05-10 18:35:03.355529","ip_address":null,"region":null,"profile_image":"","assigned_to_id":null,"department_id":null,"position_id":null}
+]
+}
+,{"type":"table","name":"accounts_customuser_groups","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"accounts_customuser_user_permissions","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"accounts_department","database":"bg_lmsn","data":
+[
+{"id":"1","name":"Administration","slug":"administration","contact_email":null}
+]
+}
+,{"type":"table","name":"accounts_department_permissions","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"accounts_position","database":"bg_lmsn","data":
+[
+{"id":"1","name":"Super Admin","slug":"super_admin","description":""}
+]
+}
+,{"type":"table","name":"accounts_position_permissions","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"accounts_rolepermission","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"app_variables","database":"bg_lmsn","data":
+[
+{"ID":"1","var_name":"APP_NAME","var_value":"LSMN LIMITED","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"2","var_name":"SLOGAN","var_value":"","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"3","var_name":"APP_PORTAL","var_value":"https:\/\/www.lmsnlimited.com\/login","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:33:03"},
+{"ID":"4","var_name":"APP_SHORTCODE","var_value":"LMSN","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:24:27"},
+{"ID":"5","var_name":"APP_SMSEMAIL","var_value":"info@lmsnlimited.com","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:24:27"},
+{"ID":"6","var_name":"APP_SMSAPI","var_value":"LMSNAPI","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:25:28"},
+{"ID":"7","var_name":"APP_SMSPWD","var_value":"ClarkKent#93","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"8","var_name":"APP_SMSNAME","var_value":"LMSN","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"9","var_name":"APP_EMAIL","var_value":"admin@lmsnlimited.com","description":"Email Address That Will Be Used To Send Messages To Clients","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"10","var_name":"APP_EMAILPWD","var_value":"LMSltd#Z4A18","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"11","var_name":"APP_MOBILE","var_value":"+234 810 545 2468","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"12","var_name":"CONTACT_ADDRESS","var_value":"39 Shedrack Avenue, Elelewon, PHC","description":"Buguma Address","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"13","var_name":"OFFICIAL_EMAIL","var_value":"info@flocareintschool.com","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:24:27"},
+{"ID":"14","var_name":"FACEBOOK","var_value":"javascript:;","description":"Facebook Handle","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"15","var_name":"INSTAGRAM","var_value":"javascript:;","description":"Instagram Handle","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"16","var_name":"YOUTUBE","var_value":"javascript:;","description":"Youtube Handle","isreadonly":"0","lastupdated":"2018-08-27 23:24:27"},
+{"ID":"17","var_name":"CONTACT_PERSON1","var_value":"+234 810 545 2468","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"18","var_name":"CONTACT_PERSON2","var_value":"+2347072596564","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"19","var_name":"CONTACT_PERSON3","var_value":"","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:24:27"},
+{"ID":"20","var_name":"SITE_HITS","var_value":"25946","description":"Number Of Times The Site Has Been Visited","isreadonly":"0","lastupdated":"2018-08-27 23:24:27"},
+{"ID":"21","var_name":"TWITTER","var_value":"javascript:;","description":"Twitter Handle","isreadonly":"0","lastupdated":"2018-08-27 23:29:10"},
+{"ID":"22","var_name":"LINKEDIN","var_value":"javascript:;","description":"Linkedin Handle","isreadonly":"0","lastupdated":"2018-08-27 23:24:27"},
+{"ID":"23","var_name":"CONTACT_PERSON4","var_value":"+2348105452468","description":"For Whatsapp Link","isreadonly":"0","lastupdated":"2018-08-27 23:24:27"},
+{"ID":"24","var_name":"SITE_URL","var_value":"https:\/\/www.lmsnlimited.com","description":"website","isreadonly":"0","lastupdated":"2018-08-27 23:24:27"},
+{"ID":"25","var_name":"GOOGLE","var_value":"","description":"Your google handle link","isreadonly":"0","lastupdated":"2026-04-20 16:50:03"}
+]
+}
+,{"type":"table","name":"auth_group","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_group_permissions","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_permission","database":"bg_lmsn","data":
+[
+{"id":"1","name":"Can add attachment","content_type_id":"1","codename":"add_attachment"},
+{"id":"2","name":"Can change attachment","content_type_id":"1","codename":"change_attachment"},
+{"id":"3","name":"Can delete attachment","content_type_id":"1","codename":"delete_attachment"},
+{"id":"4","name":"Can view attachment","content_type_id":"1","codename":"view_attachment"},
+{"id":"5","name":"Can add department","content_type_id":"4","codename":"add_department"},
+{"id":"6","name":"Can change department","content_type_id":"4","codename":"change_department"},
+{"id":"7","name":"Can delete department","content_type_id":"4","codename":"delete_department"},
+{"id":"8","name":"Can view department","content_type_id":"4","codename":"view_department"},
+{"id":"9","name":"Can add User Role","content_type_id":"5","codename":"add_position"},
+{"id":"10","name":"Can change User Role","content_type_id":"5","codename":"change_position"},
+{"id":"11","name":"Can delete User Role","content_type_id":"5","codename":"delete_position"},
+{"id":"12","name":"Can view User Role","content_type_id":"5","codename":"view_position"},
+{"id":"13","name":"Can add role permission","content_type_id":"6","codename":"add_rolepermission"},
+{"id":"14","name":"Can change role permission","content_type_id":"6","codename":"change_rolepermission"},
+{"id":"15","name":"Can delete role permission","content_type_id":"6","codename":"delete_rolepermission"},
+{"id":"16","name":"Can view role permission","content_type_id":"6","codename":"view_rolepermission"},
+{"id":"17","name":"Can add custom user","content_type_id":"3","codename":"add_customuser"},
+{"id":"18","name":"Can change custom user","content_type_id":"3","codename":"change_customuser"},
+{"id":"19","name":"Can delete custom user","content_type_id":"3","codename":"delete_customuser"},
+{"id":"20","name":"Can view custom user","content_type_id":"3","codename":"view_customuser"},
+{"id":"21","name":"Can add address","content_type_id":"2","codename":"add_address"},
+{"id":"22","name":"Can change address","content_type_id":"2","codename":"change_address"},
+{"id":"23","name":"Can delete address","content_type_id":"2","codename":"delete_address"},
+{"id":"24","name":"Can view address","content_type_id":"2","codename":"view_address"},
+{"id":"25","name":"Can add payment","content_type_id":"7","codename":"add_payment"},
+{"id":"26","name":"Can change payment","content_type_id":"7","codename":"change_payment"},
+{"id":"27","name":"Can delete payment","content_type_id":"7","codename":"delete_payment"},
+{"id":"28","name":"Can view payment","content_type_id":"7","codename":"view_payment"},
+{"id":"29","name":"Can add payment history","content_type_id":"8","codename":"add_paymenthistory"},
+{"id":"30","name":"Can change payment history","content_type_id":"8","codename":"change_paymenthistory"},
+{"id":"31","name":"Can delete payment history","content_type_id":"8","codename":"delete_paymenthistory"},
+{"id":"32","name":"Can view payment history","content_type_id":"8","codename":"view_paymenthistory"},
+{"id":"33","name":"Can add refund","content_type_id":"9","codename":"add_refund"},
+{"id":"34","name":"Can change refund","content_type_id":"9","codename":"change_refund"},
+{"id":"35","name":"Can delete refund","content_type_id":"9","codename":"delete_refund"},
+{"id":"36","name":"Can view refund","content_type_id":"9","codename":"view_refund"},
+{"id":"37","name":"Can add Brand","content_type_id":"10","codename":"add_brand"},
+{"id":"38","name":"Can change Brand","content_type_id":"10","codename":"change_brand"},
+{"id":"39","name":"Can delete Brand","content_type_id":"10","codename":"delete_brand"},
+{"id":"40","name":"Can view Brand","content_type_id":"10","codename":"view_brand"},
+{"id":"41","name":"Can add Product Category","content_type_id":"12","codename":"add_productcategory"},
+{"id":"42","name":"Can change Product Category","content_type_id":"12","codename":"change_productcategory"},
+{"id":"43","name":"Can delete Product Category","content_type_id":"12","codename":"delete_productcategory"},
+{"id":"44","name":"Can view Product Category","content_type_id":"12","codename":"view_productcategory"},
+{"id":"45","name":"Can add product","content_type_id":"11","codename":"add_product"},
+{"id":"46","name":"Can change product","content_type_id":"11","codename":"change_product"},
+{"id":"47","name":"Can delete product","content_type_id":"11","codename":"delete_product"},
+{"id":"48","name":"Can view product","content_type_id":"11","codename":"view_product"},
+{"id":"49","name":"Can add product media","content_type_id":"14","codename":"add_productmedia"},
+{"id":"50","name":"Can change product media","content_type_id":"14","codename":"change_productmedia"},
+{"id":"51","name":"Can delete product media","content_type_id":"14","codename":"delete_productmedia"},
+{"id":"52","name":"Can view product media","content_type_id":"14","codename":"view_productmedia"},
+{"id":"53","name":"Can add product variant","content_type_id":"16","codename":"add_productvariant"},
+{"id":"54","name":"Can change product variant","content_type_id":"16","codename":"change_productvariant"},
+{"id":"55","name":"Can delete product variant","content_type_id":"16","codename":"delete_productvariant"},
+{"id":"56","name":"Can view product variant","content_type_id":"16","codename":"view_productvariant"},
+{"id":"57","name":"Can add product inventory","content_type_id":"13","codename":"add_productinventory"},
+{"id":"58","name":"Can change product inventory","content_type_id":"13","codename":"change_productinventory"},
+{"id":"59","name":"Can delete product inventory","content_type_id":"13","codename":"delete_productinventory"},
+{"id":"60","name":"Can view product inventory","content_type_id":"13","codename":"view_productinventory"},
+{"id":"61","name":"Can add Supplier","content_type_id":"17","codename":"add_supplier"},
+{"id":"62","name":"Can change Supplier","content_type_id":"17","codename":"change_supplier"},
+{"id":"63","name":"Can delete Supplier","content_type_id":"17","codename":"delete_supplier"},
+{"id":"64","name":"Can view Supplier","content_type_id":"17","codename":"view_supplier"},
+{"id":"65","name":"Can add product review","content_type_id":"15","codename":"add_productreview"},
+{"id":"66","name":"Can change product review","content_type_id":"15","codename":"change_productreview"},
+{"id":"67","name":"Can delete product review","content_type_id":"15","codename":"delete_productreview"},
+{"id":"68","name":"Can view product review","content_type_id":"15","codename":"view_productreview"},
+{"id":"69","name":"Can add variant attribute","content_type_id":"18","codename":"add_variantattribute"},
+{"id":"70","name":"Can change variant attribute","content_type_id":"18","codename":"change_variantattribute"},
+{"id":"71","name":"Can delete variant attribute","content_type_id":"18","codename":"delete_variantattribute"},
+{"id":"72","name":"Can view variant attribute","content_type_id":"18","codename":"view_variantattribute"},
+{"id":"73","name":"Can add order","content_type_id":"19","codename":"add_order"},
+{"id":"74","name":"Can change order","content_type_id":"19","codename":"change_order"},
+{"id":"75","name":"Can delete order","content_type_id":"19","codename":"delete_order"},
+{"id":"76","name":"Can view order","content_type_id":"19","codename":"view_order"},
+{"id":"77","name":"Can add order item","content_type_id":"20","codename":"add_orderitem"},
+{"id":"78","name":"Can change order item","content_type_id":"20","codename":"change_orderitem"},
+{"id":"79","name":"Can delete order item","content_type_id":"20","codename":"delete_orderitem"},
+{"id":"80","name":"Can view order item","content_type_id":"20","codename":"view_orderitem"},
+{"id":"81","name":"Can add wishlist","content_type_id":"23","codename":"add_wishlist"},
+{"id":"82","name":"Can change wishlist","content_type_id":"23","codename":"change_wishlist"},
+{"id":"83","name":"Can delete wishlist","content_type_id":"23","codename":"delete_wishlist"},
+{"id":"84","name":"Can view wishlist","content_type_id":"23","codename":"view_wishlist"},
+{"id":"85","name":"Can add cart","content_type_id":"21","codename":"add_cart"},
+{"id":"86","name":"Can change cart","content_type_id":"21","codename":"change_cart"},
+{"id":"87","name":"Can delete cart","content_type_id":"21","codename":"delete_cart"},
+{"id":"88","name":"Can view cart","content_type_id":"21","codename":"view_cart"},
+{"id":"89","name":"Can add cart item","content_type_id":"22","codename":"add_cartitem"},
+{"id":"90","name":"Can change cart item","content_type_id":"22","codename":"change_cartitem"},
+{"id":"91","name":"Can delete cart item","content_type_id":"22","codename":"delete_cartitem"},
+{"id":"92","name":"Can view cart item","content_type_id":"22","codename":"view_cartitem"},
+{"id":"93","name":"Can add System Setting","content_type_id":"25","codename":"add_appvariable"},
+{"id":"94","name":"Can change System Setting","content_type_id":"25","codename":"change_appvariable"},
+{"id":"95","name":"Can delete System Setting","content_type_id":"25","codename":"delete_appvariable"},
+{"id":"96","name":"Can view System Setting","content_type_id":"25","codename":"view_appvariable"},
+{"id":"97","name":"Can add Content Type (Category)","content_type_id":"28","codename":"add_category"},
+{"id":"98","name":"Can change Content Type (Category)","content_type_id":"28","codename":"change_category"},
+{"id":"99","name":"Can delete Content Type (Category)","content_type_id":"28","codename":"delete_category"},
+{"id":"100","name":"Can view Content Type (Category)","content_type_id":"28","codename":"view_category"},
+{"id":"101","name":"Can add contact us","content_type_id":"30","codename":"add_contactus"},
+{"id":"102","name":"Can change contact us","content_type_id":"30","codename":"change_contactus"},
+{"id":"103","name":"Can delete contact us","content_type_id":"30","codename":"delete_contactus"},
+{"id":"104","name":"Can view contact us","content_type_id":"30","codename":"view_contactus"},
+{"id":"105","name":"Can add external subscriber","content_type_id":"31","codename":"add_externalsubscriber"},
+{"id":"106","name":"Can change external subscriber","content_type_id":"31","codename":"change_externalsubscriber"},
+{"id":"107","name":"Can delete external subscriber","content_type_id":"31","codename":"delete_externalsubscriber"},
+{"id":"108","name":"Can view external subscriber","content_type_id":"31","codename":"view_externalsubscriber"},
+{"id":"109","name":"Can add media album","content_type_id":"32","codename":"add_mediaalbum"},
+{"id":"110","name":"Can change media album","content_type_id":"32","codename":"change_mediaalbum"},
+{"id":"111","name":"Can delete media album","content_type_id":"32","codename":"delete_mediaalbum"},
+{"id":"112","name":"Can view media album","content_type_id":"32","codename":"view_mediaalbum"},
+{"id":"113","name":"Can add news post","content_type_id":"34","codename":"add_newspost"},
+{"id":"114","name":"Can change news post","content_type_id":"34","codename":"change_newspost"},
+{"id":"115","name":"Can delete news post","content_type_id":"34","codename":"delete_newspost"},
+{"id":"116","name":"Can view news post","content_type_id":"34","codename":"view_newspost"},
+{"id":"117","name":"Can add activity log","content_type_id":"24","codename":"add_activitylog"},
+{"id":"118","name":"Can change activity log","content_type_id":"24","codename":"change_activitylog"},
+{"id":"119","name":"Can delete activity log","content_type_id":"24","codename":"delete_activitylog"},
+{"id":"120","name":"Can view activity log","content_type_id":"24","codename":"view_activitylog"},
+{"id":"121","name":"Can add Media Asset","content_type_id":"33","codename":"add_mediaasset"},
+{"id":"122","name":"Can change Media Asset","content_type_id":"33","codename":"change_mediaasset"},
+{"id":"123","name":"Can delete Media Asset","content_type_id":"33","codename":"delete_mediaasset"},
+{"id":"124","name":"Can view Media Asset","content_type_id":"33","codename":"view_mediaasset"},
+{"id":"125","name":"Can add category post","content_type_id":"29","codename":"add_categorypost"},
+{"id":"126","name":"Can change category post","content_type_id":"29","codename":"change_categorypost"},
+{"id":"127","name":"Can delete category post","content_type_id":"29","codename":"delete_categorypost"},
+{"id":"128","name":"Can view category post","content_type_id":"29","codename":"view_categorypost"},
+{"id":"129","name":"Can add banner","content_type_id":"26","codename":"add_banner"},
+{"id":"130","name":"Can change banner","content_type_id":"26","codename":"change_banner"},
+{"id":"131","name":"Can delete banner","content_type_id":"26","codename":"delete_banner"},
+{"id":"132","name":"Can view banner","content_type_id":"26","codename":"view_banner"},
+{"id":"133","name":"Can add broadcast log","content_type_id":"27","codename":"add_broadcastlog"},
+{"id":"134","name":"Can change broadcast log","content_type_id":"27","codename":"change_broadcastlog"},
+{"id":"135","name":"Can delete broadcast log","content_type_id":"27","codename":"delete_broadcastlog"},
+{"id":"136","name":"Can view broadcast log","content_type_id":"27","codename":"view_broadcastlog"},
+{"id":"137","name":"Can add page","content_type_id":"35","codename":"add_page"},
+{"id":"138","name":"Can change page","content_type_id":"35","codename":"change_page"},
+{"id":"139","name":"Can delete page","content_type_id":"35","codename":"delete_page"},
+{"id":"140","name":"Can view page","content_type_id":"35","codename":"view_page"},
+{"id":"141","name":"Can add security audit log","content_type_id":"36","codename":"add_securityauditlog"},
+{"id":"142","name":"Can change security audit log","content_type_id":"36","codename":"change_securityauditlog"},
+{"id":"143","name":"Can delete security audit log","content_type_id":"36","codename":"delete_securityauditlog"},
+{"id":"144","name":"Can view security audit log","content_type_id":"36","codename":"view_securityauditlog"},
+{"id":"145","name":"Can add widget","content_type_id":"37","codename":"add_widget"},
+{"id":"146","name":"Can change widget","content_type_id":"37","codename":"change_widget"},
+{"id":"147","name":"Can delete widget","content_type_id":"37","codename":"delete_widget"},
+{"id":"148","name":"Can view widget","content_type_id":"37","codename":"view_widget"},
+{"id":"149","name":"Can add widget post","content_type_id":"38","codename":"add_widgetpost"},
+{"id":"150","name":"Can change widget post","content_type_id":"38","codename":"change_widgetpost"},
+{"id":"151","name":"Can delete widget post","content_type_id":"38","codename":"delete_widgetpost"},
+{"id":"152","name":"Can view widget post","content_type_id":"38","codename":"view_widgetpost"},
+{"id":"153","name":"Can add log entry","content_type_id":"39","codename":"add_logentry"},
+{"id":"154","name":"Can change log entry","content_type_id":"39","codename":"change_logentry"},
+{"id":"155","name":"Can delete log entry","content_type_id":"39","codename":"delete_logentry"},
+{"id":"156","name":"Can view log entry","content_type_id":"39","codename":"view_logentry"},
+{"id":"157","name":"Can add permission","content_type_id":"41","codename":"add_permission"},
+{"id":"158","name":"Can change permission","content_type_id":"41","codename":"change_permission"},
+{"id":"159","name":"Can delete permission","content_type_id":"41","codename":"delete_permission"},
+{"id":"160","name":"Can view permission","content_type_id":"41","codename":"view_permission"},
+{"id":"161","name":"Can add group","content_type_id":"40","codename":"add_group"},
+{"id":"162","name":"Can change group","content_type_id":"40","codename":"change_group"},
+{"id":"163","name":"Can delete group","content_type_id":"40","codename":"delete_group"},
+{"id":"164","name":"Can view group","content_type_id":"40","codename":"view_group"},
+{"id":"165","name":"Can add content type","content_type_id":"42","codename":"add_contenttype"},
+{"id":"166","name":"Can change content type","content_type_id":"42","codename":"change_contenttype"},
+{"id":"167","name":"Can delete content type","content_type_id":"42","codename":"delete_contenttype"},
+{"id":"168","name":"Can view content type","content_type_id":"42","codename":"view_contenttype"},
+{"id":"169","name":"Can add session","content_type_id":"43","codename":"add_session"},
+{"id":"170","name":"Can change session","content_type_id":"43","codename":"change_session"},
+{"id":"171","name":"Can delete session","content_type_id":"43","codename":"delete_session"},
+{"id":"172","name":"Can view session","content_type_id":"43","codename":"view_session"},
+{"id":"173","name":"Can add tracking status","content_type_id":"45","codename":"add_trackingstatus"},
+{"id":"174","name":"Can change tracking status","content_type_id":"45","codename":"change_trackingstatus"},
+{"id":"175","name":"Can delete tracking status","content_type_id":"45","codename":"delete_trackingstatus"},
+{"id":"176","name":"Can view tracking status","content_type_id":"45","codename":"view_trackingstatus"},
+{"id":"177","name":"Can add order tracking","content_type_id":"44","codename":"add_ordertracking"},
+{"id":"178","name":"Can change order tracking","content_type_id":"44","codename":"change_ordertracking"},
+{"id":"179","name":"Can delete order tracking","content_type_id":"44","codename":"delete_ordertracking"},
+{"id":"180","name":"Can view order tracking","content_type_id":"44","codename":"view_ordertracking"},
+{"id":"181","name":"Can add page section","content_type_id":"46","codename":"add_pagesection"},
+{"id":"182","name":"Can change page section","content_type_id":"46","codename":"change_pagesection"},
+{"id":"183","name":"Can delete page section","content_type_id":"46","codename":"delete_pagesection"},
+{"id":"184","name":"Can view page section","content_type_id":"46","codename":"view_pagesection"},
+{"id":"185","name":"Can add color","content_type_id":"47","codename":"add_color"},
+{"id":"186","name":"Can change color","content_type_id":"47","codename":"change_color"},
+{"id":"187","name":"Can delete color","content_type_id":"47","codename":"delete_color"},
+{"id":"188","name":"Can view color","content_type_id":"47","codename":"view_color"},
+{"id":"189","name":"Can add size","content_type_id":"48","codename":"add_size"},
+{"id":"190","name":"Can change size","content_type_id":"48","codename":"change_size"},
+{"id":"191","name":"Can delete size","content_type_id":"48","codename":"delete_size"},
+{"id":"192","name":"Can view size","content_type_id":"48","codename":"view_size"}
+]
+}
+,{"type":"table","name":"cart_cart","database":"bg_lmsn","data":
+[
+{"id":"20","session_key":null,"created_at":"2026-05-10 22:10:46.025973","updated_at":"2026-05-10 22:10:46.026031","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"21","session_key":null,"created_at":"2026-05-10 22:25:00.816580","updated_at":"2026-05-10 22:25:00.816626","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"}
+]
+}
+,{"type":"table","name":"cart_cartitem","database":"bg_lmsn","data":
+[
+{"id":"40","quantity":"1","price_at_addition":"2500.00","added_at":"2026-05-10 12:24:49.257772","cart_id":"17","product_id":"7","variant_id":null},
+{"id":"41","quantity":"3","price_at_addition":"100000.00","added_at":"2026-05-10 12:24:57.195034","cart_id":"17","product_id":"14","variant_id":"123"}
+]
+}
+,{"type":"table","name":"cart_wishlist","database":"bg_lmsn","data":
+[
+{"id":"1","added_at":"2026-05-06 16:35:13.206080","product_id":"14","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"},
+{"id":"2","added_at":"2026-05-08 08:44:37.619620","product_id":"7","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"3","added_at":"2026-05-08 09:55:24.146925","product_id":"7","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"},
+{"id":"4","added_at":"2026-05-08 10:44:00.940587","product_id":"14","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"5","added_at":"2026-05-09 07:43:02.453125","product_id":"7","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"6","added_at":"2026-05-09 07:43:04.525156","product_id":"14","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"}
+]
+}
+,{"type":"table","name":"core_activitylog","database":"bg_lmsn","data":
+[
+{"id":"1","activity_type":"update","description":"Updated category: Eva bottled water (No Asset)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-03-24 16:10:28.483784","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"},
+{"id":"2","activity_type":"update","description":"Updated category: Eva bottled water (Asset ID: 6)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-03-24 16:14:09.776678","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"},
+{"id":"3","activity_type":"update","description":"Updated widget: fhcdfhjh (Asset ID: 6)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-03-27 00:06:46.145806","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"},
+{"id":"4","activity_type":"update","description":"Updated widget: efeafwedsfd (Asset ID: 6)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-03-27 00:08:32.412197","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"},
+{"id":"5","activity_type":"update","description":"Updated category: chjghgcghgjh (Asset ID: 225)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-04-24 11:50:03.749181","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"6","activity_type":"update","description":"Updated category: chjghgcghgjh (No Asset)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-04-24 11:50:19.537749","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"7","activity_type":"update","description":"Updated widget: gfdfhgjnm (Asset ID: 224)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-04-24 11:51:35.012475","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"8","activity_type":"update","description":"Updated category: Privacy Policy (No Asset)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-04-25 08:04:32.396843","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"},
+{"id":"9","activity_type":"update","description":"Updated category: Terms of Use (No Asset)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-04-25 08:09:05.191438","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"},
+{"id":"10","activity_type":"update","description":"Updated category: FAQ (No Asset)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-04-25 08:16:08.357109","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"},
+{"id":"11","activity_type":"update","description":"Updated category: Frequently asked question (No Asset)","ip_address":"127.0.0.1","user_agent":null,"timestamp":"2026-04-25 08:19:03.263109","user_id":"2f4e91bc-8ca5-4fbb-aab4-3224eaee5360"}
+]
+}
+,{"type":"table","name":"core_appvariable","database":"bg_lmsn","data":
+[
+{"id":"1","var_name":"APP_EMAIL","var_value":"belldivine070@gmail.com","description":"Email Address That Will Be Used To Send Messages To Clients","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"2","var_name":"APP_EMAILPWD","var_value":"belldivine070","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"3","var_name":"APP_MOBILE","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"4","var_name":"APP_NAME","var_value":"BG TECH","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"5","var_name":"APP_PORTAL","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"6","var_name":"APP_SHORTCODE","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"7","var_name":"APP_SMSAPI","var_value":"2345678","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"8","var_name":"APP_SMSEMAIL","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"9","var_name":"APP_SMSNAME","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"10","var_name":"APP_SMSPWD","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"11","var_name":"CONTACT_ADDRESS","var_value":"203 Fake St. Mountain View, San Francisco, California, USA","description":"203 Fake St. Mountain View, San Francisco, California, USA","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"12","var_name":"CONTACT_PERSON1","var_value":"+234 7047137084","description":"07047137084","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"13","var_name":"CONTACT_PERSON2","var_value":"+1 (541) 563 7484","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"14","var_name":"CONTACT_PERSON3","var_value":"","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:24:27.000000"},
+{"id":"15","var_name":"CONTACT_PERSON4","var_value":"","description":"For Whatsapp Link","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"16","var_name":"FACEBOOK","var_value":"belldivine070","description":"Facebook Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"17","var_name":"INSTAGRAM","var_value":"https:\/\/www.instagram.com\/belldivine080?igsh=a2hiNnU4cnljNGVj&utm_source=qr","description":"Instagram Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"18","var_name":"LINKEDIN","var_value":"https:\/\/www.linkedin.com\/in\/bell-gam-404152221","description":"Linkedin Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"19","var_name":"OFFICIAL_EMAIL","var_value":"belldivine070@gmail.com","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"20","var_name":"SITE_HITS","var_value":"","description":"Number Of Times The Site Has Been Visited","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"21","var_name":"SLOGAN","var_value":"Far far away, behind the word mountains, far from the countries.","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10.000000"},
+{"id":"22","var_name":"TWITTER","var_value":"https:\/\/x.com\/belldivine080?s=21","description":"Twitter Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"23","var_name":"YOUTUBE","var_value":"belldivine070","description":"Youtube Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"}
+]
+}
+,{"type":"table","name":"core_banner","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"core_broadcastlog","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"core_category","database":"bg_lmsn","data":
+[
+{"id":"3","title":"Privacy Policy","slug":"privacy-policy","excerpt":"","child_fields":"[\"content\", \"title\", \"slug\"]","media_asset_id":null},
+{"id":"4","title":"Terms of Use","slug":"terms-of-use","excerpt":"","child_fields":"[\"content\", \"title\", \"slug\"]","media_asset_id":null},
+{"id":"5","title":"Frequently asked question","slug":"frequently-asked-question","excerpt":"","child_fields":"[\"title\", \"slug\", \"excerpt\", \"content\"]","media_asset_id":null}
+]
+}
+,{"type":"table","name":"core_categorypost","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"core_contactus","database":"bg_lmsn","data":
+[
+{"id":"1","fullname":"Divine sabinus","email":"belldivine080@gmail.com","subject":"The frist test","message":"form.save()","submitted_at":"2026-04-26 15:39:43.881498"},
+{"id":"2","fullname":"Divine sabinus","email":"belldivine080@gmail.com","subject":"Refund compliant","message":"I wasn't refunded after i sent the package","submitted_at":"2026-04-26 15:40:12.408668"},
+{"id":"3","fullname":"Divine sabinus","email":"ygujhy@gmail.com","subject":"Testing Mail TimeZone","message":"Testing","submitted_at":"2026-04-26 15:45:32.331404"}
+]
+}
+,{"type":"table","name":"core_externalsubscriber","database":"bg_lmsn","data":
+[
+{"id":"1","email":"success@gmail.com","ip_address":"127.0.0.1","region":null,"date_subscribed":"2026-04-25 09:31:26.343249"},
+{"id":"2","email":"favour01@gmail.com","ip_address":"127.0.0.1","region":"Unknown","date_subscribed":"2026-04-26 15:10:43.453242"},
+{"id":"3","email":"esther@gmsil.com","ip_address":"127.0.0.1","region":"Unknown","date_subscribed":"2026-04-26 15:11:13.081638"},
+{"id":"4","email":"fghdsdfc@gmail.com","ip_address":"127.0.0.1","region":"Unknown","date_subscribed":"2026-04-27 19:07:02.939213"}
+]
+}
+,{"type":"table","name":"core_mediaalbum","database":"bg_lmsn","data":
+[
+{"id":"1","name":"Main Album","slug":"main-album"},
+{"id":"2","name":"Product","slug":"product"}
+]
+}
+,{"type":"table","name":"core_mediaasset","database":"bg_lmsn","data":
+[
+{"id":"1","file":"media_library\/product\/Dettol_meduim.jpg","title":"Dettol meduim.jpg","file_type":"image","file_size":"55166","uploaded_at":"2026-04-22 12:12:02.019737","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"2","file":"media_library\/product\/Buter_beans.jpg","title":"Buter beans.jpg","file_type":"image","file_size":"94377","uploaded_at":"2026-04-22 12:12:02.038811","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"3","file":"media_library\/product\/Ani_basmati_rice_2kg.jpg","title":"Ani basmati rice 2kg.jpg","file_type":"image","file_size":"86880","uploaded_at":"2026-04-22 12:12:02.054133","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"4","file":"media_library\/product\/Eric_oat_flour.jpg","title":"Eric oat flour.jpg","file_type":"image","file_size":"88389","uploaded_at":"2026-04-22 12:12:02.070318","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"5","file":"media_library\/product\/Clasic_makeup_1.jpg","title":"Clasic makeup 1.jpg","file_type":"image","file_size":"65937","uploaded_at":"2026-04-22 12:12:02.085160","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"6","file":"media_library\/product\/Powdered_dry_pepper_500g.jpg","title":"Powdered dry pepper 500g.jpg","file_type":"image","file_size":"88592","uploaded_at":"2026-04-22 12:12:02.096956","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"7","file":"media_library\/product\/Powdered_dry_pepper.jpg","title":"Powdered dry pepper.jpg","file_type":"image","file_size":"93055","uploaded_at":"2026-04-22 12:12:02.133226","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"8","file":"media_library\/product\/Mozzarealla_cheese.jpg","title":"Mozzarealla cheese.jpg","file_type":"image","file_size":"48348","uploaded_at":"2026-04-22 12:12:02.175194","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"9","file":"media_library\/product\/Children_cloth_2.jpg","title":"Children cloth 2.jpg","file_type":"image","file_size":"79343","uploaded_at":"2026-04-22 12:12:02.204211","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"10","file":"media_library\/product\/Children_cloth_1.jpg","title":"Children cloth 1.jpg","file_type":"image","file_size":"53489","uploaded_at":"2026-04-22 12:12:02.228197","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"11","file":"media_library\/product\/MJ_chicken_spring_rolls.jpg","title":"M&J chicken spring rolls.jpg","file_type":"image","file_size":"87087","uploaded_at":"2026-04-22 12:12:02.256271","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"12","file":"media_library\/product\/Turkey_1kg.jpg","title":"Turkey 1kg.jpg","file_type":"image","file_size":"72992","uploaded_at":"2026-04-22 12:12:02.302479","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"13","file":"media_library\/product\/Ama_wonda_fried_rice_spice_100g.jpg","title":"Ama wonda fried rice spice 100g.jpg","file_type":"image","file_size":"104667","uploaded_at":"2026-04-22 12:12:02.334782","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"14","file":"media_library\/product\/Ama_wonda_fried_rice_spice.jpg","title":"Ama wonda fried rice spice.jpg","file_type":"image","file_size":"101430","uploaded_at":"2026-04-22 12:12:02.359062","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"15","file":"media_library\/product\/Sonia_tomato_mix_2.2g.jpg","title":"Sonia tomato mix 2.2g.jpg","file_type":"image","file_size":"75485","uploaded_at":"2026-04-22 12:12:02.390425","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"16","file":"media_library\/product\/Maharam_basmatic_rice_5kg.jpg","title":"Maharam basmatic rice 5kg.jpg","file_type":"image","file_size":"115462","uploaded_at":"2026-04-22 12:12:02.408719","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"17","file":"media_library\/product\/Spicity_stew_and_jellof.jpg","title":"Spicity stew and jellof.jpg","file_type":"image","file_size":"137867","uploaded_at":"2026-04-22 12:12:02.427854","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"18","file":"media_library\/product\/Pam_original.jpg","title":"Pam original.jpg","file_type":"image","file_size":"48603","uploaded_at":"2026-04-22 12:12:02.441391","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"19","file":"media_library\/product\/Ayoola_pounded_yam_flour_9.1kg.jpg","title":"Ayoola pounded yam flour 9.1kg.jpg","file_type":"image","file_size":"101721","uploaded_at":"2026-04-22 12:12:02.459067","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"20","file":"media_library\/product\/Frozen_peeled_shrimps.jpg","title":"Frozen peeled shrimps.jpg","file_type":"image","file_size":"88075","uploaded_at":"2026-04-22 12:12:02.474927","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"21","file":"media_library\/product\/Goden_penny_pasta_twist_macaroni.jpg","title":"Go;den penny pasta twist macaroni.jpg","file_type":"image","file_size":"94210","uploaded_at":"2026-04-22 12:12:02.489843","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"22","file":"media_library\/product\/Smoked_chicken_laps.jpg","title":"Smoked chicken laps.jpg","file_type":"image","file_size":"96971","uploaded_at":"2026-04-22 12:12:02.505218","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"23","file":"media_library\/product\/Thyme_250g.jpg","title":"Thyme 250g.jpg","file_type":"image","file_size":"99250","uploaded_at":"2026-04-22 12:12:02.521244","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"24","file":"media_library\/product\/Chicken_thighs.jpg","title":"Chicken thighs.jpg","file_type":"image","file_size":"96862","uploaded_at":"2026-04-22 12:12:02.537082","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"25","file":"media_library\/product\/Frozen_Salmon_fish.jpg","title":"Frozen Salmon fish.jpg","file_type":"image","file_size":"84538","uploaded_at":"2026-04-22 12:12:02.552995","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"26","file":"media_library\/product\/Soya_milk.jpg","title":"Soya milk.jpg","file_type":"image","file_size":"49554","uploaded_at":"2026-04-22 12:12:02.575745","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"27","file":"media_library\/product\/Socks.jpg","title":"Socks.jpg","file_type":"image","file_size":"70412","uploaded_at":"2026-04-22 12:12:02.620007","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"28","file":"media_library\/product\/Guinness_bottle_drink.jpg","title":"Guinness bottle drink.jpg","file_type":"image","file_size":"49841","uploaded_at":"2026-04-22 12:12:02.639007","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"29","file":"media_library\/product\/Hero_drink.jpg","title":"Hero drink.jpg","file_type":"image","file_size":"113154","uploaded_at":"2026-04-22 12:12:02.660273","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"900","width":"810"},
+{"id":"30","file":"media_library\/product\/Frozen_chicken_burgers.jpg","title":"Frozen chicken burgers.jpg","file_type":"image","file_size":"107669","uploaded_at":"2026-04-22 12:12:02.685104","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"31","file":"media_library\/product\/Toy_1.3.jpg","title":"Toy 1.3.jpg","file_type":"image","file_size":"113577","uploaded_at":"2026-04-22 12:12:02.705593","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"32","file":"media_library\/product\/Teddy_with_brown.jpg","title":"Teddy with brown.jpg","file_type":"image","file_size":"97197","uploaded_at":"2026-04-22 12:12:02.722982","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"33","file":"media_library\/product\/Toy_1.2.jpg","title":"Toy 1.2.jpg","file_type":"image","file_size":"100235","uploaded_at":"2026-04-22 12:12:02.740547","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"34","file":"media_library\/product\/Teddy_with_yellow_4.jpg","title":"Teddy with yellow 4.jpg","file_type":"image","file_size":"65815","uploaded_at":"2026-04-22 12:12:02.760995","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"35","file":"media_library\/product\/MJ_samosa_beef.jpg","title":"M&J samosa beef.jpg","file_type":"image","file_size":"85673","uploaded_at":"2026-04-22 12:12:02.778255","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"36","file":"media_library\/product\/Toy_1.jpg","title":"Toy 1.jpg","file_type":"image","file_size":"110388","uploaded_at":"2026-04-22 12:12:02.796086","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"37","file":"media_library\/product\/Blue_bullet.jpg","title":"Blue bullet.jpg","file_type":"image","file_size":"59822","uploaded_at":"2026-04-22 12:12:02.815692","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"38","file":"media_library\/product\/Mimosa.jpg","title":"Mimosa.jpg","file_type":"image","file_size":"94723","uploaded_at":"2026-04-22 12:12:02.839436","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"39","file":"media_library\/product\/Teddy_with_yellow.jpg","title":"Teddy with yellow.jpg","file_type":"image","file_size":"78557","uploaded_at":"2026-04-22 12:12:02.858941","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"40","file":"media_library\/product\/Teddy_with_brown_2.jpg","title":"Teddy with brown 2.jpg","file_type":"image","file_size":"82355","uploaded_at":"2026-04-22 12:12:02.890301","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"41","file":"media_library\/product\/Teddy_with_bow_large_3.jpg","title":"Teddy with bow large 3.jpg","file_type":"image","file_size":"57989","uploaded_at":"2026-04-22 12:12:02.925162","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"42","file":"media_library\/product\/7Up_40cl.jpg","title":"7Up 40cl.jpg","file_type":"image","file_size":"48553","uploaded_at":"2026-04-22 12:12:02.944690","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"43","file":"media_library\/product\/Black_bullet.jpg","title":"Black bullet.jpg","file_type":"image","file_size":"55393","uploaded_at":"2026-04-22 12:12:02.987412","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"44","file":"media_library\/product\/Monster_111.jpg","title":"Monster 111.jpg","file_type":"image","file_size":"62686","uploaded_at":"2026-04-22 12:12:03.058341","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"631","width":"568"},
+{"id":"45","file":"media_library\/product\/Teddy_with_bow_large.jpg","title":"Teddy with bow large.jpg","file_type":"image","file_size":"77165","uploaded_at":"2026-04-22 12:12:03.110867","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"46","file":"media_library\/product\/Teddy_with_yellow_2.jpg","title":"Teddy with yellow 2.jpg","file_type":"image","file_size":"67116","uploaded_at":"2026-04-22 12:12:03.144959","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"47","file":"media_library\/product\/Williams_bear.jpg","title":"Williams bear.jpg","file_type":"image","file_size":"42829","uploaded_at":"2026-04-22 12:12:03.188692","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"48","file":"media_library\/product\/Green_peas.jpg","title":"Green peas.jpg","file_type":"image","file_size":"105010","uploaded_at":"2026-04-22 12:12:03.227188","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"49","file":"media_library\/product\/Teddy_with_bow_large_back_1.jpg","title":"Teddy with bow large back 1.jpg","file_type":"image","file_size":"86418","uploaded_at":"2026-04-22 12:12:03.256219","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"50","file":"media_library\/product\/Teddy_with_yellow_1.jpg","title":"Teddy with yellow 1.jpg","file_type":"image","file_size":"59244","uploaded_at":"2026-04-22 12:12:03.292366","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"51","file":"media_library\/product\/Teddy_with_brown_1.jpg","title":"Teddy with brown 1.jpg","file_type":"image","file_size":"83864","uploaded_at":"2026-04-22 12:12:03.329255","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"52","file":"media_library\/product\/Desparados.jpg","title":"Desparados.jpg","file_type":"image","file_size":"48400","uploaded_at":"2026-04-22 12:12:03.350116","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"53","file":"media_library\/product\/Teddy_with_bow_large_2.jpg","title":"Teddy with bow large 2.jpg","file_type":"image","file_size":"56252","uploaded_at":"2026-04-22 12:12:03.369457","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"54","file":"media_library\/product\/Teddy_with_bow_large_1.jpg","title":"Teddy with bow large 1.jpg","file_type":"image","file_size":"59354","uploaded_at":"2026-04-22 12:12:03.394854","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"55","file":"media_library\/product\/Teddy_bear_1.jpg","title":"Teddy bear 1.jpg","file_type":"image","file_size":"53752","uploaded_at":"2026-04-22 12:12:03.444397","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"56","file":"media_library\/product\/Bama_mayonnaise.jpg","title":"Bama mayonnaise.jpg","file_type":"image","file_size":"71789","uploaded_at":"2026-04-22 12:12:03.486125","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"57","file":"media_library\/product\/Adult_diaper.jpg","title":"Adult diaper.jpg","file_type":"image","file_size":"104549","uploaded_at":"2026-04-22 12:12:03.505362","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"58","file":"media_library\/product\/Nasco_conflaskes.jpg","title":"Nasco conflaskes.jpg","file_type":"image","file_size":"91367","uploaded_at":"2026-04-22 12:12:03.522057","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"59","file":"media_library\/product\/Easy_on_starch.jpg","title":"Easy on starch.jpg","file_type":"image","file_size":"52064","uploaded_at":"2026-04-22 12:12:03.544824","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"60","file":"media_library\/product\/Mimisa.jpg","title":"Mimisa.jpg","file_type":"image","file_size":"83082","uploaded_at":"2026-04-22 12:12:03.573812","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"61","file":"media_library\/product\/Snirnoff_ice_original_can.jpg","title":"Snirnoff ice original can.jpg","file_type":"image","file_size":"67065","uploaded_at":"2026-04-22 12:12:03.592418","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"62","file":"media_library\/product\/Star.jpg","title":"Star.jpg","file_type":"image","file_size":"56385","uploaded_at":"2026-04-22 12:12:03.610336","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"63","file":"media_library\/product\/Pepsi_plastic.jpg","title":"Pepsi plastic.jpg","file_type":"image","file_size":"46106","uploaded_at":"2026-04-22 12:12:03.629180","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"64","file":"media_library\/product\/Checkers_milk_custard.jpg","title":"Checkers milk custard.jpg","file_type":"image","file_size":"89876","uploaded_at":"2026-04-22 12:12:03.656457","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"65","file":"media_library\/product\/Raid_Insect_killer.jpg","title":"Raid Insect killer.jpg","file_type":"image","file_size":"53814","uploaded_at":"2026-04-22 12:12:03.677667","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"66","file":"media_library\/product\/Peak_milk_sachet_500g.jpg","title":"Peak milk sachet 500g.jpg","file_type":"image","file_size":"92449","uploaded_at":"2026-04-22 12:12:03.712511","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"67","file":"media_library\/product\/Rolled_oats.jpg","title":"Rolled oats.jpg","file_type":"image","file_size":"98407","uploaded_at":"2026-04-22 12:12:03.742214","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"68","file":"media_library\/product\/hite_beans.jpg","title":"hite beans.jpg","file_type":"image","file_size":"103986","uploaded_at":"2026-04-22 12:12:03.761422","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"69","file":"media_library\/product\/Egg_noodle.jpg","title":"Egg noodle.jpg","file_type":"image","file_size":"120887","uploaded_at":"2026-04-22 12:12:03.791480","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"70","file":"media_library\/product\/Musk_white_peff.jpg","title":"Musk white peff.jpg","file_type":"image","file_size":"53875","uploaded_at":"2026-04-22 12:12:03.816195","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"71","file":"media_library\/product\/Brut_paris.jpg","title":"Brut paris.jpg","file_type":"image","file_size":"47879","uploaded_at":"2026-04-22 12:12:03.842698","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"72","file":"media_library\/product\/Unruly_hero.jpg","title":"Unruly hero.jpg","file_type":"image","file_size":"42906","uploaded_at":"2026-04-22 12:12:03.862987","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"73","file":"media_library\/product\/Body_philosophy_follow_my_way.jpg","title":"Body philosophy follow my way.jpg","file_type":"image","file_size":"44598","uploaded_at":"2026-04-22 12:12:03.888320","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"74","file":"media_library\/product\/Closeup_toothpaste.jpg","title":"Closeup toothpaste.jpg","file_type":"image","file_size":"59230","uploaded_at":"2026-04-22 12:12:03.928016","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"75","file":"media_library\/product\/Nivea_men_dry_impact.jpg","title":"Nivea men dry impact.jpg","file_type":"image","file_size":"49078","uploaded_at":"2026-04-22 12:12:03.976565","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"76","file":"media_library\/product\/Gillette_rollon.jpg","title":"Gillette rollon.jpg","file_type":"image","file_size":"55294","uploaded_at":"2026-04-22 12:12:04.007036","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"77","file":"media_library\/product\/Super_clean_toothbrush.jpg","title":"Super clean toothbrush.jpg","file_type":"image","file_size":"59154","uploaded_at":"2026-04-22 12:12:04.055462","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"78","file":"media_library\/product\/Axe_48hrs.jpg","title":"Axe 48hrs.jpg","file_type":"image","file_size":"56203","uploaded_at":"2026-04-22 12:12:04.077196","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"79","file":"media_library\/product\/Riggs_london.jpg","title":"Riggs london.jpg","file_type":"image","file_size":"44182","uploaded_at":"2026-04-22 12:12:04.093942","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"80","file":"media_library\/product\/Bismid_cream.jpg","title":"Bismid cream.jpg","file_type":"image","file_size":"42477","uploaded_at":"2026-04-22 12:12:04.110325","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"81","file":"media_library\/product\/Lait_peff.jpg","title":"Lait peff.jpg","file_type":"image","file_size":"48312","uploaded_at":"2026-04-22 12:12:04.128416","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"82","file":"media_library\/product\/SK_duchess_glow.jpg","title":"SK duchess glow.jpg","file_type":"image","file_size":"51363","uploaded_at":"2026-04-22 12:12:04.145241","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"83","file":"media_library\/product\/Demond_glow.jpg","title":"Demond glow.jpg","file_type":"image","file_size":"46643","uploaded_at":"2026-04-22 12:12:04.173244","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"84","file":"media_library\/product\/Voilet_glow.jpg","title":"Voilet glow.jpg","file_type":"image","file_size":"56883","uploaded_at":"2026-04-22 12:12:04.188506","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"85","file":"media_library\/product\/Just_like_skin_liploss.jpg","title":"Just like skin liploss.jpg","file_type":"image","file_size":"38602","uploaded_at":"2026-04-22 12:12:04.204646","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"86","file":"media_library\/product\/Merry_colour__makeUp.jpg","title":"Merry colour  makeUp.jpg","file_type":"image","file_size":"83190","uploaded_at":"2026-04-22 12:12:04.221573","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"87","file":"media_library\/product\/Ever_beauty_chocolate.jpg","title":"Ever beauty chocolate.jpg","file_type":"image","file_size":"79693","uploaded_at":"2026-04-22 12:12:04.237545","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"88","file":"media_library\/product\/Perfurm_3.jpg","title":"Perfurm 3.jpg","file_type":"image","file_size":"32375","uploaded_at":"2026-04-22 12:12:04.252229","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"89","file":"media_library\/product\/24k_Gold_liploss.jpg","title":"24k Gold liploss.jpg","file_type":"image","file_size":"43087","uploaded_at":"2026-04-22 12:12:04.269197","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"90","file":"media_library\/product\/Perfurm_2.jpg","title":"Perfurm 2.jpg","file_type":"image","file_size":"48999","uploaded_at":"2026-04-22 12:12:04.285013","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"91","file":"media_library\/product\/Narciso_rodrigues_peff_-_Copy.jpg","title":"Narciso rodrigues peff - Copy.jpg","file_type":"image","file_size":"49306","uploaded_at":"2026-04-22 12:12:04.301752","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"92","file":"media_library\/product\/Narciso_rodrigues_peff.jpg","title":"Narciso rodrigues peff.jpg","file_type":"image","file_size":"49306","uploaded_at":"2026-04-22 12:12:04.318945","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"93","file":"media_library\/product\/Narciso_rodrigues_for_her.jpg","title":"Narciso rodrigues for her.jpg","file_type":"image","file_size":"50776","uploaded_at":"2026-04-22 12:12:04.337341","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"94","file":"media_library\/product\/Dairy_notebook_2.jpg","title":"Dairy notebook 2.jpg","file_type":"image","file_size":"98062","uploaded_at":"2026-04-22 12:12:04.353600","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"95","file":"media_library\/product\/Dairy_notebook_1.jpg","title":"Dairy notebook 1.jpg","file_type":"image","file_size":"62765","uploaded_at":"2026-04-22 12:12:04.371802","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"96","file":"media_library\/product\/Mathematical_sets.jpg","title":"Mathematical sets.jpg","file_type":"image","file_size":"58915","uploaded_at":"2026-04-22 12:12:04.391818","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"97","file":"media_library\/product\/Board_pin_1.jpg","title":"Board pin 1.jpg","file_type":"image","file_size":"78117","uploaded_at":"2026-04-22 12:12:04.473970","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"98","file":"media_library\/product\/Board_pin.jpg","title":"Board pin.jpg","file_type":"image","file_size":"89573","uploaded_at":"2026-04-22 12:12:04.494410","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"599","width":"540"},
+{"id":"99","file":"media_library\/product\/Office_pin.jpg","title":"Office pin.jpg","file_type":"image","file_size":"70289","uploaded_at":"2026-04-22 12:12:04.512687","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"100","file":"media_library\/product\/Peakmax_scapler.jpg","title":"Peakmax scapler.jpg","file_type":"image","file_size":"52036","uploaded_at":"2026-04-22 12:12:04.533249","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"101","file":"media_library\/product\/Heavy_duty_punch.jpg","title":"Heavy duty punch.jpg","file_type":"image","file_size":"94976","uploaded_at":"2026-04-22 12:12:04.556864","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"102","file":"media_library\/product\/Korean_Glass_Skin.jpg","title":"Korean Glass Skin.jpg","file_type":"image","file_size":"55448","uploaded_at":"2026-04-22 12:12:04.576988","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"103","file":"media_library\/product\/Banana_and_mango_extra_whitening_shower_bath.jpg","title":"Banana and mango extra whitening shower bath.jpg","file_type":"image","file_size":"60113","uploaded_at":"2026-04-22 12:12:04.595177","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"104","file":"media_library\/product\/Dairy_notebook.jpg","title":"Dairy notebook.jpg","file_type":"image","file_size":"86928","uploaded_at":"2026-04-22 12:12:04.617560","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"105","file":"media_library\/product\/Ducros_curry_powder.jpg","title":"Ducros curry powder.jpg","file_type":"image","file_size":"101436","uploaded_at":"2026-04-22 12:12:04.638124","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"106","file":"media_library\/product\/Mr_chief_salt_500g.jpg","title":"Mr chief salt 500g.jpg","file_type":"image","file_size":"95073","uploaded_at":"2026-04-22 12:12:04.662983","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"107","file":"media_library\/product\/Calculate_1.2.jpg","title":"Calculate 1.2.jpg","file_type":"image","file_size":"62435","uploaded_at":"2026-04-22 12:12:04.694325","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"108","file":"media_library\/product\/Diary_notebook_1.jpg","title":"Diary notebook 1.jpg","file_type":"image","file_size":"107615","uploaded_at":"2026-04-22 12:12:04.729877","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"109","file":"media_library\/product\/Calculate_1.jpg","title":"Calculate 1.jpg","file_type":"image","file_size":"61148","uploaded_at":"2026-04-22 12:12:04.758509","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"110","file":"media_library\/product\/B_pencile_packs_of_6.jpg","title":"B pencile packs of 6.jpg","file_type":"image","file_size":"56852","uploaded_at":"2026-04-22 12:12:04.779593","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"111","file":"media_library\/product\/Digital_scale_mini.jpg","title":"Digital scale mini.jpg","file_type":"image","file_size":"61368","uploaded_at":"2026-04-22 12:12:04.808352","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"112","file":"media_library\/product\/Ayoola_poundo_yam_flour_4.5kg.jpg","title":"Ayoola poundo yam flour 4.5kg.jpg","file_type":"image","file_size":"108874","uploaded_at":"2026-04-22 12:12:04.833573","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"113","file":"media_library\/product\/Aani_basmati_rice_2kg.jpg","title":"Aani basmati rice 2kg.jpg","file_type":"image","file_size":"102777","uploaded_at":"2026-04-22 12:12:04.857934","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"114","file":"media_library\/product\/Frozen_Seses_fish.jpg","title":"Frozen Seses fish.jpg","file_type":"image","file_size":"41570","uploaded_at":"2026-04-22 12:12:04.890726","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"115","file":"media_library\/product\/Eric_oat_flour_1.3kg.jpg","title":"Eric oat flour 1.3kg.jpg","file_type":"image","file_size":"100992","uploaded_at":"2026-04-22 12:12:04.920773","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"116","file":"media_library\/product\/De_Hero.jpg","title":"De Hero.jpg","file_type":"image","file_size":"66476","uploaded_at":"2026-04-22 12:12:04.945818","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"117","file":"media_library\/product\/Euroma_Bay_leave.jpg","title":"Euroma Bay leave.jpg","file_type":"image","file_size":"105724","uploaded_at":"2026-04-22 12:12:04.977040","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"118","file":"media_library\/product\/Amoy_chilli_sauce.jpg","title":"Amoy chilli sauce.jpg","file_type":"image","file_size":"53858","uploaded_at":"2026-04-22 12:12:05.002652","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"119","file":"media_library\/product\/Honey_beans.jpg","title":"Honey beans.jpg","file_type":"image","file_size":"115758","uploaded_at":"2026-04-22 12:12:05.023045","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"120","file":"media_library\/product\/checkers_custard_powder_700g.jpg","title":"checkers custard powder 700g.jpg","file_type":"image","file_size":"113182","uploaded_at":"2026-04-22 12:12:05.043708","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"121","file":"media_library\/product\/checkers_custard_powder_200g.jpg","title":"checkers custard powder 200g.jpg","file_type":"image","file_size":"96046","uploaded_at":"2026-04-22 12:12:05.078937","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"122","file":"media_library\/product\/Tuna_Chunks.jpg","title":"Tuna Chunks.jpg","file_type":"image","file_size":"61539","uploaded_at":"2026-04-22 12:12:05.106125","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"123","file":"media_library\/product\/Amoy_red_vinegar.jpg","title":"Amoy red vinegar.jpg","file_type":"image","file_size":"46585","uploaded_at":"2026-04-22 12:12:05.124561","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"124","file":"media_library\/product\/Nescafe_classic.jpg","title":"Nescafe classic.jpg","file_type":"image","file_size":"61299","uploaded_at":"2026-04-22 12:12:05.144033","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"125","file":"media_library\/product\/Buter_beans_2kg.jpg","title":"Buter beans 2kg.jpg","file_type":"image","file_size":"94003","uploaded_at":"2026-04-22 12:12:05.167359","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"126","file":"media_library\/product\/Nestle_Milo_40g.jpg","title":"Nestle Milo 40g.jpg","file_type":"image","file_size":"109400","uploaded_at":"2026-04-22 12:12:05.191315","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"127","file":"media_library\/product\/Elite_care_superclean_toothbrushes.jpg","title":"Elite care superclean toothbrushes.jpg","file_type":"image","file_size":"69185","uploaded_at":"2026-04-22 12:12:05.207014","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"128","file":"media_library\/product\/Dabur_Herbal.jpg","title":"Dabur Herbal.jpg","file_type":"image","file_size":"54490","uploaded_at":"2026-04-22 12:12:05.223026","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"129","file":"media_library\/product\/Cleaning_charcoal_toothpaste_and_1_free_toothbrush.jpg","title":"Cleaning charcoal toothpaste and 1 free toothbrush.jpg","file_type":"image","file_size":"58672","uploaded_at":"2026-04-22 12:12:05.238657","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"130","file":"media_library\/product\/Oral-B_toothbrush.jpg","title":"Oral-B toothbrush.jpg","file_type":"image","file_size":"62052","uploaded_at":"2026-04-22 12:12:05.258023","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"131","file":"media_library\/product\/Si.jpg","title":"Si.jpg","file_type":"image","file_size":"46768","uploaded_at":"2026-04-22 12:12:05.274571","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"132","file":"media_library\/product\/Clube_de_nuit.jpg","title":"Clube de nuit.jpg","file_type":"image","file_size":"61746","uploaded_at":"2026-04-22 12:12:05.294988","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"133","file":"media_library\/product\/Chloe.jpg","title":"Chloe.jpg","file_type":"image","file_size":"60576","uploaded_at":"2026-04-22 12:12:05.317957","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"134","file":"media_library\/product\/Khamrah.jpg","title":"Khamrah.jpg","file_type":"image","file_size":"86078","uploaded_at":"2026-04-22 12:12:05.337103","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"135","file":"media_library\/product\/Olay_regenerist.jpg","title":"Olay regenerist.jpg","file_type":"image","file_size":"41707","uploaded_at":"2026-04-22 12:12:05.355369","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"136","file":"media_library\/product\/Jergens_hydrating_coconut.jpg","title":"Jergens hydrating coconut.jpg","file_type":"image","file_size":"44911","uploaded_at":"2026-04-22 12:12:05.370885","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"137","file":"media_library\/product\/Cetaphil_moisturizing_cream.jpg","title":"Cetaphil moisturizing cream.jpg","file_type":"image","file_size":"54404","uploaded_at":"2026-04-22 12:12:05.386845","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"138","file":"media_library\/product\/Listerine_multi_protect.jpg","title":"Listerine multi protect.jpg","file_type":"image","file_size":"57867","uploaded_at":"2026-04-22 12:12:05.402658","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"139","file":"media_library\/product\/Cool_mint_listerine.jpg","title":"Cool mint listerine.jpg","file_type":"image","file_size":"60268","uploaded_at":"2026-04-22 12:12:05.418034","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"140","file":"media_library\/product\/Tooth_picks.jpg_packs.jpg","title":"Tooth picks.jpg packs.jpg","file_type":"image","file_size":"61148","uploaded_at":"2026-04-22 12:12:05.435016","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"141","file":"media_library\/product\/Tooth_picks.jpg","title":"Tooth picks.jpg","file_type":"image","file_size":"52374","uploaded_at":"2026-04-22 12:12:05.462969","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"142","file":"media_library\/product\/Oral_dental_floss.jpg","title":"Oral dental floss.jpg","file_type":"image","file_size":"108767","uploaded_at":"2026-04-22 12:12:05.482740","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"143","file":"media_library\/product\/Dove_original.jpg","title":"Dove original.jpg","file_type":"image","file_size":"36225","uploaded_at":"2026-04-22 12:12:05.496546","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"144","file":"media_library\/product\/Axe_apollo.jpg","title":"Axe apollo.jpg","file_type":"image","file_size":"65834","uploaded_at":"2026-04-22 12:12:05.518317","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"145","file":"media_library\/product\/Dove_advance_care.jpg","title":"Dove advance care.jpg","file_type":"image","file_size":"42560","uploaded_at":"2026-04-22 12:12:05.537687","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"146","file":"media_library\/product\/Nivea_fresh_natural.jpg","title":"Nivea fresh natural.jpg","file_type":"image","file_size":"41819","uploaded_at":"2026-04-22 12:12:05.556742","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"147","file":"media_library\/product\/Nivea_men_deep_black_carbon.jpg","title":"Nivea men deep black carbon.jpg","file_type":"image","file_size":"43811","uploaded_at":"2026-04-22 12:12:05.605564","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"148","file":"media_library\/product\/Ginger_with_honey_tea.jpg","title":"Ginger with honey tea.jpg","file_type":"image","file_size":"118019","uploaded_at":"2026-04-22 12:12:05.629845","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"149","file":"media_library\/product\/Carex_antiseptic_liquid.jpg","title":"Carex antiseptic liquid.jpg","file_type":"image","file_size":"67137","uploaded_at":"2026-04-22 12:12:05.659113","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"150","file":"media_library\/product\/Apple_cider_vinegar.jpg","title":"Apple cider vinegar.jpg","file_type":"image","file_size":"71070","uploaded_at":"2026-04-22 12:12:05.677391","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"151","file":"media_library\/product\/Dettol_liquid_antiseptic_meduim.jpg","title":"Dettol liquid antiseptic meduim.jpg","file_type":"image","file_size":"62754","uploaded_at":"2026-04-22 12:12:05.699641","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"152","file":"media_library\/product\/Molped_pads.jpg","title":"Molped pads.jpg","file_type":"image","file_size":"106171","uploaded_at":"2026-04-22 12:12:05.723138","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"153","file":"media_library\/product\/Corned_beef_Exeter_340g.jpg","title":"Corned beef Exeter 340g.jpg","file_type":"image","file_size":"98838","uploaded_at":"2026-04-22 12:12:05.743573","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"154","file":"media_library\/product\/Green_Giant_sweet_corn.jpg","title":"Green Giant sweet corn.jpg","file_type":"image","file_size":"85398","uploaded_at":"2026-04-22 12:12:05.772631","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"155","file":"media_library\/product\/Soya_beans_and_pap_powder_450g.jpg","title":"Soya beans and pap powder 450g.jpg","file_type":"image","file_size":"87870","uploaded_at":"2026-04-22 12:12:05.794547","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"156","file":"media_library\/product\/Softcare_sanitary_pad.jpg","title":"Softcare sanitary pad.jpg","file_type":"image","file_size":"91193","uploaded_at":"2026-04-22 12:12:05.822729","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"157","file":"media_library\/product\/Fanillia_ultra_toilet_rolls.jpg","title":"Fanillia ultra toilet rolls.jpg","file_type":"image","file_size":"103959","uploaded_at":"2026-04-22 12:12:05.844440","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"158","file":"media_library\/product\/Famillia_toilet_rolls.jpg","title":"Famillia toilet rolls.jpg","file_type":"image","file_size":"82087","uploaded_at":"2026-04-22 12:12:05.873694","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"159","file":"media_library\/product\/molped_pad.jpg","title":"molped pad.jpg","file_type":"image","file_size":"108901","uploaded_at":"2026-04-22 12:12:05.903708","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"160","file":"media_library\/product\/Aroma_diaffuser1.jpg","title":"Aroma diaffuser1.jpg","file_type":"image","file_size":"51138","uploaded_at":"2026-04-22 12:12:05.926118","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"161","file":"media_library\/product\/Aroma_diaffuser.jpg","title":"Aroma diaffuser.jpg","file_type":"image","file_size":"46259","uploaded_at":"2026-04-22 12:12:05.959363","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"162","file":"media_library\/product\/Sniper.jpg","title":"Sniper.jpg","file_type":"image","file_size":"61058","uploaded_at":"2026-04-22 12:12:06.007187","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"163","file":"media_library\/product\/Peak_full_cream.jpg","title":"Peak full cream.jpg","file_type":"image","file_size":"82490","uploaded_at":"2026-04-22 12:12:06.028881","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"164","file":"media_library\/product\/Golden_aroma_juicy_cherry.jpg","title":"Golden aroma juicy cherry.jpg","file_type":"image","file_size":"61203","uploaded_at":"2026-04-22 12:12:06.055097","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"165","file":"media_library\/product\/Raid_multipurpose_insect_killer.jpg","title":"Raid multipurpose insect killer.jpg","file_type":"image","file_size":"57196","uploaded_at":"2026-04-22 12:12:06.074990","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"166","file":"media_library\/product\/BNC_mosquito_spray_400ml.jpg","title":"BNC mosquito spray 400ml.jpg","file_type":"image","file_size":"61581","uploaded_at":"2026-04-22 12:12:06.107117","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"167","file":"media_library\/product\/BNC_mosquito_spray.jpg","title":"BNC mosquito spray.jpg","file_type":"image","file_size":"62424","uploaded_at":"2026-04-22 12:12:06.124830","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"168","file":"media_library\/product\/Awiss_tangerine_airfreshner.jpg","title":"Awiss tangerine airfreshner.jpg","file_type":"image","file_size":"98034","uploaded_at":"2026-04-22 12:12:06.144190","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"169","file":"media_library\/product\/Faultless_niagara_lemon_scent.jpg","title":"Faultless niagara lemon scent.jpg","file_type":"image","file_size":"51773","uploaded_at":"2026-04-22 12:12:06.161116","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"170","file":"media_library\/product\/Soya_beans_and_pap_powder.jpg","title":"Soya beans and pap powder.jpg","file_type":"image","file_size":"79422","uploaded_at":"2026-04-22 12:12:06.176944","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"171","file":"media_library\/product\/Glade_elegant_amber__oud.jpg","title":"Glade elegant amber & oud.jpg","file_type":"image","file_size":"53955","uploaded_at":"2026-04-22 12:12:06.195266","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"172","file":"media_library\/product\/Just_mackerel.jpg","title":"Just mackerel.jpg","file_type":"image","file_size":"68593","uploaded_at":"2026-04-22 12:12:06.212948","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"507","width":"456"},
+{"id":"173","file":"media_library\/product\/Estus_maquereau.jpg","title":"Estus maquereau.jpg","file_type":"image","file_size":"97371","uploaded_at":"2026-04-22 12:12:06.229563","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"174","file":"media_library\/product\/Todays_sardines.jpg","title":"Todays sardines.jpg","file_type":"image","file_size":"92994","uploaded_at":"2026-04-22 12:12:06.248658","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"175","file":"media_library\/product\/Erica_chicken_luncheon_meat.jpg","title":"Erica chicken luncheon meat.jpg","file_type":"image","file_size":"100677","uploaded_at":"2026-04-22 12:12:06.265538","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"176","file":"media_library\/product\/Immaculate_marrow_fat_processed_peas.jpg","title":"Immaculate marrow fat processed peas.jpg","file_type":"image","file_size":"90851","uploaded_at":"2026-04-22 12:12:06.283759","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"177","file":"media_library\/product\/Immaculate_marrow_fat_proocessed_peas.jpg","title":"Immaculate marrow fat proocessed peas.jpg","file_type":"image","file_size":"86667","uploaded_at":"2026-04-22 12:12:06.299991","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"601","width":"540"},
+{"id":"178","file":"media_library\/product\/Heinz_tomato_ketchup_1.25kg.jpg","title":"Heinz tomato ketchup 1.25kg.jpg","file_type":"image","file_size":"73469","uploaded_at":"2026-04-22 12:12:06.318720","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"179","file":"media_library\/product\/Heinz_tomato_ketchup.jpg","title":"Heinz tomato ketchup.jpg","file_type":"image","file_size":"73890","uploaded_at":"2026-04-22 12:12:06.336400","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"180","file":"media_library\/product\/Corned_beef_exeter.jpg","title":"Corned beef exeter.jpg","file_type":"image","file_size":"110515","uploaded_at":"2026-04-22 12:12:06.354593","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"181","file":"media_library\/product\/Lucky_whole_green_olives.jpg","title":"Lucky whole green olives.jpg","file_type":"image","file_size":"89388","uploaded_at":"2026-04-22 12:12:06.377472","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"182","file":"media_library\/product\/Blue_band_original_1.jpg","title":"Blue band original 1.jpg","file_type":"image","file_size":"106052","uploaded_at":"2026-04-22 12:12:06.399631","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"183","file":"media_library\/product\/Heinz_vinegar_568ml.jpg","title":"Heinz vinegar 568ml.jpg","file_type":"image","file_size":"60552","uploaded_at":"2026-04-22 12:12:06.419172","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"184","file":"media_library\/product\/Blue_band_original.jpg","title":"Blue band original.jpg","file_type":"image","file_size":"75306","uploaded_at":"2026-04-22 12:12:06.438361","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"185","file":"media_library\/product\/Golden_penny_butter_900g.jpg","title":"Golden penny butter 900g.jpg","file_type":"image","file_size":"137116","uploaded_at":"2026-04-22 12:12:06.459900","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"186","file":"media_library\/product\/Blue_band_butter_1.jpg","title":"Blue band butter 1.jpg","file_type":"image","file_size":"91714","uploaded_at":"2026-04-22 12:12:06.482888","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"187","file":"media_library\/product\/Blue_band_butter.jpg","title":"Blue band butter.jpg","file_type":"image","file_size":"104096","uploaded_at":"2026-04-22 12:12:06.502958","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"188","file":"media_library\/product\/Sara_hotdogs.jpg","title":"Sara hotdogs.jpg","file_type":"image","file_size":"100833","uploaded_at":"2026-04-22 12:12:06.521918","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"189","file":"media_library\/product\/Frolic_tomato_ketchup.jpg","title":"Frolic tomato ketchup.jpg","file_type":"image","file_size":"55560","uploaded_at":"2026-04-22 12:12:06.542760","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"190","file":"media_library\/product\/Pepsi_can_drink.jpg","title":"Pepsi can drink.jpg","file_type":"image","file_size":"65692","uploaded_at":"2026-04-22 12:12:06.559657","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"191","file":"media_library\/product\/7UP_soft_can_drink.jpg","title":"7UP soft can drink.jpg","file_type":"image","file_size":"61450","uploaded_at":"2026-04-22 12:12:06.576494","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"192","file":"media_library\/product\/Indomie_belleful.jpg","title":"Indomie belleful.jpg","file_type":"image","file_size":"112847","uploaded_at":"2026-04-22 12:12:06.593075","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"193","file":"media_library\/product\/Barilla_spaghetti.jpg","title":"Barilla spaghetti.jpg","file_type":"image","file_size":"62026","uploaded_at":"2026-04-22 12:12:06.609680","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"194","file":"media_library\/product\/Turkey_gizzard.jpg","title":"Turkey gizzard.jpg","file_type":"image","file_size":"83944","uploaded_at":"2026-04-22 12:12:06.632193","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"195","file":"media_library\/product\/Indomie_hungry_man_size.jpg","title":"Indomie hungry man size.jpg","file_type":"image","file_size":"135985","uploaded_at":"2026-04-22 12:12:06.676724","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"196","file":"media_library\/product\/Zartech_chickeen_breast_fillets.jpg","title":"Zartech chickeen breast fillets.jpg","file_type":"image","file_size":"90720","uploaded_at":"2026-04-22 12:12:06.707538","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"197","file":"media_library\/product\/Mozzarella_butter.jpg","title":"Mozzarella butter.jpg","file_type":"image","file_size":"51942","uploaded_at":"2026-04-22 12:12:06.734037","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"198","file":"media_library\/product\/Polar_tomato_paste_tin_2200g.jpg","title":"Polar tomato paste tin 2200g.jpg","file_type":"image","file_size":"94657","uploaded_at":"2026-04-22 12:12:06.758002","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"199","file":"media_library\/product\/Simas_butter.jpg","title":"Simas butter.jpg","file_type":"image","file_size":"135642","uploaded_at":"2026-04-22 12:12:06.779456","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"200","file":"media_library\/product\/Chicken_thigh_drumstick.jpg","title":"Chicken thigh drumstick.jpg","file_type":"image","file_size":"78727","uploaded_at":"2026-04-22 12:12:06.804568","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"201","file":"media_library\/product\/Sonia_tomato_tin.jpg","title":"Sonia tomato tin.jpg","file_type":"image","file_size":"86361","uploaded_at":"2026-04-22 12:12:06.828678","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"202","file":"media_library\/product\/Jumbo_tiger_prawns.jpg","title":"Jumbo tiger prawns.jpg","file_type":"image","file_size":"106029","uploaded_at":"2026-04-22 12:12:06.852930","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"203","file":"media_library\/product\/Zartech_golden_frozen_whole_chicken.jpg","title":"Zartech golden frozen whole chicken.jpg","file_type":"image","file_size":"85041","uploaded_at":"2026-04-22 12:12:06.874062","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"204","file":"media_library\/product\/Frozn_Turkey.jpg","title":"Frozn Turkey.jpg","file_type":"image","file_size":"72406","uploaded_at":"2026-04-22 12:12:06.895232","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"205","file":"media_library\/product\/Olive_oil_cooking_spray.jpg","title":"Olive oil cooking spray.jpg","file_type":"image","file_size":"53384","uploaded_at":"2026-04-22 12:12:06.924368","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"206","file":"media_library\/product\/Devrica_tomato_mix.jpg","title":"Devrica tomato mix.jpg","file_type":"image","file_size":"87439","uploaded_at":"2026-04-22 12:12:06.960926","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"207","file":"media_library\/product\/Golden_penny_paste_twist_macaroni.jpg","title":"Golden penny paste twist macaroni.jpg","file_type":"image","file_size":"114852","uploaded_at":"2026-04-22 12:12:06.989190","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"208","file":"media_library\/product\/Antonio_amato_macaroni.jpg","title":"Antonio amato macaroni.jpg","file_type":"image","file_size":"107360","uploaded_at":"2026-04-22 12:12:07.020340","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"209","file":"media_library\/product\/Aeroplane_Rice_La_taste.jpg","title":"Aeroplane Rice La taste.jpg","file_type":"image","file_size":"111062","uploaded_at":"2026-04-22 12:12:07.041219","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"210","file":"media_library\/product\/Zer_Macaroni_makarna.jpg","title":"Zer Macaroni makarna.jpg","file_type":"image","file_size":"96292","uploaded_at":"2026-04-22 12:12:07.058839","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"211","file":"media_library\/product\/Golden_penny_pasta_spaghetti.jpg","title":"Golden penny pasta spaghetti.jpg","file_type":"image","file_size":"67671","uploaded_at":"2026-04-22 12:12:07.077942","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"212","file":"media_library\/product\/Maharani_suitable_for_diabetis.jpg","title":"Maharani suitable for diabetis.jpg","file_type":"image","file_size":"117319","uploaded_at":"2026-04-22 12:12:07.101446","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"213","file":"media_library\/product\/Antonio_amato_spaghetti.jpg","title":"Antonio amato spaghetti.jpg","file_type":"image","file_size":"61882","uploaded_at":"2026-04-22 12:12:07.127464","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"214","file":"media_library\/product\/Ayoola_pounded_yam_flour.jpg","title":"Ayoola pounded yam flour.jpg","file_type":"image","file_size":"108121","uploaded_at":"2026-04-22 12:12:07.150390","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"215","file":"media_library\/product\/Cardela_Fiyonl.jpg","title":"Cardela Fiyonl.jpg","file_type":"image","file_size":"116217","uploaded_at":"2026-04-22 12:12:07.171464","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"216","file":"media_library\/product\/Aani_Basmati_Rice.jpg","title":"Aani Basmati Rice.jpg","file_type":"image","file_size":"100872","uploaded_at":"2026-04-22 12:12:07.190738","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"217","file":"media_library\/product\/Elkris_Oat_Flour.jpg","title":"Elkris Oat Flour.jpg","file_type":"image","file_size":"87858","uploaded_at":"2026-04-22 12:12:07.212197","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"600","width":"540"},
+{"id":"218","file":"media_library\/product\/Chicken_thigh.jpg","title":"Chicken thigh.jpg","file_type":"image","file_size":"73584","uploaded_at":"2026-04-22 12:12:07.236948","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"1080","width":"810"},
+{"id":"219","file":"media_library\/product\/Yellow_garri.jpg","title":"Yellow garri.jpg","file_type":"image","file_size":"108970","uploaded_at":"2026-04-22 12:12:07.259861","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"1080","width":"987"},
+{"id":"220","file":"media_library\/product\/Ayoola_Plantain_Flour.jpg","title":"Ayoola Plantain Flour.jpg","file_type":"image","file_size":"119017","uploaded_at":"2026-04-22 12:12:07.287569","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"1080","width":"810"},
+{"id":"221","file":"media_library\/product\/henesy.jpg","title":"henesy.jpg","file_type":"image","file_size":"226093","uploaded_at":"2026-04-22 12:22:03.290122","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"964","width":"574"},
+{"id":"222","file":"media_library\/product\/whiskycat.jpg","title":"whiskycat.jpg","file_type":"image","file_size":"24100","uploaded_at":"2026-04-22 12:22:03.306425","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"168","width":"260"},
+{"id":"223","file":"media_library\/product\/beercat.jpg","title":"beercat.jpg","file_type":"image","file_size":"187578","uploaded_at":"2026-04-22 12:22:03.323268","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"768","width":"766"},
+{"id":"224","file":"media_library\/product\/drinkcat.jpg","title":"drinkcat.jpg","file_type":"image","file_size":"103536","uploaded_at":"2026-04-22 12:22:03.342591","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"599","width":"487"},
+{"id":"225","file":"media_library\/product\/juice.jpg","title":"juice.jpg","file_type":"image","file_size":"11451","uploaded_at":"2026-04-22 12:22:03.360788","mediacat_id":"2","replace_existing":"0","duration":null,"extension":".jpg","height":"177","width":"285"}
+]
+}
+,{"type":"table","name":"core_newspost","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"core_page","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"core_pagesection","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"core_securityauditlog","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"core_widget","database":"bg_lmsn","data":
+[
+{"id":"3","title":"gfdfhgjnm","slug":"gfdfhgjnm","excerpt":"","child_fields":"[\"title\", \"slug\", \"featured_image\"]","media_asset_id":"224"}
+]
+}
+,{"type":"table","name":"core_widgetpost","database":"bg_lmsn","data":
+[
+{"id":"3","title":"fghjkl;'","slug":"fghjkl","excerpt":null,"content":null,"tags":null,"address":null,"subtitle":null,"shortcodes":null,"icon":null,"image_align":null,"btn_text":"Read More","btn_url":null,"event_date":null,"progress":null,"addfield1":null,"addfield2":null,"addfield3":null,"addfield4":null,"is_published":"1","created_at":"2026-04-24 11:52:50.943827","updated_at":"2026-04-24 11:52:50.943936","author_id":"739e68c0-c463-422d-b7f1-023f79566e65","featured_audio_id":null,"featured_image_id":"225","featured_video_id":null,"widget_id":"3"},
+{"id":"4","title":"rzgxfhcjvb","slug":"rzgxfhcjvb","excerpt":null,"content":null,"tags":null,"address":null,"subtitle":null,"shortcodes":null,"icon":null,"image_align":null,"btn_text":"Read More","btn_url":null,"event_date":null,"progress":null,"addfield1":null,"addfield2":null,"addfield3":null,"addfield4":null,"is_published":"1","created_at":"2026-04-24 11:54:37.950242","updated_at":"2026-04-24 11:54:37.950378","author_id":"739e68c0-c463-422d-b7f1-023f79566e65","featured_audio_id":null,"featured_image_id":null,"featured_video_id":null,"widget_id":"3"}
+]
+}
+,{"type":"table","name":"django_admin_log","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"django_content_type","database":"bg_lmsn","data":
+[
+{"id":"2","app_label":"accounts","model":"address"},
+{"id":"3","app_label":"accounts","model":"customuser"},
+{"id":"4","app_label":"accounts","model":"department"},
+{"id":"5","app_label":"accounts","model":"position"},
+{"id":"6","app_label":"accounts","model":"rolepermission"},
+{"id":"39","app_label":"admin","model":"logentry"},
+{"id":"40","app_label":"auth","model":"group"},
+{"id":"41","app_label":"auth","model":"permission"},
+{"id":"21","app_label":"cart","model":"cart"},
+{"id":"22","app_label":"cart","model":"cartitem"},
+{"id":"23","app_label":"cart","model":"wishlist"},
+{"id":"42","app_label":"contenttypes","model":"contenttype"},
+{"id":"24","app_label":"core","model":"activitylog"},
+{"id":"25","app_label":"core","model":"appvariable"},
+{"id":"26","app_label":"core","model":"banner"},
+{"id":"27","app_label":"core","model":"broadcastlog"},
+{"id":"28","app_label":"core","model":"category"},
+{"id":"29","app_label":"core","model":"categorypost"},
+{"id":"30","app_label":"core","model":"contactus"},
+{"id":"31","app_label":"core","model":"externalsubscriber"},
+{"id":"32","app_label":"core","model":"mediaalbum"},
+{"id":"33","app_label":"core","model":"mediaasset"},
+{"id":"34","app_label":"core","model":"newspost"},
+{"id":"35","app_label":"core","model":"page"},
+{"id":"46","app_label":"core","model":"pagesection"},
+{"id":"36","app_label":"core","model":"securityauditlog"},
+{"id":"37","app_label":"core","model":"widget"},
+{"id":"38","app_label":"core","model":"widgetpost"},
+{"id":"1","app_label":"django_summernote","model":"attachment"},
+{"id":"19","app_label":"order","model":"order"},
+{"id":"20","app_label":"order","model":"orderitem"},
+{"id":"44","app_label":"order","model":"ordertracking"},
+{"id":"45","app_label":"order","model":"trackingstatus"},
+{"id":"7","app_label":"payment","model":"payment"},
+{"id":"8","app_label":"payment","model":"paymenthistory"},
+{"id":"9","app_label":"payment","model":"refund"},
+{"id":"10","app_label":"product","model":"brand"},
+{"id":"47","app_label":"product","model":"color"},
+{"id":"11","app_label":"product","model":"product"},
+{"id":"12","app_label":"product","model":"productcategory"},
+{"id":"13","app_label":"product","model":"productinventory"},
+{"id":"14","app_label":"product","model":"productmedia"},
+{"id":"15","app_label":"product","model":"productreview"},
+{"id":"16","app_label":"product","model":"productvariant"},
+{"id":"48","app_label":"product","model":"size"},
+{"id":"17","app_label":"product","model":"supplier"},
+{"id":"18","app_label":"product","model":"variantattribute"},
+{"id":"43","app_label":"sessions","model":"session"}
+]
+}
+,{"type":"table","name":"django_migrations","database":"bg_lmsn","data":
+[
+{"id":"1","app":"contenttypes","name":"0001_initial","applied":"2026-03-24 16:07:41.389085"},
+{"id":"2","app":"contenttypes","name":"0002_remove_content_type_name","applied":"2026-03-24 16:07:41.575355"},
+{"id":"3","app":"auth","name":"0001_initial","applied":"2026-03-24 16:07:42.200354"},
+{"id":"4","app":"auth","name":"0002_alter_permission_name_max_length","applied":"2026-03-24 16:07:42.442284"},
+{"id":"5","app":"auth","name":"0003_alter_user_email_max_length","applied":"2026-03-24 16:07:42.564619"},
+{"id":"6","app":"auth","name":"0004_alter_user_username_opts","applied":"2026-03-24 16:07:42.699238"},
+{"id":"7","app":"auth","name":"0005_alter_user_last_login_null","applied":"2026-03-24 16:07:42.832767"},
+{"id":"8","app":"auth","name":"0006_require_contenttypes_0002","applied":"2026-03-24 16:07:42.871708"},
+{"id":"9","app":"auth","name":"0007_alter_validators_add_error_messages","applied":"2026-03-24 16:07:43.069681"},
+{"id":"10","app":"auth","name":"0008_alter_user_username_max_length","applied":"2026-03-24 16:07:43.250133"},
+{"id":"11","app":"auth","name":"0009_alter_user_last_name_max_length","applied":"2026-03-24 16:07:43.534582"},
+{"id":"12","app":"auth","name":"0010_alter_group_name_max_length","applied":"2026-03-24 16:07:43.698153"},
+{"id":"13","app":"auth","name":"0011_update_proxy_permissions","applied":"2026-03-24 16:07:43.900147"},
+{"id":"14","app":"auth","name":"0012_alter_user_first_name_max_length","applied":"2026-03-24 16:07:43.939295"},
+{"id":"15","app":"accounts","name":"0001_initial","applied":"2026-03-24 16:07:45.530047"},
+{"id":"16","app":"admin","name":"0001_initial","applied":"2026-03-24 16:07:45.873992"},
+{"id":"17","app":"admin","name":"0002_logentry_remove_auto_add","applied":"2026-03-24 16:07:46.219274"},
+{"id":"18","app":"admin","name":"0003_logentry_add_action_flag_choices","applied":"2026-03-24 16:07:46.498484"},
+{"id":"19","app":"core","name":"0001_initial","applied":"2026-03-24 16:07:49.881586"},
+{"id":"20","app":"core","name":"0002_mediaasset_replace_existing_and_more","applied":"2026-03-24 16:07:50.224339"},
+{"id":"21","app":"core","name":"0003_mediaasset_duration_mediaasset_extension_and_more","applied":"2026-03-24 16:07:50.787667"},
+{"id":"25","app":"django_summernote","name":"0001_initial","applied":"2026-03-24 16:07:56.404273"},
+{"id":"26","app":"django_summernote","name":"0002_update-help_text","applied":"2026-03-24 16:07:56.429943"},
+{"id":"27","app":"django_summernote","name":"0003_alter_attachment_id","applied":"2026-03-24 16:07:56.789292"},
+{"id":"33","app":"sessions","name":"0001_initial","applied":"2026-03-24 16:07:58.914709"},
+{"id":"45","app":"core","name":"0004_alter_mediaasset_file","applied":"2026-04-22 11:20:33.732210"},
+{"id":"46","app":"core","name":"0005_pagesection","applied":"2026-04-25 21:41:15.926892"},
+{"id":"50","app":"accounts","name":"0002_rename_full_name_address_country","applied":"2026-04-26 00:25:06.077166"},
+{"id":"51","app":"accounts","name":"0003_rename_country_address_country","applied":"2026-04-26 00:31:52.089696"},
+{"id":"63","app":"product","name":"0001_initial","applied":"2026-05-02 09:55:06.107615"},
+{"id":"64","app":"order","name":"0001_initial","applied":"2026-05-02 09:55:10.845445"},
+{"id":"65","app":"order","name":"0002_initial","applied":"2026-05-02 09:55:11.349315"},
+{"id":"66","app":"cart","name":"0001_initial","applied":"2026-05-02 09:55:15.643650"},
+{"id":"67","app":"cart","name":"0002_initial","applied":"2026-05-02 09:55:16.150747"},
+{"id":"68","app":"payment","name":"0001_initial","applied":"2026-05-02 09:55:20.556092"},
+{"id":"69","app":"product","name":"0002_alter_productvariant_weight","applied":"2026-05-02 23:30:12.127432"},
+{"id":"70","app":"product","name":"0003_alter_productinventory_quantity_and_more","applied":"2026-05-06 01:28:39.765458"},
+{"id":"71","app":"order","name":"0003_alter_orderitem_variant","applied":"2026-05-10 14:21:44.410198"},
+{"id":"72","app":"order","name":"0004_order_note","applied":"2026-05-10 14:29:30.487292"},
+{"id":"73","app":"order","name":"0005_rename_note_order_order_notes","applied":"2026-05-10 14:52:00.533541"}
+]
+}
+,{"type":"table","name":"django_session","database":"bg_lmsn","data":
+[
+{"session_key":"1audo5khzhxdl3ljhb2qd3c8ztcf3gt8","session_data":".eJxVy0GKwzAMQNG7eN2EyJFjK8tZdNczBFlSiGloYewUSpm7DwNdTLef_15u4aNty1HteynqZudXNIIsXRIOHa45d8wZu9F7NDYL4zS403-WWa52-7Mscj9urfbvVPvLsbdyLrbr5a62f73XD79x3dzs0oBEFhUm5pSUQxpE1uwRJkLORKwoAlmDDuhpJCVjPwIpYIiB3cntXNvC0sqjtKebIcaEECimPgKhn35-AbKPS1g:1wM3Eg:SXzvLvAjnxg2MydCYx2kyvIIBIP1aEmtM5Nd_i8KJr8","expire_date":"2026-05-10 12:56:18.804067"},
+{"session_key":"66ha53rqxwx72drg8zkn0tj230ad5oai","session_data":".eJxVy0FqwzAQQNG7zDo20mg0krzsorucwYxGMhY1CVRyIYTevRSyaLef_56wyjn29ez1c20FFoiuulyZpuJDnUgRp1RCmjxpRo2GI0e4_GVZ9KPefq2o3s_b6PMr9fl6HqO9t3qU673U4-21_vO79B0WICRkshtzxiJVCI04ZCfWs2fDWqLVDXWzwWdfYw5KKW8-lCiUKcMFDuljFR3tq40HLDaESGRcCnPg5A1__wDMkkpG:1wM9aX:ffme-b-Cdrpwpljslu0IB4WyK1NiUKnEpBHL35PCjiU","expire_date":"2026-05-10 19:43:17.771724"},
+{"session_key":"a4mbmxcex8xv6rlbqutwz5k2cfrvunfv","session_data":".eJxVy0FqwzAQQNG7zDo2ljQaSV52kV3OYEajMRYxCVRyIITevRSyaLaf_16w8NG35Wj6vdQCM0SnLivhUHzQAcXaIZWQBo-SrcSJIkU4_WeZ5aq3P8si9-PW2_hObbwce6_nqnu53IvuX-_1w2_cNpgBLVpCsxJlW1gZ7cTOkmPjydNEUqKR1cpqgs9eYw6CKa8-lMiYMcMJdm59Yen1UfsTZhNCdM5PPo2GApr08wvMTUo_:1wLiBX:-93uHi0hgib5Mg4Jch67Nj6XxHf79PXc6xGqo0J3ask","expire_date":"2026-05-09 14:27:39.191568"},
+{"session_key":"awhceu29abg3m1slrex64bzmlokkp7vd","session_data":".eJxVy0FqwzAQQNG7zDo21mg0krzsIrucwYxGMhYxCVRyIITevRSyaLaf_16wyNG35Wjle6kZZgi22FSYhux8GUgRh5h9HBxpQg0TBw5w-s-S6LXc_qyo3o9bb-M7tfFy7L2ea9nz5Z7L_vVeP_wmbYMZCAmZzMqcMEsRwkksshXj2PHEmoPRFXU13iVXQvJKMa3O5yCUKMEJdml9Ee31UfsTZuN9sM74SOPEwUX8-QXMi0pF:1wLmXS:2Omh7gH-fz2oCszt0nu5h81WthgOiPb5_TZdAGY29-M","expire_date":"2026-05-09 19:06:34.192124"},
+{"session_key":"bd86051jqk2itpf13w7hcd09nqfinglo","session_data":".eJxVy8FqwzAMgOF38bkJkmJbco877NZnCI6sELPQQu0MRum7j0IP2_Xn_x5uzkff5qPZfa7FnR1PyaIoDOrjNHiiMiy84gA0rZxCjBaDO_1lS9Yvu75sVr0d197Gd2rj5dh7_ay2l8ut2P7xXv_5LbfthdlTIciAZIYRIpYkGjghrKCygEcksKSoIoIc0GOYgHgRn0xWd3J7bn3O2ut37T_ujMziiQPRKD6i0PMXKxpIVA:1wM6Es:SlZMgjI0uOLSXRSHBb4GquNPe1kAMbKhZbDQwqab520","expire_date":"2026-05-10 16:08:42.915126"},
+{"session_key":"dw5xculwrhgqlcip3e607ku6kjisaqxw","session_data":"e30:1wFYal:Xj7k5mMXVZ4tiatiBA-K0vlAfhea21rr1FoeJrfXK-s","expire_date":"2026-04-22 15:00:15.463071"},
+{"session_key":"dyb075a0pub1c317ujcptrmj8kinebn6","session_data":".eJxVzEFqwzAQheG7zDo2kjyyNV5mkZ3PYEYzYyxqEojkQim9ewlk0W4f__e-YeWz7etZ7bkWhRnChkY-S5eEY4dbzh1zxm4IAY3N4jA6uPxlmeXD7i_LIo_z3mr_nmq_nEcrt2KHLg-14_pO__md6w4zJIdENqkfmVNSjsmJbDmgHwk5E7GiiM8a1WGggZSMw-BJPcYpMlzg4NpWllY-S_uC2U_TmPzroHeeYog_v7HRS0M:1wFK4m:WS9gER7rhwNDl7SgIYIdz47fzU0RJanRkrir2caLpuc","expire_date":"2026-04-21 23:30:16.067034"},
+{"session_key":"dz8qz0h7l6jx6339pvsjshmwrjwy12px","session_data":"e30:1wFavL:7ykjlW7QCL03bDw63HlvFUPHAwBzTtKVgA4Tp7h0QI4","expire_date":"2026-04-22 17:29:39.656158"},
+{"session_key":"e66nzsm47egzz8hap10ob77n0epek0l6","session_data":".eJxVy01qwzAQQOG7aB0b_YwsjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNYbLm9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObbAFRk7iJKGehmC3zWjy4CYEKIgkwuyJRLHgMKKjkg0NxEFMkczI7tb4Q9_qo_Wlml1LyIYUYRhctev_zC7HgS0I:1wH6cc:Csx53IJtFzAabhQFOrSA2shUXRwK0c8oFVvUUKqvrpw","expire_date":"2026-04-26 21:32:34.665115"},
+{"session_key":"eae4g7glv6w5gjvlmtzc1sbxljfenw5a","session_data":".eJxVy8FqwzAMgOF38bkJkS3HVo477NZnCLKkELPQwuwMStm7j0EP2_Xn_55u5bPv69nsc63qFuc3NIIiQxaOA26lDMwFh-A9GpvFME_u8pcVlg-7_VoWuZ-33sZXauP1PHp9r3bo9a52vL3Wf37ntrvF5QmJLCnMzDkrxzyJbMUjzIRciFhRBIpGndBTICVjH4AUMKbI7uIObn1l6fWr9odbIKUEIeccR59CAvr-AbJqS1Y:1wGh0P:9ljp5_JVTcwvYJRnXOcYcy89WjOzsM542mrxJEMK0t4","expire_date":"2026-04-25 18:11:25.299279"},
+{"session_key":"efnfmubgkcbihxtoj8g8pigmsgwlh38v","session_data":".eJxVy01qw0AMQOG7zDo286OxJS-76C5nMBpJxkNNAp1xIYTevRSyaLeP9z3dymff17PZ51rVLS5uYBSKDCicB9hKGZgLDClGMDbLafLu8pcVlg-7_VoWuZ-33sZXauP1PHp9r3bo9a52vL3Wf37ntrvFoQcimzVMzIjKGb3IViKEiYALESuIhKJZPURKpGQcUyANkOfM7uIObn1l6fWr9odbwjwDoEf0Y54IE33_ALJSS1k:1w5XXM:OB8aDmo3yQeNFks-AKIOU2bnQ3Mf1E4hjkuilWvW2fc","expire_date":"2026-03-25 23:51:20.592590"},
+{"session_key":"enlf5qmxgo9jl038f64ezm7cybe4kzuq","session_data":"e30:1wGgz2:TPFhUSE1Yq584lWSEmvZjpvoiUxk83hxunlSJlvNgyY","expire_date":"2026-04-25 18:10:00.066757"},
+{"session_key":"euxdfomhz18r7blwj8crdmokfih93b1n","session_data":"e30:1wH69K:uMglYW9OmEVxQYGz4yoW_ovsszIn9D8Z2wNheFps3lw","expire_date":"2026-04-26 21:02:18.721308"},
+{"session_key":"f8ink4bnyjk06rqh5lu6znfh4gwm86bu","session_data":".eJxVy01qwzAQQOG7aB0bjTT6GS-76C5nMKPRGIuaBCq5EELvXgpZtNvH-55m5XPs69n1c23VLMZtqARFpiwcJtxKmZgLTt45VFYNPlpz-csKy4fefi2L3M_b6PMr9fl6HqO9Nz3q9V71eHut__zOfTeLyRaJNFWIzDlXDtmKbMUhREIuRFxRBEoN1aIjT5WUnQeqgCEFNhdzcB8ry2hfbTzMAikhJogW5uRDdPD9A7HBS0A:1w5V7h:4n3oJeO191s6fNhfH1MLF70k17kO7wqMbg2MlJjt5n4","expire_date":"2026-03-25 21:16:41.752782"},
+{"session_key":"fbw1xz7ee7i9ue0v4ny18jfk287rm0pk","session_data":"e30:1wHH1n:LdcOgygJ19Y30T1VpBs3A_4_Dgg20-UqdQCukwQkrZU","expire_date":"2026-04-27 08:39:15.662451"},
+{"session_key":"fgx6mej6wo1n9l9uxll1gp5ogekomzk2","session_data":".eJxVy01qw0AMQOG7zDo28yN5Rl520V3OYDSSjE1NAp1xIYTevRSyaLeP9z3dwmfflrPZ57Krm11cwShUGYowDrDWOjBXGFKMYGyGafLu8pdVlg-7_VoWuZ-33sZXauP1PPr-vtuh17va8fZa__mN2-ZmVzwQWdYwMZeijMWLrDVCmAi4ErGCSKiK6iFSIiXjmAJpAMzI7uIObn1h6fvX3h9uDjkDUSqEIyL6kL9_ALK8S1c:1w7gzn:vausAgjo7FCFRlvcDny-HMLLZfmm0B-tn11K4kY_91Q","expire_date":"2026-03-31 22:21:35.807542"},
+{"session_key":"fnwmt7yvoz1hgi1xmoy6o3um8bstv1ih","session_data":".eJxVy8FqwzAMgOF30bkJsS07Vo477NZnCLKkELPQwuwMStm7j0EP2_Xn_56w8tn39Wz2uVaFBfyGRq7IkIXjgFspA3PBIXiPxmYxpAkuf1lh-bDbr2WR-3nrbXylNl7Po9f3aode72rH22v953duOyyQJySyWV1izlk55klkKx5dIuRCxIoirmjUCT0FUjL2wZE6jHNkuMDBra8svX7V_oDFzXOiFD36MWPMOXz_ALJ4S1c:1wFxpi:KqDPWPft9CSeaR4hzycWtSyFNOBEkxejpME7282sfP8","expire_date":"2026-04-23 17:57:22.874126"},
+{"session_key":"gbqcnhekflsx1ivahruwgzvg0mciv95o","session_data":"e30:1wHIRx:RkssANP2t6n9-goGJcQ7ELl0CQTOiO5jSrMPkpuG3ag","expire_date":"2026-04-27 10:10:21.875933"},
+{"session_key":"ggq0ktsq25ctx0bwhticc4nlqq1omjdk","session_data":"e30:1wGhjX:BF-3dpJ4pke_8v8S94RqLm2mtgwxrkZcybARd2HCODQ","expire_date":"2026-04-25 18:58:03.475572"},
+{"session_key":"gn0s8krgpjegnwshzj17d9ov0q188uxw","session_data":"e30:1wM4u4:pYhqHF8axnv5cEqAUxeOHcCAHN2MFdjUN-k3zhZYeV4","expire_date":"2026-05-10 14:43:08.190546"},
+{"session_key":"gwrjlth4brqu1xaftcbve0a3h4l4zkhc","session_data":".eJxVy01qwzAQQOG7aB0bSxr9jJddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNWULSFh8wUBlhLGYgKDN45UFINPk7m9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObPAGiJrGRKGehkCfmtTiwEYEKIgkw2yJBJnDoUVDJeYtiIaRA5mR2an0h7vVR-9PMNqXkIvqAo40-B_fzC7JvS1M:1wHEwq:D60HjJRUMoiRF4ka2ldfaDGfSYJYqKjQMR9bDB9ztP4","expire_date":"2026-04-27 06:26:00.976912"},
+{"session_key":"gyxvctz9nvfzrjvvj7378d83a4n4clb1","session_data":"e30:1wGkGw:1DuKJeF2VA5PKDoyIowd0gW3Y3YHyCz3EdwZ_H_uuvI","expire_date":"2026-04-25 21:40:42.069290"},
+{"session_key":"hvi95395xg2h3cdaak7klr3qo68qln1d","session_data":".eJxVy8FqwzAMgOF38bkJtiwnVo477NZnCLKkELPQwuwMStm7j0EP2_Xn_55u5bPv69nsc63qFgcbGoUiQxZOA26lDMwFhwiAxmYpTt5d_rLC8mG3X8si9_PW2_hKbbyeR6_v1Q693tWOt9f6z-_cdre47JHIZg0Tc87KKXuRrQCGiZALESuKhKJJPQJFUjKGGEgDpjmxu7iDW19Zev2q_eGWMM8TRCKA0QOQD98_se1LQA:1wCv90:9QU4kC1G9DpCTSatfCvFuj31iDHN5qGDrpeGVySvCK0","expire_date":"2026-04-15 08:28:42.116838"},
+{"session_key":"hz68vf4901sxbohjlsukbs71glpgqz72","session_data":".eJxVy8FqwzAMgOF38bkJli3HVo477NZnCLKkkLDQwuwMStm7j0EP2_Xn_55u4bNvy9nsc9nVzS6saARVhiKcBlxrHZgrDjEENDZLcfLu8pdVlg-7_VoWuZ-33sZXauP1PPr-vtuh17va8fZa__mN2-ZmVzwSWVaYmEtRTsWLrDUgTIRciVhRBKom9RgokpJxiEAKmHJid3EHt76w9P1r7w83Q845A_kIYwkhI3z_ALICS0U:1wJ7vc:tPj4-J6MC01UnseLnH-MH4y7UQ9gtx02VmCjAOH64MM","expire_date":"2026-05-02 11:20:32.088411"},
+{"session_key":"i29zug11gkpt20ke6w3qgsdkt55m29iy","session_data":"e30:1wFYEE:sg5OtXexTkMVRlxWB7sxLuifN4FvCk06CS4VwMLZpnI","expire_date":"2026-04-22 14:36:58.189217"},
+{"session_key":"ijqf0i3dzn3povjw5g7y7dsgaen3zq40","session_data":".eJxVyz1qxDAQQOG7qLbNjKyfkcst0u0ZhDwaYxFnDZYUCCF3DwtbJO3jfd8qpt722KtcsWS1KD8HccQwsnHzaLTO4-o3HEHPmw_WOXFWDX_ZmvhdHk-bmM_-aHV6pTrd-9HKW5Ej388sx-21_vN7qvsTe6OzhgSoRdCBwxyIrQ8IGzCtYBA1SGBkIkJv0aCdQfuVTBDa1KCOVFtM3MpnaV9qQe_JWAMWJgxkwAyK09Xix5nLViSrpV1dfn4BaJFQAQ:1wMD8k:Q4euTlqS3kDxtdpS1tWBNj4-ErRO8vYFjQBGKojjCSc","expire_date":"2026-05-10 23:30:50.276748"},
+{"session_key":"j2xojto3dpc0zh901z5aeurqrixr70uu","session_data":"e30:1wGlyd:-81-5O4bwGUp-50cktm2Woj3hQpQ_gA2NHw8ntHer5A","expire_date":"2026-04-25 23:29:55.886660"},
+{"session_key":"jdd179gp5kfhu1lsjl7midsjbw5z93nh","session_data":"e30:1wEshi:jxJl-nuh1ebju-FRGd17zpCsdipWaRL9ti70Hew0T94","expire_date":"2026-04-20 18:16:38.779820"},
+{"session_key":"jlgqek1093yi1u6aeb8r5fatq8p2gbqn","session_data":".eJxVy01qwzAQQOG7aB0bSxr9jJddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNWULSFh8wUBlhLGYgKDN45UFINPk7m9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObPAGiJrGRKGehkCfmtTiwEYEKIgkw2yJBJnDoUVDJeYtiIaRA5mR2an0h7vVR-9PMNqWUYrA5jh7AQ_75BbJuS1M:1wJJw2:oCuDjwaLKhcmV_MCN1NL02G_x2ivHANVuoB3HPgQdSk","expire_date":"2026-05-03 00:09:46.772056"},
+{"session_key":"jlk5y3zj7fa0114a8xtqpnfbah7e4t4d","session_data":"e30:1wFBhV:eZxpTHfIM-m_txJBFNA8kYVY4svsLpgY5ob_qoTAIvU","expire_date":"2026-04-21 14:33:41.094674"},
+{"session_key":"jo0vxyjmnyzbtq8kbr1vr372u7wzclz9","session_data":"e30:1wFq4x:lCnP_lKBxa47uRjwiQW2Xa14ii_hyvZut777zSaj1Qw","expire_date":"2026-04-23 09:40:35.750746"},
+{"session_key":"js9pxstnetp2lg8xsvina78ktqnmmib7","session_data":".eJxVy01qwzAQQOG7aB0b_YwsjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNYbLm9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObbAFRk7iJKGehmC3zWjy4CYEKIgkwuyJRLHgMKKjkg0NxEFMkczI7tb4Q9_qo_Wlml1JKzqaQR7DeTT-_ZvRLDw:1wJ5lq:qhlKnFWpGlTJFUsedXsljyo8Zk2kCm8aOfju74vVIf8","expire_date":"2026-05-02 09:02:18.505360"},
+{"session_key":"jygy5svtr3519u56g42uf2tz36i54ke6","session_data":".eJxVy01qwzAQQOG7aB0b_YxkjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNIVlz-s8K8VVvf5aY78ett_Gd2ng59l7PVXe53EX3r_f64Tdqm5lNtoCok7hElLNQzJZ5LR5cQqCCSALMrkgUCx4DCir54FAcxCmSOZmdWl-Ie33U_jSzmyYIOWZMYwIfbPr5BbJ1S1E:1w58pN:GZRt76tSyrcU6L9TU2s3bSOKXmX5wXUyy8JYBjduW_o","expire_date":"2026-03-24 21:28:17.548777"},
+{"session_key":"k1o80jh6g8y8z5bne4cts0i9o8vl4bnw","session_data":".eJxVy0EKwjAQQNG7ZG3LTJpkMi5duPMMJZ1MabAomFQQ8e4iuNDt57-nGdPWlnGrehtLNntDA2uIAp24MHTO2txNNGMHdpiJfQgavNn9sinJWS8fm0Su26XV_ptqf9rWVo5F13y6Zl0P3_XPL6kuH0zOZgsJ0KpigICZo3hihBkkTuAQLSgLSowRyaNDP4ClKTrWOJudWVNtY5JW7qU9zB6JCH1Axz2T8_x6A-MjSCw:1wGlUs:oXq3mD3TL-bAsCWTYAJ5_qBdBvHtNKke5GZ5GLdNHWI","expire_date":"2026-04-25 22:59:10.241195"},
+{"session_key":"kn34jq9lno9t7or1f3gectv921s4643r","session_data":".eJxVy8FqwzAMgOF30bkJtiPHVo477NZnCLKkELPQwuwMStm7j0EP2_Xn_56w8tn39Wz2uVaFBcKGRr7IkIXjgFspA3PBYQoBjc3iNDu4_GWF5cNuv5ZF7uett_GV2ng9j17fqx16vasdb6_1n9-57bBAdkhkSf3MnLNyzE5kKwH9TMiFiBVFfNGoDgNNpGQcJk_qMabIcIGDW19Zev2q_QGLTym7nILPY0pIlL5_ALJ3S14:1wKfi7:9-KJmnuuzq4beyQZhVSPo4aDN-RTp1xlAB9T_RD5-Bo","expire_date":"2026-05-06 17:36:59.071732"},
+{"session_key":"ko4uwofwa9lghjf7gatfcjweaslgr6tu","session_data":".eJxVy01qwzAQQOG7aB0b_YwsjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNYbLm9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObbAFRk7iJKGehmC3zWjy4CYEKIgkwuyJRLHgMKKjkg0NxEFMkczI7tb4Q9_qo_Wlml1JyNuZsx4whoP_5BbIiS1A:1wGYQ5:O8a7_aycm4YozXoBk6Cg8Opk0UBw4VRwtH_nz0N9PLg","expire_date":"2026-04-25 09:01:21.172802"},
+{"session_key":"mac5zw6ih7kg4mp80uf9tns20gjj8z9m","session_data":".eJxVy82qwjAQQOF3ydqWmfzNxOVd3J3PUNLJlAaLgkkFEd_9Iri4bg_ne5op732d9qa3qRZzNOSSRhYYxEc3eGvLMNOCA1i3UAoxagzm8J_NWc56edssct0vvY2f1MbTvvX6W3Urp2vR7eezfvk1t_WNydtiIQNaVYwQsSSWQAlhAeEZPKIFTYLCzEgBPQYHlmb2SXkxB7Pl1qcsvd5rf5gjErHz3gGPBAQ2vv4AKuZITQ:1wLkaj:kG5I4ahp006cS9nRH0iHpQ94gUDvlUMBby9RReuyCYw","expire_date":"2026-05-09 17:01:49.183205"},
+{"session_key":"mrnc4b3em8pjyfyl6furmsfzsi7vex58","session_data":".eJxVy01qwzAQQOG7aB0b_YxkjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNIVlz-s8K8VVvf5aY78ett_Gd2ng59l7PVXe53EX3r_f64Tdqm5lNtoCok7hElLNQzJZ5LR5cQqCCSALMrkgUCx4DCir54FAcxCmSOZmdWl-Ie33U_jSzm6aECVNOo3eANvz8ArLLS1Y:1wFyzO:b9zNTQZF3oXvj9YRwS-VSMDjcxsnQBLcY3hNORwn638","expire_date":"2026-04-23 19:11:26.426267"},
+{"session_key":"mt05gv9m60534xgmm6b1aaokshss5lhr","session_data":"e30:1wF6m1:JpR3urHKqw5IzI0JNxdzMhRa3yPWmjhx_WmiN3_IHdc","expire_date":"2026-04-21 09:18:01.773999"},
+{"session_key":"mw4tn3i0xc628h23jk8befqeby2khvu7","session_data":".eJxVy8tqwzAQQNF_0To2eowe42UX3eUbzGhmjEVNApVcCKH_XgpZtNvLPU-z0jn29ez6uTYxi_EbKLrKU2GKE2y1TkQVpuA9KKnGkKy5_GWV-ENvv5aY7-dt9PmV-nw9j9Hemx5yvYseb6_1n9-p72YxxQKiZnGJqBShWCzzVj24hEAVkQSYXZUoFjwGFFTywaE4iDmSuZiD-liJR_tq42EWl3OyNuVQ5pBDCf77B7HvS0k:1wBwTy:tXyHlxwEo_QEbk2HxAkXmbxAWO_7_iusnOHT69446xQ","expire_date":"2026-04-12 15:42:18.399693"},
+{"session_key":"mww0akrbp81ninax2752bly06ixqe4kt","session_data":"e30:1wHkLb:rCjqqHJHKqdie8cSw9ayfluCxPzVeaEunFnd4jLwrho","expire_date":"2026-04-28 15:57:39.765876"},
+{"session_key":"nlg9um8s6155822hpb90vywmco5psjj9","session_data":"e30:1wDpEx:V_BbTJ1MNEYQufAdkwzNqG0rCQcScL5CwbRXVxLdGHU","expire_date":"2026-04-17 20:22:35.162553"},
+{"session_key":"ny45866lemt47r3w5mg53w64psbvvzpv","session_data":"e30:1wFu1e:AwzPQ2TQOiP7FoliRKIJ8OLIryvaVe9DRFwy3DY7GQE","expire_date":"2026-04-23 13:53:26.462427"},
+{"session_key":"odtnm7jqwpdxs140056s6p317snpz0vz","session_data":".eJxVy8FqwzAMgOF38bkJtiLHVo477NZnCLKkELPQwuwMStm7j0EP2_Xn_55u5bPv69nsc63qFgcbGoUiQxaOA26lDMwFhwkAjc3iNHt3-csKy4fdfi2L3M9bb-MrtfF6Hr2-Vzv0elc73l7rP79z293iskciSxpm5pyVY_YiWwEMMyEXIlYUCUWjegSaSMkYpkAaMKbI7uIObn1l6fWr9odbQkrJA4BPY5wx-_z9A7GaS0Q:1wGCeW:2En-bUugfvgGFH5dS9tLkEXwrnBgR-ncc5xKoSfEeNg","expire_date":"2026-04-24 09:46:48.061828"},
+{"session_key":"omopgi25b6etx3p0w4iqb15t2gsetoei","session_data":"e30:1wLFsc:w-T7FHVMzxQGcINT6zCBv1HM2hhu5Tij17ErelSOg5g","expire_date":"2026-05-08 08:14:14.148840"},
+{"session_key":"os233k9ltpirt8bmxqxuiqjsadutpugb","session_data":"e30:1wGWTa:JS6YHTG8fP7AkC1PeSTd_5tWf8rRCHhv2XmT4H7DKlQ","expire_date":"2026-04-25 06:56:50.941593"},
+{"session_key":"pj9wb1elxd7lvltuiat8qf2zzba5jmfb","session_data":".eJxVy01qwzAQQOG7aB0b_YxkjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNIVlz-s8K8VVvf5aY78ett_Gd2ng59l7PVXe53EX3r_f64Tdqm5lNtoCok7hElLNQzJZ5LR5cQqCCSALMrkgUCx4DCir54FAcxCmSOZmdWl-Ie33U_jSzm6aYrU8xjQ4DePz5BbIQS00:1wB5OK:3kfxIAb6wAphEUcKslwFdAwx3FYYdFp9Q00sM4yeG2Q","expire_date":"2026-04-10 07:00:56.375405"},
+{"session_key":"pju9qh9r4m4sj0eawypzjlmee3e6xhc4","session_data":".eJxVy82qwjAQQOF3ydqWmfzMJC7v4u58hpJOpjRYFEwqiPjuF8HFdXs439NMee_rtDe9TbWYo2GXlKLAIJ7c4K0tw8wLDmDdwikQKQVz-M_mLGe9vG0Wue6X3sZPauNp33r9rbqV07Xo9vNZv_ya2_rG7G2xkAGtKhIQlhQlcEJYQOIMHtGCJkGJMSIH9BgcWJ6jTxoXczBbbn3K0uu99oc5IjMlskg8QiJw9PoDKz5IVg:1wFx27:kbpsHtLDnaamSiXntk3re2OgJOQdcMzHm58rq6mHync","expire_date":"2026-04-23 17:06:07.313596"},
+{"session_key":"pmhskkfrwj3a185gmx77y0i4qhzjby73","session_data":".eJxVy01qwzAQQOG7aB0b_YwsjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNYbLm9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObbAFRk7iJKGehmC3zWjy4CYEKIgkwuyJRLHgMKKjkg0NxEFMkczI7tb4Q9_qo_Wlml9IUgk05jCkAIPz8ArIMS04:1wDImV:CPTH8IHsDOexGOjWMvsy_SU3WLN0FG27oYF6UrElGTw","expire_date":"2026-04-16 09:43:03.852383"},
+{"session_key":"prkstoqen9psp24bqmqa1gamb00685y2","session_data":".eJxVy01qwzAQQOG7aB0b_YwsjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNYbLm9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObbAFRk7iJKGehmC3zWjy4CYEKIgkwuyJRLHgMKKjkg0NxEFMkczI7tb4Q9_qo_Wlml1Ly2YPLY7I5OPz5BbIcS00:1wHILS:oQoANV0mNkRrZu_ueT55pR8TpVMl_1FmUWKBGNJd5yI","expire_date":"2026-04-27 10:03:38.762850"},
+{"session_key":"q41jiw47moi61yjyi0w6g9rdff7nf5hw","session_data":"e30:1wFqOo:CzqKqqXCGxC8BGgFkiJ5JsI7SawzHAcnHy4C33UPCmU","expire_date":"2026-04-23 10:01:06.037558"},
+{"session_key":"qgjkpmhv47duorldl2fhc1eaialn0v4p","session_data":".eJxVy8tqwzAQQNF_0To2eowe42UX3eUbzGhmjEVNApVcCKH_XgpZtNvLPU-z0jn29ez6uTYxi_EbKLrKU2GKE2y1TkQVpuA9KKnGkKy5_GWV-ENvv5aY7-dt9PmV-nw9j9Hemx5yvYseb6_1n9-p72YxxQKiZnGJqBShWCzzVj24hEAVkQSYXZUoFjwGFFTywaE4iDmSuZiD-liJR_tq42EWl3MqydkMM_gQPXz_ALIGS0U:1wFWja:6agq6w9XVqdy5NYMcraXTeqhX77ZCROCNxWfEYyy_HY","expire_date":"2026-04-22 13:01:14.426801"},
+{"session_key":"qhm2jiyfzblff5d5phj5yrhedywfdar9","session_data":"e30:1wHcGp:D62JDaEeyZE4Z0FRFREdndlDJz-6tvQe5g5dx9wmMpc","expire_date":"2026-04-28 07:20:11.144048"},
+{"session_key":"r5mw6zv1w46akt9tyfgizx510l5mmoek","session_data":".eJxVy01qwzAQQOG7aB0bSxr9jJddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNWULSFh8wUBlhLGYgKDN45UFINPk7m9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObPAGiJrGRKGehkCfmtTiwEYEKIgkw2yJBJnDoUVDJeYtiIaRA5mR2an0h7vVR-9PMNqXoU4SAY8wBHPz8ArKGS1Y:1wDUfD:7oZkdaNQHXkWTIJww06RRWYZqGU-GFP0GOphai8NWDU","expire_date":"2026-04-16 22:24:19.906909"},
+{"session_key":"rnlzhufndvh0fxhm3zwmbo7e2st6b3ja","session_data":".eJxVy01qwzAQQOG7aB0b_YwsjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNYbLm9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObbAFRk7iJKGehmC3zWjy4CYEKIgkwuyJRLHgMKKjkg0NxEFMkczI7tb4Q9_qo_Wlml1L2wTqLI9gE6H5-AbGiS0E:1wLGsn:Zwdej3XkB7DCq85VOnj6rjZmHGpHfe8YVL6nhjJuE_E","expire_date":"2026-05-08 09:18:29.728665"},
+{"session_key":"rs1ojaf1ywuzpmofvxbdbx8pe4b0bvtr","session_data":".eJxVy0EKwjAQQNG7ZG3LzDTJJC5duPMMJZ1MabAomFQQ8e4iuNDt57-nGdPWlnGrehtLNnvDQ1QfBDqxfugsUe4mnrEDGmaOznv1zux-2ZTkrJePTSLX7dJq_021P21rK8eiaz5ds66H7_rnl1SXD2ZLmSABkip68JhjEMcRYQYJE1hEAo2CEkJAdmjRDUA8BRs1zGZn1lTbmKSVe2kPs0dmRuuihZ4iIL7e4shIFA:1wGiqC:WDPPf3FV2gS4ARXXCuL2Pvp1UU7SAWuJpZ2dx77cpJo","expire_date":"2026-04-25 20:09:00.944272"},
+{"session_key":"s8v9gr8pu2az660eb2m2d4q455xaxr9v","session_data":"e30:1wHOTz:FvFFRB6O-a9p2EdFRcJSyLTI-jca1PCOiJwVsHuwpM8","expire_date":"2026-04-27 16:36:51.026176"},
+{"session_key":"siqdw1gwhg71brvzjb3szp88xp2k72n6","session_data":"e30:1wH5qS:GwdTdB66pgEsG_LMcRPZ1TR-Z4GPBkRkSz6s2_JpvP8","expire_date":"2026-04-26 20:42:48.342769"},
+{"session_key":"t64k5sxeomnghy7i7sjtqe4sw2fncrn0","session_data":".eJxVy82qwjAQQOF3ydqWmcnPJC7v4u58hpJOpjRYFEwqiPjuF8HFdXs439NMee_rtDe9TbWYo2GbNESBQVywgyMqw8wLDkB24eRD0ODN4T-bs5z18rZZ5Lpfehs_qY2nfev1t-pWTtei289n_fJrbusbs6NCkAFJFQMELCmK54SwgMQZHCKBJkGJMSJ7dOgtEM_RJY2LOZgttz5l6fVe-8MckZkpOY9-tJ7AhdcfKv5ITg:1wHLUZ:4crc6F9pz8lLKjV1WA3eL8O6YwwhSo0KF0fUUB3WXnU","expire_date":"2026-04-27 13:25:15.373155"},
+{"session_key":"t8n5g4kor7onrbo4w0bspojk7123qz10","session_data":".eJxVy82qwjAQQOF3ydqWmcnPJC7v4u58hpJOpjRYFEwqiPjuF8HFdXs439NMee_rtDe9TbWYo2GbNESBQVywgyMqw8wLDkB24eRD0ODN4T-bs5z18rZZ5Lpfehs_qY2nfev1t-pWTtei289n_fJrbusbs6NCkAFJFQMELCmK54SwgMQZHCKBJkGJMSJ7dOgtEM_RJY2LOZgttz5l6fVe-8MckZnBBnAwBiSXXn_icUgT:1wGGFc:Blifr4lc-r13vku8u4IGuq2u-8JhNWPgikUNixnepe0","expire_date":"2026-04-24 13:37:20.659353"},
+{"session_key":"tbv0pl9lboimn7g1i0b0sfxu9wmzemoe","session_data":".eJxVy82qwjAQQOF3ydqWmcnPJC7v4u58hpJOpjRYFEwqiPjuF8HFdXs439NMee_rtDe9TbWYo2GbNESBQVywgyMqw8wLDkB24eRD0ODN4T-bs5z18rZZ5Lpfehs_qY2nfev1t-pWTtei289n_fJrbusbs6NCkAFJFQMELCmK54SwgMQZHCKBJkGJMSJ7dOgtEM_RJY2LOZgttz5l6fVe-8MckTk6a73zYyII_vUH4vlIHw:1wM7o1:IPZMN-rs9P5oD27ZXshKiSuJ7RQfdSWWlqOapMU-fQU","expire_date":"2026-05-10 17:49:05.967504"},
+{"session_key":"tljk9wbu5ulsgw6q366ibv0lvwedwxb1","session_data":".eJxVy82qwjAQQOF3ydqWmcnPJC7v4u58hpJOpjRYFEwqiPjuF8HFdXs439NMee_rtDe9TbWYo2GbNESBQVywgyMqw8wLDkB24eRD0ODN4T-bs5z18rZZ5Lpfehs_qY2nfev1t-pWTtei289n_fJrbusbs6NCkAFJFQMELCmK54SwgMQZHCKBJkGJMSJ7dOgtEM_RJY2LOZgttz5l6fVe-8MckZmJLEIYETkkev0BKnxISA:1wH2uo:A9F0aSvBf9q8GWKbROLSRSzzsVNYwqDVZJshpT1ev_g","expire_date":"2026-04-26 17:35:06.351063"},
+{"session_key":"u1wyigtd83yhtwv4sam17oixbpiidbo0","session_data":".eJxVy01qwzAQQOG7aB0b_YwsjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNYbLm9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObbAFRk7iJKGehmC3zWjy4CYEKIgkwuyJRLHgMKKjkg0NxEFMkczI7tb4Q9_qo_Wlml1IK1sYQx4DBef_zC7GcSzw:1wHN3f:PxU9H8ed1MVKIgXl7X8Eb0fDP40JAtxf54o2qr5RxV0","expire_date":"2026-04-27 15:05:35.439396"},
+{"session_key":"v5ip3xcka25c0pw69rqycov5s7ejobh8","session_data":"e30:1wKJc5:4RKa2WfTRai1zWl8-gUNbni9XweoGoBXGWK7ujkrag0","expire_date":"2026-05-05 18:01:17.787080"},
+{"session_key":"v5qpiabzwi6rdyrgzefc0r3a5e079vhc","session_data":"e30:1wFbhg:M5SsrRC6ZcR12JcKOqrCr2YxFkosD0sxHOzBR8RaTEc","expire_date":"2026-04-22 18:19:36.863653"},
+{"session_key":"vctvi09ldsnty6cv74b2rawc2veeckfx","session_data":".eJxVy8FqwzAMgOF38bkJkS3HVo477NZnCLKkELPQwuwMStm7j0EP2_Xn_55u5bPv69nsc63qFuc3NIIiQxaOA26lDMwFh-A9GpvFME_u8pcVlg-7_VoWuZ-33sZXauP1PHp9r3bo9a52vL3Wf37ntrvF5QmJLCnMzDkrxzyJbMUjzIRciFhRBIpGndBTICVjH4AUMKbI7uIObn1l6fWr9odbIKVIkDzQiMHPyX__ALIjS0s:1wBZC7:Sj4Q7B392SDXr9WQdVhZ-oWCehqUUWmZQjBAh1nVHek","expire_date":"2026-04-11 14:50:19.453880"},
+{"session_key":"vrv2tt8koe2rg7o9bd28r151sk1j0qgm","session_data":"e30:1wHjvv:3_j8rMnSYF-s5zEgbE2z-L3fRfTlJgUIjtVPJh9Ctcs","expire_date":"2026-04-28 15:31:07.772513"},
+{"session_key":"vxunvxlxucp4ytvytd8rxo8qlhyf7z70","session_data":".eJxVy8FqwzAMgOF38bkJli3HVo477NZnCLKkkLDQwuwMStm7j0EP2_Xn_55u4bNvy9nsc9nVzS6saARVhiKcBlxrHZgrDjEENDZLcfLu8pdVlg-7_VoWuZ-33sZXauP1PPr-vtuh17va8fZa__mN2-ZmVzwSWVaYmEtRTsWLrDUgTIRciVhRBKom9RgokpJxiEAKmHJid3EHt76w9P1r7w83Q87ZA5SSRgIfffz-AbHNSz8:1wG9y2:Wzu63TW0YsFGnGKKJUrffdL1nkjjmZYbE9HjAphC0vI","expire_date":"2026-04-24 06:54:46.131075"},
+{"session_key":"vy25q3e88p94univm3qk13ijbpqimr3s","session_data":".eJxVy01qwzAQQOG7aB0bSR79jJddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUBlhLGYgKDJP3oKQapmjN6T8rxFe9_Vlivh-33sZ3auPl2Hs9V93lchfdv97rh9-obWY22QKiJnGRKGehkC3zWjy4iEAFkQSYXZEgFjxOKKjkJ4fiIKRA5mR2an0h7vVR-9PMLqUYbI7ZjzFE79PPL7JFS1A:1wE33q:b7C3_pBn7QF6NYeDDgTCJkxB_tMXFA1DiW4F_rWJkAY","expire_date":"2026-04-18 11:08:02.966703"},
+{"session_key":"w5u8p4esaekoxvv3371wh520n340un2n","session_data":"e30:1w7gCV:HCrK5H4ZN50hZMe7SmJPfH8Rxl4Sc2c1sb7MaKOIaLs","expire_date":"2026-03-31 21:30:39.610802"},
+{"session_key":"wm24ls6kkzhpj2g6huzv4i4gt24ya0b5","session_data":".eJxVy8FqwzAMgOF30bkJsSzLSo477NZnCLLsELPQwuwMStm7j0EP2_Xn_56w6tn39Wzlc60ZFhBffCpMQw6xDGSIw5zjPASyhCYTCwtc_rKk9lFuv1bN7uett_GV2ng9j17fazny9Z7L8fZa__ld2w4LEBIyuY05YdaihJN6ZK8ucOCJLYuzDW1zMaRQJEWjOW0hZlFKlOACh7a-qvX6VfsDFhejeBcd0SgRXZi_fwDMPUo-:1wLdWb:7nP6hJEaXpJAzpkAV0k0pTUVaxXnPcy-lP2qnySSyio","expire_date":"2026-05-09 09:29:05.065369"},
+{"session_key":"ws7fw7s76lk2viarx8tjiahsimq1tu9l","session_data":".eJxVy8GKwjAQgOF3ydmWmWSSSTzuYW8-Q0knUxosCiYVRHz3RfCwXn_-72mmvPd12pveplrM0bBLGqLAIBTcQNaWYeYFB7Bu4eRD0ODN4T-bs5z18rZZ5Lpfehs_qY2nfev1t-pWTtei289n_fJrbusbM9liIQNaVQwQsKQonhPCAhJnIEQLmgQlxojskdA7sDxHShoXczBbbn3K0uu99oc5IjNbICAYiaJ3_PoDKnVISQ:1wGxxI:zM4Fra3V-ZgbUrTnyNcDGob8ogaowzqr0OqiTOYxCoM","expire_date":"2026-04-26 12:17:20.588511"},
+{"session_key":"wvpr0jrsr8tj7n9jn7xmeh55q2bxq404","session_data":".eJxVy01qwzAQQOG7aB0b_YwsjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNYbLm9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObbAFRk7iJKGehmC3zWjy4CYEKIgkwuyJRLHgMKKjkg0NxEFMkczI7tb4Q9_qo_Wlml1K2IVpMI3qHMf78ArIgS1A:1wKS9S:H4RBr4eIUe1Sil_owtc4FEAG2vcUC0AjFSCPU8vD10I","expire_date":"2026-05-06 03:08:18.041223"},
+{"session_key":"wvrrvo363cahkz50o473p4bkld7x81x5","session_data":".eJxVy01qw0AMQOG7aB2b-dHYIy-76C5nMBpJxkNNAp1xIYTevRSyaLeP9z1h5bPv69nsc60KC4QNjXyRIQunAbdSBuaCQwwBjc1SnBxc_rLC8mG3X8si9_PW2_hKbbyeR6_v1Q693tWOt9f6z-_cdlggOySyWf3EnLNyyk5kKwH9RMiFiBVFfNGkDgNFUjIO0ZN6THNiuMDBra8svX7V_oDFzzNmnyO5kUJy9P0DZzRLGw:1w6xL4:7eIhPdR_Txelp_uH4ORC7p3GRT7XW_WDY6BYbg28Kxw","expire_date":"2026-03-29 21:36:30.974721"},
+{"session_key":"x1aqz25cbv5ez1h2fi73y0uuayrnsx9n","session_data":".eJxVy01qwzAQQOG7aB0b_YwsjZddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUB1hLGYgKDMF7UFKNYbLm9J8V4qve_iwx349bb-M7tfFy7L2eq-5yuYvuX-_1w2_UNjObbAFRk7iJKGehmC3zWjy4CYEKIgkwuyJRLHgMKKjkg0NxEFMkczI7tb4Q9_qo_Wlml1K2OYTgR0gx-vDzC7HzS0Y:1wKehQ:V2sOckRcZvcQojJOEgfzx_vxr3wXlslfsXepS-mDULA","expire_date":"2026-05-06 16:32:12.560949"},
+{"session_key":"xezpwk6mofl2k40z2wywr4nri5x6epv5","session_data":"e30:1wEtoe:8_y4yn98EyE1ek6X6Ifx4T-3JvRl_yPjGNrJkuj8n7U","expire_date":"2026-04-20 19:27:52.919805"},
+{"session_key":"xny13q4wjthrvi8hfzz07j1as4hwor7w","session_data":"e30:1wFnT7:-3kED8jt1Q9Hbud5MapQ3h3u_Yucl-KDYzMT07CpQAA","expire_date":"2026-04-23 06:53:21.708906"},
+{"session_key":"xpvv32js0javyvnllamg4dstfjnqskld","session_data":".eJxVy8tqwzAQQNF_0To2eowe42UX3eUbzGhmjEVNApVcCKH_XgpZtNvLPU-z0jn29ez6uTYxi_EbKLrKU2GKE2y1TkQVpuA9KKnGkKy5_GWV-ENvv5aY7-dt9PmV-nw9j9Hemx5yvYseb6_1n9-p72YxxQKiZnGJqBShWCzzVj24hEAVkQSYXZUoFjwGFFTywaE4iDmSuZiD-liJR_tq42EWl3Mq2SK4OZRcUvj-AbJ4S1c:1wFZIj:ofMmvEqRjeDeYpEKPEWcsJJ_cSC1wpwbyNVJqYVeEpQ","expire_date":"2026-04-22 15:45:41.408610"},
+{"session_key":"xrf26hsk343h77ys36nzvvl5m58skpmd","session_data":".eJxVy0FqwzAQQNG7zDo20mg0kr3sIrucwYxGMhYxCVRyIITevRSyaLaf_16wyNG35Wjle6kZZoiuuFSYhuxDGUgRhymHafCkCTUajhzh9J8l0Wu5_VlRvR-33sZ3auPl2Hs917Lnyz2X_eu9fvhN2gYzEBIy2ZU5YZYihEYcshPr2bNhzdHqirra4JMvMQWlKa0-5CiUKMEJdml9Ee31UfsTZhtCtCb6yYxoMDj6-QXMDkoz:1wKlGo:n3svyhRAG2g0FdZuWBZfXhpFeR5ny66qHuxCIhjlWT0","expire_date":"2026-05-06 23:33:10.251217"},
+{"session_key":"xxtr2vx9nvqxc8ecf25nuvw2ofzw126f","session_data":"e30:1wFaEO:Kr-f3ujYcywMWE8XN5zqMfRmM5FCWkVlNVzgQw0BpwE","expire_date":"2026-04-22 16:45:16.955435"},
+{"session_key":"y1lgoevwvr16vp9y7zigtxisxf7lpnwp","session_data":"e30:1wHgrL:9Yox9O7L7K72UKYLCLP-JHc7cup2JRira9Uebnjzgiw","expire_date":"2026-04-28 12:14:11.980969"},
+{"session_key":"y3tw1dqhoxf8hrxyyylcrgnxapjhght0","session_data":"e30:1wHH0n:gWg1DeW-6TArYRKjMArzKk0Skm3MRsnW4eYrvkJCCQY","expire_date":"2026-04-27 08:38:13.039790"},
+{"session_key":"y5fgmkjjg1pwbvba9ckdjv9zn00tem9f","session_data":".eJxVyz1qxDAQQOG7TG0bWRr92GWKdHsGMRqNsYizBksKhGXvHgJbJO3jfQ-I1Nsee5UrlgwrBCMmicMxWy8jstbjkv0yWuSkOSgXXIDhL0vEH3L_tcR89nur0yvV6daPVt6LHPl2ZjneXus_v1PdYQXUqB3Om3NJZxJCrchoZ2i2zjrlOIeZN83b7G2yEpJnXNJmfQ6ECRMMcFBtkbiVr9K-YZ29D2jNonBavA3KD8B0tfh55rIVybC2q8vzBzPfUfs:1wMD6P:Xd8Et2oSnpF562KdlACtGwmURIeOhurwuhvr3hnOI6M","expire_date":"2026-05-10 23:28:25.068065"},
+{"session_key":"yb3j2vdoizzex75rsec4169wc4jc210q","session_data":"e30:1wHlal:vV0cgVFvRo91wdOE0hL1eIg1yDdG99xLhGbDD2pI_Jc","expire_date":"2026-04-28 17:17:23.954996"},
+{"session_key":"yez0urer1bgi1fzz9911ak9b4yi69y9s","session_data":".eJxVy0GKwzAMQNG7eN2E2JFiK8tZdNczBFlSiGloYewUSpm7DwNdTLef_15u4aNty1HteynqZhdWMPJZuiSMHaw5d8wZujEEMDbDcRrc6T_LLFe7_VkWuR-3Vvt3qv3l2Fs5F9v1clfbv97rh9-4bm52aQAii-on5pSUMQ0iaw7gJwLORKwg4rOiDhBoJCXjMHpSDxiR3cntXNvC0sqjtKebfYxIAQNSH8H7CX9-AbJFS04:1wBbHn:LOZ5zFs9qdTMg23QbE6XcCvt1uPjf9hG0_Vg-9nsKYI","expire_date":"2026-04-11 17:04:19.759644"},
+{"session_key":"yhmy6jwc875ly3pw8cbgy2i61uyzlwfg","session_data":".eJxVy8FqwzAMgOF38bkJtiw7Vo477NZnCLKkkLDQwuwMStm7j0EP2_Xn_55u4bNvy9nsc9nVzQ5WNApVhiKcBlxrHZgrDhEAjc1SzN5d_rLK8mG3X8si9_PW2_hKbbyeR9_fdzv0elc73l7rP79x29zsikcimzRk5lKUU_EiawUMmZArESuKhKpJPQJFUjKGGEgDpimxu7iDW19Y-v6194ebwzTlDDEDjDki-PL9A7HbS0M:1wEWxi:z8y0NC-_xeOJ_rKxn6Ro1uCulHqrS2ejdie9frEqoVI","expire_date":"2026-04-19 19:03:42.786422"},
+{"session_key":"yqffxt50jevwy4qim9adbaptoz30eh9n","session_data":".eJxVy0GKwzAMQNG7eN2EWJFjK8tZdNczBFlSiGloYewUSpm7DwNdTLef_15u4aNty1HteynqZgcrGvksXRIOHa45d8wZuxEAjc3COA3u9J9llqvd_iyL3I9bq_071f5y7K2ci-16uavtX-_1w29cNze7NCCRRfUTc0rKIQ0iawb0EyFnIlYU8VmDDgg0kpIxjJ7UY4iB3cntXNvC0sqjtKebfYyYYkgJ-jgRAP78ArK0S1k:1w7CIM:qw8UtTBZRf5AeXxDDS-YqEXQyv_25rntuFqKFMxMrqU","expire_date":"2026-03-30 13:34:42.805540"},
+{"session_key":"yu3lo5w467u9hxw1zyi9iqd7ubwt50mn","session_data":".eJxVy01qwzAQQOG7aB0bSR79jJddZJczmNHMGIuYBCo5EELvXgpZNNvH-15moaNvy9H0e6liZuNXUHSFh8wUBlhLGYgKDJP3oKQapmjN6T8rxFe9_Vlivh-33sZ3auPl2Hs9V93lchfdv97rh9-obWY22QKiJnGRKGehkC3zWjy4iEAFkQSYXZEgFjxOKKjkJ4fiIKRA5mR2an0h7vVR-9PMLqUIziYXxpBiwJ9fZuBLGQ:1wDdZj:3T5egqjuuDiszDOEjeKerGy-mZ2r0TzWiG6zhdddsc8","expire_date":"2026-04-17 07:55:15.591248"},
+{"session_key":"z3dnhwucewdb3vnzi5jvvge17syx01eq","session_data":"e30:1wFb91:oRH6dNk6Ot6WV34mz9ZlNxADifxkeeb1h-Pvg4yOLIk","expire_date":"2026-04-22 17:43:47.558673"},
+{"session_key":"z7iri6h5xeo5q6s7qumc6z5jkvbuiukj","session_data":".eJxVy8FqwzAMgOF38bkJkmJbco877NZnCI6sELPQQu0MRum7j0IP2_Xn_x5uzkff5qPZfa7FnR1PyaIoDOrjNHiiMiy84gA0rZxCjBaDO_1lS9Yvu75sVr0d197Gd2rj5dh7_ay2l8ut2P7xXv_5LbfthdlTIciAZIYRIpYkGjghrKCygEcksKSoIoIc0GOYgHgRn0xWd3J7bn3O2ut37T_ujMziMSShkXwgDM9fKyNIUQ:1wM3Ek:XeplGYsnjo4OU9ak5HWUFa1dSZeB637yfAbMZPXPdvU","expire_date":"2026-05-10 12:56:22.399855"}
+]
+}
+,{"type":"table","name":"django_summernote_attachment","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"order_order","database":"bg_lmsn","data":
+[
+{"id":"20","order_number":"ORD-DDFAA61A","recipient_name":"Favour Bell-Gam","recipient_email":"favourbell@gmail.com","shipping_address":"1st okuta avenue, Benin, QWEYRTUYJHTSDEWQ","shipping_phone":"456789","subtotal":"239998.00","shipping_fee":"0.00","total_amount":"239998.00","status":"pending","is_paid":"0","created_at":"2026-05-10 19:05:16.273178","user_id":"9e52070e-7516-4433-9cfc-8244e6580ab8","order_notes":"d5f67ghopj[k]lpkojiugyfhtcv nbuivyg"},
+{"id":"22","order_number":"ORD-31DCDC59","recipient_name":"inimoney okun uya","recipient_email":"techwiszard@gmail.com","shipping_address":"Obidianso Sreet, Portharcourt, Rivers","shipping_phone":"+234 7047137084","subtotal":"121200.00","shipping_fee":"0.00","total_amount":"121200.00","status":"processing","is_paid":"1","created_at":"2026-05-10 21:18:19.447633","user_id":"739e68c0-c463-422d-b7f1-023f79566e65","order_notes":"re fdbgfbv"},
+{"id":"23","order_number":"ORD-11E47594","recipient_name":"chisom Bell-Gam","recipient_email":"chisom119@gmail.com","shipping_address":"1st okuta avenue, Port-Harcourt, Rivers","shipping_phone":"4567890","subtotal":"1200.00","shipping_fee":"0.00","total_amount":"1200.00","status":"processing","is_paid":"1","created_at":"2026-05-10 21:19:39.909205","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868","order_notes":"This ordered for my family "},
+{"id":"24","order_number":"ORD-8C8AF465","recipient_name":"chisom Bell-Gam","recipient_email":"chisom119@gmail.com","shipping_address":"1st okuta avenue, Port-Harcourt, Rivers","shipping_phone":"4567890","subtotal":"140000.00","shipping_fee":"0.00","total_amount":"140000.00","status":"processing","is_paid":"1","created_at":"2026-05-10 21:21:49.329468","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868","order_notes":"th fd u dj udgjb "},
+{"id":"32","order_number":"ORD-E3D7AF49","recipient_name":"inimoney okun uya","recipient_email":"techwiszard@gmail.com","shipping_address":"Obidianso Sreet, Portharcourt, Rivers","shipping_phone":"+234 7047137084","subtotal":"5000.00","shipping_fee":"0.00","total_amount":"5000.00","status":"processing","is_paid":"1","created_at":"2026-05-10 22:32:06.609144","user_id":"739e68c0-c463-422d-b7f1-023f79566e65","order_notes":""},
+{"id":"33","order_number":"ORD-97F5D055","recipient_name":"chisom Bell-Gam","recipient_email":"chisom119@gmail.com","shipping_address":"Plot 6 avenue GRA, Lagos, Lagos","shipping_phone":"4567890","subtotal":"5000.00","shipping_fee":"0.00","total_amount":"5000.00","status":"processing","is_paid":"1","created_at":"2026-05-10 22:45:56.750630","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868","order_notes":"gfgkjl,nmnbcyfugjb"},
+{"id":"35","order_number":"ORD-41D06F48","recipient_name":"chisom Bell-Gam","recipient_email":"chisom119@gmail.com","shipping_address":"Plot 6 avenue GRA, Lagos, Lagos","shipping_phone":"4567890","subtotal":"379996.00","shipping_fee":"0.00","total_amount":"379996.00","status":"processing","is_paid":"1","created_at":"2026-05-10 22:57:51.623314","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868","order_notes":""},
+{"id":"36","order_number":"ORD-A37CA682","recipient_name":"inimoney okun uya","recipient_email":"techwiszard@gmail.com","shipping_address":"1st okuta avenue, Port-Harcourt, Rivers","shipping_phone":"+234 7047137084","subtotal":"115000.00","shipping_fee":"0.00","total_amount":"115000.00","status":"processing","is_paid":"1","created_at":"2026-05-10 23:00:06.736233","user_id":"739e68c0-c463-422d-b7f1-023f79566e65","order_notes":"uyeghdjfbfv"}
+]
+}
+,{"type":"table","name":"order_orderitem","database":"bg_lmsn","data":
+[
+{"id":"45","product_name_snapshot":"Juice Youghurt","price_at_purchase":"100000.00","quantity":"1","order_id":"20","variant_id":"123"},
+{"id":"46","product_name_snapshot":"Juice Youghurt","price_at_purchase":"69999.00","quantity":"2","order_id":"20","variant_id":"127"},
+{"id":"48","product_name_snapshot":"Juice Youghurt","price_at_purchase":"1200.00","quantity":"1","order_id":"22","variant_id":"129"},
+{"id":"49","product_name_snapshot":"Juice Youghurt","price_at_purchase":"100000.00","quantity":"1","order_id":"22","variant_id":"123"},
+{"id":"50","product_name_snapshot":"Juice Youghurt","price_at_purchase":"10000.00","quantity":"2","order_id":"22","variant_id":"128"},
+{"id":"51","product_name_snapshot":"Juice Youghurt","price_at_purchase":"1200.00","quantity":"1","order_id":"23","variant_id":"129"},
+{"id":"52","product_name_snapshot":"Juice Youghurt","price_at_purchase":"100000.00","quantity":"1","order_id":"24","variant_id":"123"},
+{"id":"53","product_name_snapshot":"Juice Youghurt","price_at_purchase":"10000.00","quantity":"4","order_id":"24","variant_id":"128"},
+{"id":"61","product_name_snapshot":"Unknown Product","price_at_purchase":"2500.00","quantity":"2","order_id":"32","variant_id":null},
+{"id":"62","product_name_snapshot":"Unknown Product","price_at_purchase":"2500.00","quantity":"2","order_id":"33","variant_id":null},
+{"id":"66","product_name_snapshot":"Juice Youghurt","price_at_purchase":"100000.00","quantity":"1","order_id":"35","variant_id":"123"},
+{"id":"67","product_name_snapshot":"Juice Youghurt","price_at_purchase":"69999.00","quantity":"4","order_id":"35","variant_id":"127"},
+{"id":"68","product_name_snapshot":"Unknown Product","price_at_purchase":"2500.00","quantity":"2","order_id":"36","variant_id":null},
+{"id":"69","product_name_snapshot":"Juice Youghurt","price_at_purchase":"100000.00","quantity":"1","order_id":"36","variant_id":"123"},
+{"id":"70","product_name_snapshot":"Juice Youghurt","price_at_purchase":"10000.00","quantity":"1","order_id":"36","variant_id":"128"}
+]
+}
+,{"type":"table","name":"order_ordertracking","database":"bg_lmsn","data":
+[
+{"id":"20","created_at":"2026-05-10 19:05:16.299000","order_id":"20","status_message_id":"7"},
+{"id":"22","created_at":"2026-05-10 21:18:19.454662","order_id":"22","status_message_id":"7"},
+{"id":"23","created_at":"2026-05-10 21:19:39.924599","order_id":"23","status_message_id":"7"},
+{"id":"24","created_at":"2026-05-10 21:21:49.334544","order_id":"24","status_message_id":"7"},
+{"id":"32","created_at":"2026-05-10 22:32:06.615466","order_id":"32","status_message_id":"7"},
+{"id":"33","created_at":"2026-05-10 22:45:56.755856","order_id":"33","status_message_id":"7"},
+{"id":"35","created_at":"2026-05-10 22:57:51.627640","order_id":"35","status_message_id":"7"},
+{"id":"36","created_at":"2026-05-10 22:58:10.038548","order_id":"35","status_message_id":"8"},
+{"id":"37","created_at":"2026-05-10 23:00:06.741736","order_id":"36","status_message_id":"7"},
+{"id":"38","created_at":"2026-05-10 23:00:23.866753","order_id":"36","status_message_id":"8"}
+]
+}
+,{"type":"table","name":"order_trackingstatus","database":"bg_lmsn","data":
+[
+{"id":"7","message":"Processing your order...","description":""},
+{"id":"8","message":"Payment Confirmed","description":"Your payment was successfully processed. We are now preparing your items."}
+]
+}
+,{"type":"table","name":"payment_payment","database":"bg_lmsn","data":
+[
+{"id":"1","amount":"121200.00","payment_method":"card","status":"successful","transaction_reference":"vuaiibm6mi","gateway_response":"{\"status\": true, \"message\": \"Verification successful\", \"data\": {\"id\": 6133014218, \"domain\": \"test\", \"status\": \"success\", \"reference\": \"vuaiibm6mi\", \"receipt_number\": null, \"amount\": 12120000, \"message\": null, \"gateway_response\": \"Successful\", \"response_code\": \"00\", \"paid_at\": \"2026-05-10T21:18:37.000Z\", \"created_at\": \"2026-05-10T21:18:25.000Z\", \"channel\": \"card\", \"currency\": \"NGN\", \"ip_address\": \"197.210.53.19\", \"metadata\": {\"order_id\": \"22\"}, \"log\": {\"start_time\": 1778447908, \"time_spent\": 6, \"attempts\": 1, \"errors\": 0, \"success\": true, \"mobile\": false, \"input\": [], \"history\": [{\"type\": \"action\", \"message\": \"Attempted to pay with card\", \"time\": 5}, {\"type\": \"success\", \"message\": \"Successfully paid with card\", \"time\": 6}]}, \"fees\": 191800, \"fees_split\": null, \"authorization\": {\"authorization_code\": \"AUTH_pezbiyrsd0\", \"bin\": \"408408\", \"last4\": \"4081\", \"exp_month\": \"12\", \"exp_year\": \"2030\", \"channel\": \"card\", \"card_type\": \"visa \", \"bank\": \"TEST BANK\", \"country_code\": \"NG\", \"brand\": \"visa\", \"reusable\": true, \"signature\": \"SIG_DN9MZYcZWYzmAENnpMhg\", \"account_name\": null, \"receiver_bank_account_number\": null, \"receiver_bank\": null}, \"customer\": {\"id\": 363551444, \"first_name\": null, \"last_name\": null, \"email\": \"techwiszard@gmail.com\", \"customer_code\": \"CUS_h441lgg1fgg9v3f\", \"phone\": null, \"metadata\": null, \"risk_action\": \"default\", \"international_format_phone\": null}, \"plan\": null, \"split\": {}, \"order_id\": null, \"paidAt\": \"2026-05-10T21:18:37.000Z\", \"createdAt\": \"2026-05-10T21:18:25.000Z\", \"requested_amount\": 12120000, \"pos_transaction_data\": null, \"source\": null, \"fees_breakdown\": null, \"connect\": null, \"transaction_date\": \"2026-05-10T21:18:25.000Z\", \"plan_object\": {}, \"subaccount\": {}}}","created_at":"2026-05-10 21:18:37.568423","updated_at":"2026-05-10 21:18:37.568538","order_id":"22","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"2","amount":"1200.00","payment_method":"card","status":"successful","transaction_reference":"9sgsiq04qr","gateway_response":"{\"status\": true, \"message\": \"Verification successful\", \"data\": {\"id\": 6133016682, \"domain\": \"test\", \"status\": \"success\", \"reference\": \"9sgsiq04qr\", \"receipt_number\": null, \"amount\": 120000, \"message\": null, \"gateway_response\": \"Successful\", \"response_code\": \"00\", \"paid_at\": \"2026-05-10T21:19:58.000Z\", \"created_at\": \"2026-05-10T21:19:46.000Z\", \"channel\": \"card\", \"currency\": \"NGN\", \"ip_address\": \"197.210.53.19\", \"metadata\": {\"order_id\": \"23\"}, \"log\": {\"start_time\": 1778447990, \"time_spent\": 6, \"attempts\": 1, \"errors\": 0, \"success\": true, \"mobile\": false, \"input\": [], \"history\": [{\"type\": \"action\", \"message\": \"Attempted to pay with card\", \"time\": 4}, {\"type\": \"success\", \"message\": \"Successfully paid with card\", \"time\": 6}]}, \"fees\": 1800, \"fees_split\": null, \"authorization\": {\"authorization_code\": \"AUTH_vt2o28pbk6\", \"bin\": \"408408\", \"last4\": \"4081\", \"exp_month\": \"12\", \"exp_year\": \"2030\", \"channel\": \"card\", \"card_type\": \"visa \", \"bank\": \"TEST BANK\", \"country_code\": \"NG\", \"brand\": \"visa\", \"reusable\": true, \"signature\": \"SIG_DN9MZYcZWYzmAENnpMhg\", \"account_name\": null, \"receiver_bank_account_number\": null, \"receiver_bank\": null}, \"customer\": {\"id\": 363555857, \"first_name\": null, \"last_name\": null, \"email\": \"chisom119@gmail.com\", \"customer_code\": \"CUS_k510k9dabzqiewo\", \"phone\": null, \"metadata\": null, \"risk_action\": \"default\", \"international_format_phone\": null}, \"plan\": null, \"split\": {}, \"order_id\": null, \"paidAt\": \"2026-05-10T21:19:58.000Z\", \"createdAt\": \"2026-05-10T21:19:46.000Z\", \"requested_amount\": 120000, \"pos_transaction_data\": null, \"source\": null, \"fees_breakdown\": null, \"connect\": null, \"transaction_date\": \"2026-05-10T21:19:46.000Z\", \"plan_object\": {}, \"subaccount\": {}}}","created_at":"2026-05-10 21:20:00.504438","updated_at":"2026-05-10 21:20:00.504481","order_id":"23","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"3","amount":"140000.00","payment_method":"card","status":"successful","transaction_reference":"53pcsxjfhc","gateway_response":"{\"status\": true, \"message\": \"Verification successful\", \"data\": {\"id\": 6133020733, \"domain\": \"test\", \"status\": \"success\", \"reference\": \"53pcsxjfhc\", \"receipt_number\": null, \"amount\": 14000000, \"message\": \"test-3ds\", \"gateway_response\": \"[Test] Approved\", \"response_code\": \"05\", \"paid_at\": \"2026-05-10T21:22:14.000Z\", \"created_at\": \"2026-05-10T21:21:56.000Z\", \"channel\": \"card\", \"currency\": \"NGN\", \"ip_address\": \"197.210.53.19\", \"metadata\": {\"order_id\": \"24\"}, \"log\": {\"start_time\": 1778448115, \"time_spent\": 16, \"attempts\": 2, \"errors\": 1, \"success\": true, \"mobile\": false, \"input\": [], \"history\": [{\"type\": \"action\", \"message\": \"Attempted to pay with card\", \"time\": 6}, {\"type\": \"error\", \"message\": \"Error: Declined\", \"time\": 7}, {\"type\": \"action\", \"message\": \"Attempted to pay with card\", \"time\": 12}, {\"type\": \"auth\", \"message\": \"Authentication Required: 3DS\", \"time\": 13}, {\"type\": \"action\", \"message\": \"Third-party authentication window opened\", \"time\": 15}, {\"type\": \"success\", \"message\": \"Successfully paid with card\", \"time\": 16}, {\"type\": \"action\", \"message\": \"Third-party authentication window closed\", \"time\": 16}]}, \"fees\": 200000, \"fees_split\": null, \"authorization\": {\"authorization_code\": \"AUTH_k33qtrwbet\", \"bin\": \"408408\", \"last4\": \"0409\", \"exp_month\": \"01\", \"exp_year\": \"2030\", \"channel\": \"card\", \"card_type\": \"visa \", \"bank\": \"TEST BANK\", \"country_code\": \"NG\", \"brand\": \"visa\", \"reusable\": true, \"signature\": \"SIG_uOxScYiXfeBq3J6Po9cZ\", \"account_name\": null, \"receiver_bank_account_number\": null, \"receiver_bank\": null}, \"customer\": {\"id\": 363555857, \"first_name\": null, \"last_name\": null, \"email\": \"chisom119@gmail.com\", \"customer_code\": \"CUS_k510k9dabzqiewo\", \"phone\": null, \"metadata\": null, \"risk_action\": \"default\", \"international_format_phone\": null}, \"plan\": null, \"split\": {}, \"order_id\": null, \"paidAt\": \"2026-05-10T21:22:14.000Z\", \"createdAt\": \"2026-05-10T21:21:56.000Z\", \"requested_amount\": 14000000, \"pos_transaction_data\": null, \"source\": null, \"fees_breakdown\": null, \"connect\": null, \"transaction_date\": \"2026-05-10T21:21:56.000Z\", \"plan_object\": {}, \"subaccount\": {}}}","created_at":"2026-05-10 21:22:16.366975","updated_at":"2026-05-10 21:22:16.367097","order_id":"24","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"4","amount":"5000.00","payment_method":"bank","status":"successful","transaction_reference":"ai3sr78r2e","gateway_response":"{\"status\": true, \"message\": \"Verification successful\", \"data\": {\"id\": 6133131058, \"domain\": \"test\", \"status\": \"success\", \"reference\": \"ai3sr78r2e\", \"receipt_number\": null, \"amount\": 500000, \"message\": \"madePayment\", \"gateway_response\": \"Approved\", \"response_code\": null, \"paid_at\": \"2026-05-10T22:33:55.000Z\", \"created_at\": \"2026-05-10T22:32:13.000Z\", \"channel\": \"bank\", \"currency\": \"NGN\", \"ip_address\": \"197.210.53.19\", \"metadata\": {\"order_id\": \"32\"}, \"log\": {\"start_time\": 1778452333, \"time_spent\": 98, \"attempts\": 1, \"errors\": 0, \"success\": true, \"mobile\": false, \"input\": [], \"history\": [{\"type\": \"action\", \"message\": \"Set payment method to: bank\", \"time\": 6}, {\"type\": \"input\", \"message\": \"Filled this field: account number\", \"time\": 47}, {\"type\": \"action\", \"message\": \"Attempted to pay with bank account\", \"time\": 47}, {\"type\": \"auth\", \"message\": \"Authentication Required: birthday\", \"time\": 48}, {\"type\": \"auth\", \"message\": \"Authentication Required: registration_token\", \"time\": 82}, {\"type\": \"auth\", \"message\": \"Authentication Required: payment_token\", \"time\": 92}, {\"type\": \"success\", \"message\": \"Successfully paid with bank account\", \"time\": 98}]}, \"fees\": 17500, \"fees_split\": null, \"authorization\": {\"authorization_code\": \"AUTH_3wxofg99ma\", \"bin\": \"000XXX\", \"last4\": \"X000\", \"exp_month\": \"12\", \"exp_year\": \"9999\", \"channel\": \"bank\", \"card_type\": \"\", \"bank\": \"Zenith Bank\", \"country_code\": \"NG\", \"brand\": \"Zenith Emandate\", \"reusable\": false, \"signature\": null, \"account_name\": null, \"receiver_bank_account_number\": null, \"receiver_bank\": null}, \"customer\": {\"id\": 363551444, \"first_name\": null, \"last_name\": null, \"email\": \"techwiszard@gmail.com\", \"customer_code\": \"CUS_h441lgg1fgg9v3f\", \"phone\": null, \"metadata\": null, \"risk_action\": \"default\", \"international_format_phone\": null}, \"plan\": null, \"split\": {}, \"order_id\": null, \"paidAt\": \"2026-05-10T22:33:55.000Z\", \"createdAt\": \"2026-05-10T22:32:13.000Z\", \"requested_amount\": 500000, \"pos_transaction_data\": null, \"source\": null, \"fees_breakdown\": null, \"connect\": null, \"transaction_date\": \"2026-05-10T22:32:13.000Z\", \"plan_object\": {}, \"subaccount\": {}}}","created_at":"2026-05-10 22:33:54.733751","updated_at":"2026-05-10 22:33:54.733864","order_id":"32","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"5","amount":"5000.00","payment_method":"bank_transfer","status":"successful","transaction_reference":"86vpvovonu","gateway_response":"{\"status\": true, \"message\": \"Verification successful\", \"data\": {\"id\": 6133146333, \"domain\": \"test\", \"status\": \"success\", \"reference\": \"86vpvovonu\", \"receipt_number\": null, \"amount\": 500000, \"message\": null, \"gateway_response\": \"Approved\", \"response_code\": null, \"paid_at\": \"2026-05-10T22:46:46.000Z\", \"created_at\": \"2026-05-10T22:46:03.000Z\", \"channel\": \"bank_transfer\", \"currency\": \"NGN\", \"ip_address\": \"197.210.53.19\", \"metadata\": {\"order_id\": \"33\"}, \"log\": {\"start_time\": 1778453164, \"time_spent\": 39, \"attempts\": 0, \"errors\": 0, \"success\": true, \"mobile\": false, \"input\": [], \"history\": [{\"type\": \"action\", \"message\": \"Set payment method to: ussd\", \"time\": 5}, {\"type\": \"action\", \"message\": \"Set payment method to: bank\", \"time\": 33}, {\"type\": \"action\", \"message\": \"Set payment method to: bank_transfer\", \"time\": 34}, {\"type\": \"success\", \"message\": \"Successfully paid with bank_transfer\", \"time\": 39}]}, \"fees\": 17500, \"fees_split\": null, \"authorization\": {\"authorization_code\": \"AUTH_5zmmvpdsn9\", \"bin\": \"123XXX\", \"last4\": \"X890\", \"exp_month\": \"05\", \"exp_year\": \"2026\", \"channel\": \"bank_transfer\", \"card_type\": \"transfer\", \"bank\": null, \"country_code\": \"NG\", \"brand\": \"Managed Account\", \"reusable\": false, \"signature\": null, \"account_name\": null, \"sender_bank\": null, \"sender_country\": \"NG\", \"sender_bank_account_number\": \"XXXXXXX890\", \"sender_name\": \"TEST PAYER\", \"narration\": \"Test transaction\", \"receiver_bank_account_number\": null, \"receiver_bank\": null}, \"customer\": {\"id\": 363555857, \"first_name\": null, \"last_name\": null, \"email\": \"chisom119@gmail.com\", \"customer_code\": \"CUS_k510k9dabzqiewo\", \"phone\": null, \"metadata\": null, \"risk_action\": \"default\", \"international_format_phone\": null}, \"plan\": null, \"split\": {}, \"order_id\": null, \"paidAt\": \"2026-05-10T22:46:46.000Z\", \"createdAt\": \"2026-05-10T22:46:03.000Z\", \"requested_amount\": 500000, \"pos_transaction_data\": null, \"source\": null, \"fees_breakdown\": null, \"connect\": null, \"transaction_date\": \"2026-05-10T22:46:03.000Z\", \"plan_object\": {}, \"subaccount\": {}}}","created_at":"2026-05-10 22:47:04.626797","updated_at":"2026-05-10 22:47:04.626842","order_id":"33","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"6","amount":"379996.00","payment_method":"card","status":"successful","transaction_reference":"vdd96fmm9d","gateway_response":"{\"status\": true, \"message\": \"Verification successful\", \"data\": {\"id\": 6133158592, \"domain\": \"test\", \"status\": \"success\", \"reference\": \"vdd96fmm9d\", \"receipt_number\": null, \"amount\": 37999600, \"message\": null, \"gateway_response\": \"Successful\", \"response_code\": \"00\", \"paid_at\": \"2026-05-10T22:58:09.000Z\", \"created_at\": \"2026-05-10T22:57:58.000Z\", \"channel\": \"card\", \"currency\": \"NGN\", \"ip_address\": \"197.210.53.19\", \"metadata\": {\"order_id\": \"35\"}, \"log\": {\"start_time\": 1778453878, \"time_spent\": 8, \"attempts\": 1, \"errors\": 0, \"success\": true, \"mobile\": false, \"input\": [], \"history\": [{\"type\": \"action\", \"message\": \"Set payment method to: card\", \"time\": 4}, {\"type\": \"action\", \"message\": \"Attempted to pay with card\", \"time\": 7}, {\"type\": \"success\", \"message\": \"Successfully paid with card\", \"time\": 8}]}, \"fees\": 200000, \"fees_split\": null, \"authorization\": {\"authorization_code\": \"AUTH_prkyme5lw6\", \"bin\": \"408408\", \"last4\": \"4081\", \"exp_month\": \"12\", \"exp_year\": \"2030\", \"channel\": \"card\", \"card_type\": \"visa \", \"bank\": \"TEST BANK\", \"country_code\": \"NG\", \"brand\": \"visa\", \"reusable\": true, \"signature\": \"SIG_DN9MZYcZWYzmAENnpMhg\", \"account_name\": null, \"receiver_bank_account_number\": null, \"receiver_bank\": null}, \"customer\": {\"id\": 363555857, \"first_name\": null, \"last_name\": null, \"email\": \"chisom119@gmail.com\", \"customer_code\": \"CUS_k510k9dabzqiewo\", \"phone\": null, \"metadata\": null, \"risk_action\": \"default\", \"international_format_phone\": null}, \"plan\": null, \"split\": {}, \"order_id\": null, \"paidAt\": \"2026-05-10T22:58:09.000Z\", \"createdAt\": \"2026-05-10T22:57:58.000Z\", \"requested_amount\": 37999600, \"pos_transaction_data\": null, \"source\": null, \"fees_breakdown\": null, \"connect\": null, \"transaction_date\": \"2026-05-10T22:57:58.000Z\", \"plan_object\": {}, \"subaccount\": {}}}","created_at":"2026-05-10 22:58:10.024511","updated_at":"2026-05-10 22:58:10.024556","order_id":"35","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"7","amount":"115000.00","payment_method":"card","status":"successful","transaction_reference":"yzideatuj9","gateway_response":"{\"status\": true, \"message\": \"Verification successful\", \"data\": {\"id\": 6133160808, \"domain\": \"test\", \"status\": \"success\", \"reference\": \"yzideatuj9\", \"receipt_number\": null, \"amount\": 11500000, \"message\": null, \"gateway_response\": \"Successful\", \"response_code\": \"00\", \"paid_at\": \"2026-05-10T23:00:24.000Z\", \"created_at\": \"2026-05-10T23:00:13.000Z\", \"channel\": \"card\", \"currency\": \"NGN\", \"ip_address\": \"197.210.53.19\", \"metadata\": {\"order_id\": \"36\"}, \"log\": {\"start_time\": 1778454014, \"time_spent\": 6, \"attempts\": 1, \"errors\": 0, \"success\": true, \"mobile\": false, \"input\": [], \"history\": [{\"type\": \"action\", \"message\": \"Set payment method to: card\", \"time\": 3}, {\"type\": \"action\", \"message\": \"Attempted to pay with card\", \"time\": 5}, {\"type\": \"success\", \"message\": \"Successfully paid with card\", \"time\": 6}]}, \"fees\": 182500, \"fees_split\": null, \"authorization\": {\"authorization_code\": \"AUTH_om9fsgxwfx\", \"bin\": \"408408\", \"last4\": \"4081\", \"exp_month\": \"12\", \"exp_year\": \"2030\", \"channel\": \"card\", \"card_type\": \"visa \", \"bank\": \"TEST BANK\", \"country_code\": \"NG\", \"brand\": \"visa\", \"reusable\": true, \"signature\": \"SIG_DN9MZYcZWYzmAENnpMhg\", \"account_name\": null, \"receiver_bank_account_number\": null, \"receiver_bank\": null}, \"customer\": {\"id\": 363551444, \"first_name\": null, \"last_name\": null, \"email\": \"techwiszard@gmail.com\", \"customer_code\": \"CUS_h441lgg1fgg9v3f\", \"phone\": null, \"metadata\": null, \"risk_action\": \"default\", \"international_format_phone\": null}, \"plan\": null, \"split\": {}, \"order_id\": null, \"paidAt\": \"2026-05-10T23:00:24.000Z\", \"createdAt\": \"2026-05-10T23:00:13.000Z\", \"requested_amount\": 11500000, \"pos_transaction_data\": null, \"source\": null, \"fees_breakdown\": null, \"connect\": null, \"transaction_date\": \"2026-05-10T23:00:13.000Z\", \"plan_object\": {}, \"subaccount\": {}}}","created_at":"2026-05-10 23:00:23.858899","updated_at":"2026-05-10 23:00:23.858940","order_id":"36","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"}
+]
+}
+,{"type":"table","name":"payment_paymenthistory","database":"bg_lmsn","data":
+[
+{"id":"1","purchase_id":"6f3920b3-42d9-42be-9642-118fd5561f9c","product":"Payment for Order ORD-31DCDC59","purchase_status":"successful","created_at":"2026-05-10 21:18:37.590215","payment_id":"1","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"2","purchase_id":"bacadcc5-5fbe-4f7a-a527-1f79d3ceb9ee","product":"Payment for Order ORD-11E47594","purchase_status":"successful","created_at":"2026-05-10 21:20:00.515110","payment_id":"2","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"3","purchase_id":"88001953-4167-4d73-93c2-5b125dca2a0c","product":"Payment for Order ORD-8C8AF465","purchase_status":"successful","created_at":"2026-05-10 21:22:16.385377","payment_id":"3","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"4","purchase_id":"a2cd0bab-6bdd-48b4-bc64-4f8dd68e90f2","product":"Payment for Order ORD-E3D7AF49","purchase_status":"successful","created_at":"2026-05-10 22:33:54.752835","payment_id":"4","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"},
+{"id":"5","purchase_id":"906edc37-d2f8-487e-b54e-f73a02932324","product":"Payment for Order ORD-97F5D055","purchase_status":"successful","created_at":"2026-05-10 22:47:04.634294","payment_id":"5","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"6","purchase_id":"990d9fe3-bf8d-44d3-8465-0c995ae94561","product":"Payment for Order ORD-41D06F48","purchase_status":"successful","created_at":"2026-05-10 22:58:10.040195","payment_id":"6","user_id":"83e3be64-d57e-4c22-9d79-54cb2c806868"},
+{"id":"7","purchase_id":"2fa60ad2-8a37-499e-ad65-1bbb576831b4","product":"Payment for Order ORD-A37CA682","purchase_status":"successful","created_at":"2026-05-10 23:00:23.868668","payment_id":"7","user_id":"739e68c0-c463-422d-b7f1-023f79566e65"}
+]
+}
+,{"type":"table","name":"payment_refund","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"product_brand","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"product_color","database":"bg_lmsn","data":
+[
+{"id":"1","name":"Black","hex_code":"#0000"},
+{"id":"2","name":"Red","hex_code":"#85955"},
+{"id":"3","name":"purple","hex_code":"#87980"},
+{"id":"4","name":"green","hex_code":"#67678"}
+]
+}
+,{"type":"table","name":"product_product","database":"bg_lmsn","data":
+[
+{"id":"7","name":"Bread Sardine","slug":"bread-sardine","uom":"pcs","short_description":"Bread Sardine","description":"Bread Sardine To ensure your script works perfectly for both simple and variable products while correctly displaying the Price Override (and hiding\/showing the Old Price based on whether an override is active), use the code below.\r\n\r\nI have updated the variants array to correctly map your model structure (no discount\/old price in Variant) and fixed the logic to update the UI.","warranty_text":null,"cost_price":"1000.00","selling_price":"2500.00","old_price":null,"discount":"0","product_type":"simple","is_active":"1","is_featured":"1","is_locked":"0","is_sales":"0","sale_start":null,"sale_end":null,"tags":"hghsf, bfudjf, gfufbjjg","meta_title":"","meta_description":"","meta_keywords":"","created_at":"2026-05-03 14:40:57.845882","updated_at":"2026-05-08 09:40:18.559852","brand_id":null,"is_primary_id":"201","is_secondary_id":"213","category_id":"1","supplier_id":null},
+{"id":"14","name":"Juice Youghurt","slug":"harmony","uom":"pcs","short_description":"Juice Youghurt","description":"To ensure your script works perfectly for both simple and variable products while correctly displaying the Price Override (and hiding\/showing the Old Price based on whether an override is active), use the code below.\r\n\r\nI have updated the variants array to correctly map your model structure (no discount\/old price in Variant) and fixed the logic to update the UI.","warranty_text":null,"cost_price":"100000.00","selling_price":"100000.00","old_price":"125000.00","discount":"20","product_type":"variable","is_active":"1","is_featured":"1","is_locked":"0","is_sales":"1","sale_start":"2026-05-27 00:00:00.000000","sale_end":"2026-06-26 00:00:00.000000","tags":"Bag, Shoe, T-Shirt, Phones","meta_title":"","meta_description":"","meta_keywords":"","created_at":"2026-05-06 15:28:53.503087","updated_at":"2026-05-08 09:53:57.252395","brand_id":null,"is_primary_id":"225","is_secondary_id":"223","category_id":"1","supplier_id":null}
+]
+}
+,{"type":"table","name":"product_productcategory","database":"bg_lmsn","data":
+[
+{"id":"1","name":"Bakery","slug":"bakery","description":"","is_featured":"1","is_active":"1","created_at":"2026-05-02 23:24:39.636264","image_id":"223"}
+]
+}
+,{"type":"table","name":"product_productinventory","database":"bg_lmsn","data":
+[
+{"id":"24","sku":"uighdosjhjlbl","barcode":"456786756458","barcode_type":"ean13","barcode_image":"barcodes\/bc-456786756458.png","is_active":"1","quantity":"9","low_stock_threshold":"10","date_added":"2026-05-05 23:40:45.212599","product_id":"7","variant_id":null},
+{"id":"124","sku":"yhksbjsf","barcode":"isvhvhss","barcode_type":"code128","barcode_image":"barcodes\/bc-isvhvhss.png","is_active":"1","quantity":"10","low_stock_threshold":"10","date_added":"2026-05-06 15:28:53.545478","product_id":"14","variant_id":"123"},
+{"id":"128","sku":"hsjbvfdjbsi","barcode":"bhjbdjkvbfj","barcode_type":"code128","barcode_image":"barcodes\/bc-bhjbdjkvbfj.png","is_active":"1","quantity":"100","low_stock_threshold":"10","date_added":"2026-05-08 09:39:15.916626","product_id":"14","variant_id":"127"},
+{"id":"129","sku":"fhjsbhj","barcode":"kbdvjhvs","barcode_type":"code128","barcode_image":"barcodes\/bc-kbdvjhvs.png","is_active":"1","quantity":"100","low_stock_threshold":"10","date_added":"2026-05-08 09:39:15.928326","product_id":"14","variant_id":"128"},
+{"id":"130","sku":"UDWUHBSJ","barcode":"NDJBjbjb","barcode_type":"code128","barcode_image":"barcodes\/bc-NDJBjbjb.png","is_active":"1","quantity":"200","low_stock_threshold":"10","date_added":"2026-05-08 09:39:15.938761","product_id":"14","variant_id":"129"}
+]
+}
+,{"type":"table","name":"product_productreview","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"product_productvariant","database":"bg_lmsn","data":
+[
+{"id":"123","weight":"0.00","price_override":null,"is_active":"1","created_at":"2026-05-06 15:28:53.535249","color_id":"1","product_id":"14","size_id":"3"},
+{"id":"127","weight":"0.00","price_override":"69999.00","is_active":"1","created_at":"2026-05-08 09:39:15.906090","color_id":"3","product_id":"14","size_id":"4"},
+{"id":"128","weight":"0.00","price_override":"10000.00","is_active":"1","created_at":"2026-05-08 09:39:15.920621","color_id":"4","product_id":"14","size_id":"1"},
+{"id":"129","weight":"0.00","price_override":"1200.00","is_active":"1","created_at":"2026-05-08 09:39:15.931327","color_id":"2","product_id":"14","size_id":"2"}
+]
+}
+,{"type":"table","name":"product_product_colors","database":"bg_lmsn","data":
+[
+{"id":"37","product_id":"14","color_id":"1"},
+{"id":"38","product_id":"14","color_id":"2"},
+{"id":"39","product_id":"14","color_id":"3"},
+{"id":"40","product_id":"14","color_id":"4"}
+]
+}
+,{"type":"table","name":"product_product_gallery","database":"bg_lmsn","data":
+[
+{"id":"3","product_id":"7","mediaasset_id":"223"},
+{"id":"1","product_id":"7","mediaasset_id":"224"},
+{"id":"2","product_id":"7","mediaasset_id":"225"},
+{"id":"10","product_id":"14","mediaasset_id":"223"},
+{"id":"8","product_id":"14","mediaasset_id":"224"},
+{"id":"9","product_id":"14","mediaasset_id":"225"}
+]
+}
+,{"type":"table","name":"product_product_sizes","database":"bg_lmsn","data":
+[
+{"id":"58","product_id":"14","size_id":"1"},
+{"id":"59","product_id":"14","size_id":"2"},
+{"id":"57","product_id":"14","size_id":"3"},
+{"id":"60","product_id":"14","size_id":"4"}
+]
+}
+,{"type":"table","name":"product_size","database":"bg_lmsn","data":
+[
+{"id":"3","name":"L"},
+{"id":"4","name":"S"},
+{"id":"1","name":"X"},
+{"id":"2","name":"XL"}
+]
+}
+,{"type":"table","name":"product_supplier","database":"bg_lmsn","data":
+[
+
+]
+}
+,{"type":"table","name":"users_appvariable","database":"bg_lmsn","data":
+[
+{"id":"1","var_name":"APP_EMAIL","var_value":"belldivine070@gmail.com","description":"Email Address That Will Be Used To Send Messages To Clients","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"2","var_name":"APP_EMAILPWD","var_value":"belldivine070","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"3","var_name":"APP_MOBILE","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"4","var_name":"APP_NAME","var_value":"BG TECH","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"5","var_name":"APP_PORTAL","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"6","var_name":"APP_SHORTCODE","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"7","var_name":"APP_SMSAPI","var_value":"2345678","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"8","var_name":"APP_SMSEMAIL","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"9","var_name":"APP_SMSNAME","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"10","var_name":"APP_SMSPWD","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"11","var_name":"CONTACT_ADDRESS","var_value":"203 Fake St. Mountain View, San Francisco, California, USA","description":"203 Fake St. Mountain View, San Francisco, California, USA","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"12","var_name":"CONTACT_PERSON1","var_value":"+234 7047137084","description":"07047137084","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"13","var_name":"CONTACT_PERSON2","var_value":"","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"14","var_name":"CONTACT_PERSON3","var_value":"","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:24:27.000000"},
+{"id":"15","var_name":"CONTACT_PERSON4","var_value":"","description":"For Whatsapp Link","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"16","var_name":"FACEBOOK","var_value":"belldivine070","description":"Facebook Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"17","var_name":"INSTAGRAM","var_value":"https:\/\/www.instagram.com\/belldivine080?igsh=a2hiNnU4cnljNGVj&utm_source=qr","description":"Instagram Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"18","var_name":"LINKEDIN","var_value":"https:\/\/www.linkedin.com\/in\/bell-gam-404152221","description":"Linkedin Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"19","var_name":"OFFICIAL_EMAIL","var_value":"belldivine070@gmail.com","description":"","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"20","var_name":"SITE_HITS","var_value":"","description":"Number Of Times The Site Has Been Visited","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"21","var_name":"SLOGAN","var_value":"Far far away, behind the word mountains, far from the countries.","description":"","isreadonly":"0","lastupdated":"2018-08-27 23:29:10.000000"},
+{"id":"22","var_name":"TWITTER","var_value":"https:\/\/x.com\/belldivine080?s=21","description":"Twitter Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"},
+{"id":"23","var_name":"YOUTUBE","var_value":"belldivine070","description":"Youtube Handle","isreadonly":"0","lastupdated":"2025-11-20 22:44:00.000000"}
+]
+}
+]

@@ -2,26 +2,389 @@
 {% load static %}
 
 
-{% block content %}
+{% block sub-content %}
+<style>
+    /* Admin Panel Container */
+    .admin-order-container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: #333;
+        padding: 0 1rem;
+    }
 
-<div class="order-header">
-    <h2>Order #{{ order.id }}</h2>
+    /* Top Bar Summary */
+    .order-header-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .header-meta h2 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.5rem;
+        color: #1e293b;
+    }
+
+    .header-meta h4 {
+        margin: 0;
+        font-weight: 400;
+        color: #64748b;
+        font-size: 0.9rem;
+    }
+
+    /* Dynamic Badges */
+    .admin-badge {
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    .badge-paid {
+        background-color: #dcfce7;
+        color: #15803d;
+    }
+    .badge-unpaid {
+        background-color: #fee2e2;
+        color: #b91c1c;
+    }
+
+    /* Main Content Layout */
+    .order-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin-top: 0;
+        margin-bottom: 1.25rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    /* Items List Table-Style */
+    .item-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid #f1f5f9;
+    }
     
-    {% if order.status == 'paid' %}
-        <span class="badge bg-success">Payment Received</span>
-        <p>Thank you! Your order is being processed.</p>
-    {% elif order.status == 'pending' %}
-        <span class="badge bg-warning">Awaiting Payment</span>
-        <a href="{% url 'payments:initiate' order.id %}" class="btn btn-primary">Complete Payment</a>
-    {% endif %}
-</div>
+    .item-row:last-child {
+        border-bottom: none;
+    }
 
-<div class="order-items">
-    {% for item in order.items.all %}
-        <div class="item">
-            {{ item.product.name }} x {{ item.quantity }} - ₦{{ item.price }}
+    .item-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-name {
+        font-weight: 500;
+        color: #334155;
+    }
+
+    .item-qty {
+        font-size: 0.85rem;
+        color: #64748b;
+        margin-top: 0.25rem;
+    }
+
+    .item-price {
+        font-weight: 600;
+        color: #1e293b;
+    }
+
+    /* Financial Summary Card */
+    .summary-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        color: #64748b;
+    }
+
+    .summary-total-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.25rem;
+        padding-top: 1.25rem;
+        border-top: 2px dashed #e2e8f0;
+    }
+
+    .total-label {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #1e293b;
+    }
+
+    .total-amount {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #0f172a;
+    }
+
+    @media (max-width: 768px) {
+        .order-grid {
+            grid-template-columns: 1fr;
+        }
+        .order-header-card {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+    }
+</style>
+
+<div class="admin-order-container">
+
+    <div class="order-header-card">
+        <div class="header-meta">
+            <h2>Order #{{ order.order_number }}</h2>
+            <h4>Date: {{ order.created_at|date:"F d, Y • h:i A" }}</h4>
         </div>
-    {% endfor %}
+        <div>
+            {% if order.is_paid %}
+                <span class="admin-badge badge-paid">Paid</span>
+            {% else %}
+                <span class="admin-badge badge-unpaid">Unpaid</span>
+            {% endif %}
+        </div>
+    </div>
 </div>
+{% endblock sub-content %}
 
+{% block content %}
+<style>
+    /* Admin Panel Container */
+    .admin-order-container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: #333;
+        padding: 0 1rem;
+    }
+
+    /* Top Bar Summary */
+    .order-header-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .header-meta h2 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.5rem;
+        color: #1e293b;
+    }
+
+    .header-meta h4 {
+        margin: 0;
+        font-weight: 400;
+        color: #64748b;
+        font-size: 0.9rem;
+    }
+
+    /* Dynamic Badges */
+    .admin-badge {
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    .badge-paid {
+        background-color: #dcfce7;
+        color: #15803d;
+    }
+    .badge-unpaid {
+        background-color: #fee2e2;
+        color: #b91c1c;
+    }
+
+    /* Main Content Layout */
+    .order-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin-top: 0;
+        margin-bottom: 1.25rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    /* Items List Table-Style */
+    .item-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid #f1f5f9;
+    }
+    
+    .item-row:last-child {
+        border-bottom: none;
+    }
+
+    .item-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-name {
+        font-weight: 500;
+        color: #334155;
+    }
+
+    .item-qty {
+        font-size: 0.85rem;
+        color: #64748b;
+        margin-top: 0.25rem;
+    }
+
+    .item-price {
+        font-weight: 600;
+        color: #1e293b;
+    }
+
+    /* Financial Summary Card */
+    .summary-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+        color: #64748b;
+    }
+
+    .summary-total-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.25rem;
+        padding-top: 1.25rem;
+        border-top: 2px dashed #e2e8f0;
+    }
+
+    .total-label {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #1e293b;
+    }
+
+    .total-amount {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #0f172a;
+    }
+
+    @media (max-width: 768px) {
+        .order-grid {
+            grid-template-columns: 1fr;
+        }
+        .order-header-card {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+    }
+</style>
+
+<div class="admin-order-container">
+
+    <div class="order-header-card">
+        <div class="header-meta">
+            <h2>Order #{{ order.order_number }}</h2>
+            <h4>Date: {{ order.created_at|date:"F d, Y • h:i A" }}</h4>
+        </div>
+        <div>
+            {% if order.is_paid %}
+                <span class="admin-badge badge-paid">Paid</span>
+            {% else %}
+                <span class="admin-badge badge-unpaid">Unpaid</span>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="order-grid">
+        
+        <div class="card">
+            <h3 class="card-title">Order Items ({{ order.order_items.all.count }})</h3>
+            <div class="order-items-list">
+                {% for item in order.order_items.all %}
+                    <div class="item-row">
+                        <div class="item-details">
+                            <span class="item-name">{{ item.product_name_snapshot }}</span>
+                            <span class="item-qty">Quantity: {{ item.quantity }}</span>
+                        </div>
+                        <div class="item-price">
+                            ₦{{ item.price_at_purchase }}
+                        </div>
+                    </div>
+                {% empty %}
+                    <p style="color: #64748b; text-align: center; padding: 2rem 0;">No items found in this order.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Payment Summary</h3>
+            
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>₦{{ order.total_amount }}</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>₦0.00</span>
+            </div>
+            
+            <div class="summary-total-row">
+                <span class="total-label">Grand Total</span>
+                <span class="total-amount">₦{{ order.total_amount }}</span>
+            </div>
+        </div>
+
+    </div>
+</div>
 {% endblock content %}

@@ -204,9 +204,12 @@ class ActivityLog(models.Model):
         ('login', 'Login'),
         ('logout', 'Logout'),
         ('purchase', 'Purchase'),
+        ('purchase', 'Purchase'),
+        ('refund', 'Refund'),
         ('cancel_Payment', 'Cancel Payment'),
         ('failed_login', 'Failed Login Attempt'),
         ('password_change', 'Password Change'),
+        ('registered', 'Register'),
     )
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='activities')
     activity_type = models.CharField(max_length=20, choices=ACTIVITY_TYPES)
@@ -215,13 +218,22 @@ class ActivityLog(models.Model):
     user_agent = models.TextField(null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        indexes = [
+            models.Index(fields=['timestamp', 'activity_type']),
+        ]
+        ordering = ['-timestamp']
+
 
 class SecurityAuditLog(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True)
     event = models.CharField(max_length=100) 
     description = models.TextField()
+    user_agent = models.TextField(null=True, blank=True)
     ip_address = models.GenericIPAddressField(null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
+
+
 
 # ----------------------------------------------------
 # 4. CONTENT & DYNAMIC PAGES
