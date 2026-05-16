@@ -25,7 +25,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    # 'import_export',    
     'widget_tweaks',
     'django_paystack',
     'django_bootstrap5',
@@ -51,10 +50,10 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
     'accounts.middleware.UserActivityMiddleware',
     'core.middleware.SessionCartMiddleware',  
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'lmsn.urls'
@@ -188,27 +187,15 @@ PAYSTACK_SETTINGS = {
     'BUTTON_CLASS': 'btn btn-primary',
 }
 
-#Block unwanted bots and crawlers
-# CRAWLER_USER_AGENTS = [
-#     'Googlebot',
-#     'Slurp',
-#     'DuckDuckGo',
-# ]
-AXES_FAILURE_LIMIT = 5  # Lock out after 5 tries
-AXES_COOLOFF_TIME = 1   # Lock out for 1 hour
-AXES_LOCKOUT_TEMPLATE = 'lockout.html' # Show a custom "You are blocked" page
-AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP = True
-
-
 # # --- DEPLOYMENT SECURITY ---
-# SECURE_SSL_REDIRECT = True
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-# SECURE_HSTS_SECONDS = 31536000
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-# SECURE_HSTS_PRELOAD = True
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
-# X_FRAME_OPTIONS = 'DENY'
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_HSTS_SECONDS = 31536000
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+X_FRAME_OPTIONS = 'DENY'
 
 # GEOIP_PATH = os.path.join(BASE_DIR, 'geoip')
 
@@ -216,7 +203,7 @@ AXES_LOCK_OUT_BY_COMBINATION_USER_AND_IP = True
 # Force session to expire when browser closes (Security best practice)
 # SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 # Set global session cookie age to 30 minutes
-SESSION_COOKIE_AGE = 1800000
+SESSION_COOKIE_AGE = 1800
 SESSION_SAVE_EVERY_REQUEST = True
 
 # --- CELERY CONFIGURATION ---
